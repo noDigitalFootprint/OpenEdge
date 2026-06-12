@@ -13,5 +13,3 @@ runtime/local/
 
 # Generated or local-only artifacts
 .codegraph/
-vendor/
-LOB.exe
