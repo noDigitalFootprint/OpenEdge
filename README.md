@@ -24,10 +24,6 @@
 - Rebuilds now copy loose assets from `Data/resources/` to `runtime/local/app/resources/` and from `Data/audio/` to `runtime/local/app/audio/`.
 - File-backed runtime state such as `flags/`, `lines/`, `images/`, `videos/`, `debug/`, `options.txt`, `tasks.txt`, and `tags.txt` is expected under `runtime/local/app/`.
 
-## First milestone
-- Project builds.
-- App launches to `FrameWindow` and survives startup into the first-screen flow using the rebuilt `runtime/local/app/` layout.
-
 ## Phase 1 stabilization entrypoints
 - Backlog and exit criteria: `docs/recovery/phase-1-baseline.md`
 - Repeatable smoke check: `docs/recovery/smoke-check.ps1`
@@ -49,10 +45,3 @@ This smoke check currently verifies the canonical recovery baseline:
 Current Phase 1 interpretation:
 - the current repo should build with zero warnings and zero errors on the validated baseline
 - smoke-check success means the build completes with zero errors and the launch/startup checks pass
-
-## Verified recovery decisions
-- Remaining hand-built runtime paths in the current recovery scope were replaced with `RuntimePaths` helpers in `TalkBaseClass`, `MainWindow`, `Page1`, `ImageTagger`, and `WriteTask`.
-- The rebuilt app no longer depends on stale loose files already sitting in `runtime/local/app/`; rebuilds repopulate `resources/` and `audio/` from `Data/`.
-- Launch smoke testing is currently a controlled startup check: build, run `runtime/local/app/OpenEdge.exe`, verify the process stays alive, and confirm startup writes runtime markers such as `flags/temp/open.txt`.
-- The first source-based media pipeline slice is live: shared media catalog, source enable/disable, image/video source toggles, and existing session/tag flows consuming the catalog instead of only hardcoded media folders.
-- The first resilient tag-identity slice is live: tags still mirror to `tags.txt`, but the catalog now maintains identity-backed records in `media-tag-index.json` and uses those records to rebind tags when files move within configured sources.
