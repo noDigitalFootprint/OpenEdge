@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="OpenEdge.BulkMoveDestinationDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Bulk Move Destination"
+        Width="760"
+        Height="560"
+        WindowStartupLocation="CenterOwner"
+        Background="#FF101014">
+  <Border Padding="18">
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <TextBlock Text="Choose Move Destination"
+                 Foreground="White"
+                 FontFamily="Segoe UI"
+                 FontSize="28"
+                 Margin="0,0,0,8" />
+      <TextBlock Grid.Row="1"
+                 Text="Pick a configured source or one of its immediate subfolders so moved files stay visible in OpenEdge. Use Custom Folder only when you intend to move outside configured sources."
+                 Foreground="#FFD6D6D6"
+                 FontSize="16"
+                 TextWrapping="Wrap"
+                 Margin="0,0,0,14" />
+      <Border Grid.Row="2"
+              Background="#E0141418"
+              BorderBrush="#668A6AB0"
+              BorderThickness="1"
+              CornerRadius="8">
+        <ListBox x:Name="DestinationList"
+                 Background="Transparent"
+                 BorderThickness="0"
+                 Foreground="White"
+                 SelectionChanged="DestinationList_SelectionChanged">
+          <ListBox.ItemTemplate>
+            <DataTemplate>
+              <Border Padding="10"
+                      Margin="0,0,0,4"
+                      BorderBrush="#33FFFFFF"
+                      BorderThickness="0,0,0,1">
+                <StackPanel>
+                  <TextBlock Text="{Binding Label}"
+                             Foreground="#FFEDEDED"
+                             FontSize="16"
+                             FontWeight="Bold" />
+                  <TextBlock Text="{Binding Path}"
+                             Foreground="#FFD6D6D6"
+                             FontSize="13"
+                             TextWrapping="Wrap" />
+                </StackPanel>
+              </Border>
+            </DataTemplate>
+          </ListBox.ItemTemplate>
+        </ListBox>
+      </Border>
+      <Grid Grid.Row="3"
+            Margin="0,14,0,0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="SelectedPathText"
+                   Grid.Column="0"
+                   VerticalAlignment="Center"
+                   Foreground="#FFD6D6D6"
+                   TextWrapping="Wrap" />
+        <Button Grid.Column="1"
+                Content="New Folder"
+                Width="130"
+                Height="38"
+                Margin="10,0,0,0"
+                Click="NewFolder_Click" />
+        <Button Grid.Column="2"
+                Content="Custom Folder"
+                Width="150"
+                Height="38"
+                Margin="10,0,0,0"
+                Click="CustomFolder_Click" />
+        <Button Grid.Column="3"
+                Content="Cancel"
+                Width="110"
+                Height="38"
+                Margin="10,0,0,0"
+                Click="Cancel_Click" />
+        <Button x:Name="MoveButton"
+                Grid.Column="4"
+                Content="Move Here"
+                Width="130"
+                Height="38"
+                Margin="10,0,0,0"
+                IsEnabled="False"
+                Click="MoveButton_Click" />
+      </Grid>
+    </Grid>
+  </Border>
+</Window>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Grid x:Class="OpenEdge.SecondWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:gif="http://wpfanimatedgif.codeplex.com" xmlns:local="clr-namespace:OpenEdge" x:Name="secondWindow" KeyDown="secondWindow_KeyDown">
+  <Grid Name="imageGrid">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+      <ColumnDefinition />
+      <ColumnDefinition />
+      <ColumnDefinition />
+      <ColumnDefinition />
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+    </Grid.RowDefinitions>
+    <Grid Name="censorGrid" ColumnSpan="6" RowSpan="12" ZIndex="100">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+      </Grid.RowDefinitions>
+      <MediaElement Name="videoWindow" ScrubbingEnabled="True" Grid.Column="0" Grid.RowSpan="12" Visibility="Visible" Grid.Row="0" LoadedBehavior="Play" Grid.ColumnSpan="6" Volume="0.1" Stretch="Uniform" MediaOpened="videoWindow_MediaOpened" MediaEnded="videoWindow_MediaEnded">
+        <UIElement.Effect>
+          <BlurEffect Radius="0" x:Name="mediaBlurEffect" KernelType="Gaussian" />
+        </UIElement.Effect>
+      </MediaElement>
+    </Grid>
+    <Image Name="heartbg" Grid.Column="0" Grid.RowSpan="12" Grid.Row="0" Grid.ColumnSpan="6" Source="/heartsbgblack.png" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False" Stretch="UniformToFill" />
+  </Grid>
+</Grid>

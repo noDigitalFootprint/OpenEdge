@@ -1,0 +1,637 @@
+﻿# Legacy State Audit
+
+Generated: 2026-06-02 22:16:51
+Include mods: False
+
+## Summary
+
+- ADDVAR: 65
+- DELFLAG: 46
+- FLAG: 41
+- getFlag: 71
+- getVar: 63
+- ISFLAG: 162
+- ISNOFLAG: 31
+- setFlag: 34
+- SETVAR: 78
+
+## Matches
+
+### ADDVAR
+
+- `runtime/local/app/lines/Common/Scripts/Base/chastityWear.txt:95` - ADDVAR:chastityTime,GETVAR:chastityMod
+- `runtime/local/app/lines/Common/Scripts/Base/illegalCum.txt:4` - ADDVAR:illegalCum,1
+- `runtime/local/app/lines/Common/Scripts/Base/illegalCum.txt:62` - ADDVAR:noVideoValue,7
+- `runtime/local/app/lines/Common/Scripts/Base/illegalEdge.txt:270` - ADDVAR:strokeMod,-1
+- `runtime/local/app/lines/Common/Scripts/Base/illegalEdge.txt:276` - ADDVAR:strokeMod,-1
+- `runtime/local/app/lines/Common/Scripts/Base/illegalEdge.txt:283` - ADDVAR:strokeMod,-1
+- `runtime/local/app/lines/Common/Scripts/Base/illegalEdge.txt:290` - ADDVAR:strokeMod,-1
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:7` - ADDVAR:LOBMod,-1 alright I've made it a bit less oppressive GOTO:end
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:18` - ADDVAR:LOBMod,-1 it should be a little easier to deal with now GOTO:end
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:29` - ADDVAR:LOBMod,-1 GOTO:end
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:37` - ADDVAR:LOBMod,-1 I'm going to make it a little less intense, then you won't have to turn it off anymore
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:44` - ADDVAR:LOBMod,1 I'm increasing the intensity of the program, since you need to make up some ground
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:51` - ADDVAR:LOBMod,-1 GOTO:end
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:61` - ADDVAR:LOBMod,1 you're such a good @boy for me
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:73` - ADDVAR:LOBMod,1 you're going to regret this, you know that right? GOTO:end
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:85` - ADDVAR:LOBMod,1 that's what I thought GOTO:end
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:96` - ADDVAR:LOBMod,1 that's a good @boy GOTO:end
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:105` - ADDVAR:LOBMod,1 I'm increasing the intensity
+- `runtime/local/app/lines/Common/Scripts/Base/longEdge.txt:6` - but from now on you'll be stroking faster ADDVAR:strokeMod,1
+- `runtime/local/app/lines/Common/Scripts/Base/longEdge.txt:33` - ADDVAR:strokeMod,1
+- `runtime/local/app/lines/Common/Scripts/Base/longEdge.txt:41` - ADDVAR:strokeMod,1
+- `runtime/local/app/lines/Common/Scripts/Base/longEdge.txt:48` - ADDVAR:strokeMod,1
+- `runtime/local/app/lines/Common/Scripts/Base/longEdge.txt:60` - ADDVAR:strokeMod,1
+- `runtime/local/app/lines/Common/Scripts/Base/longEdge.txt:72` - ADDVAR:strokeMod,1
+- `runtime/local/app/lines/Common/Scripts/Base/longEdge.txt:81` - ADDVAR:strokeMod,1
+- `runtime/local/app/lines/Common/Scripts/Base/longEdge.txt:91` - ADDVAR:strokeMod,1
+- `runtime/local/app/lines/Common/Scripts/Base/longEdge.txt:103` - ADDVAR:strokeMod,-8
+- `runtime/local/app/lines/Common/Scripts/Base/punishment.txt:39` - MOOD:2 ADDVAR:noVideoValue,1
+- `runtime/local/app/lines/Common/Scripts/Base/punishment.txt:102` - ADDVAR:censorIncrease,2
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:138` - I'm increasing your sentence ADDVAR:chastiyTime,1
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:146` - I'm increasing your sentence ADDVAR:chastiyTime,3
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:2` - ADDVAR:request,1 MOOD:-1 ISFLAGT:gag GOTO:noAsk
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:46` - ADDVAR:request,8
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:49` - ADDVAR:request,7
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:68` - ADDVAR:request,3
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:71` - ADDVAR:request,4
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:75` - ADDVAR:request,5
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:79` - ADDVAR:request,6
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:84` - ADDVAR:request,6
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:88` - ADDVAR:request,6
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:92` - ADDVAR:request,8
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:95` - ADDVAR:request,7
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:98` - ADDVAR:request,5
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:101` - ADDVAR:request,5
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:113` - ADDVAR:request,3
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:118` - ADDVAR:request,8
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:121` - ADDVAR:request,7
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:129` - ADDVAR:request,3
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:136` - ADDVAR:request,8
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:139` - ADDVAR:request,7
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:151` - ADDVAR:request,8
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:156` - ADDVAR:request,5
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:159` - ADDVAR:request,8
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:162` - ADDVAR:request,7
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:165` - ADDVAR:request,6
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:168` - ADDVAR:request,6
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:175` - ADDVAR:request,2
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:292` - ADDVAR:strokeMod,1
+- `runtime/local/app/lines/Common/Scripts/Base/reward.txt:126` - ADDVAR:censorIncrease,1
+- `runtime/local/app/lines/Common/Scripts/Base/reward.txt:162` - ADDVAR:sessionLengthMod,1
+- `runtime/local/app/lines/Common/Scripts/Base/reward.txt:167` - ADDVAR:sessionLengthMod,-1
+- `runtime/local/app/lines/Common/Scripts/Base/reward.txt:172` - ADDVAR:scoreMod,-1 MOOD:-80
+- `runtime/local/app/lines/Common/Scripts/Base/reward.txt:178` - ADDVAR:scoreMod,1 MOOD:20
+- `runtime/local/app/lines/Common/Scripts/Base/reward.txt:183` - ADDVAR:videoMod,1
+- `runtime/local/app/lines/Common/Scripts/Base/reward.txt:190` - ADDVAR:videoMod,-1
+
+### DELFLAG
+
+- `runtime/local/app/lines/Common/Scripts/Base/backFromBreak.txt:3` - FLAGT:sessionIntro DELFLAG:break I hope you've reflected on your behavior by now
+- `runtime/local/app/lines/Common/Scripts/Base/changeState.txt:21` - DELFLAG:lostKey
+- `runtime/local/app/lines/Common/Scripts/Base/chastityRemove.txt:103` - DELFLAG:chastityDate
+- `runtime/local/app/lines/Common/Scripts/Base/chastityRemove.txt:104` - DELFLAG:chastityTime
+- `runtime/local/app/lines/Common/Scripts/Base/chastityRemove.txt:105` - DELFLAG:wearingChastity
+- `runtime/local/app/lines/Common/Scripts/Base/cuck.txt:26` - DELFLAG:cuck
+- `runtime/local/app/lines/Common/Scripts/Base/cuck.txt:134` - DELFLAG:cuck
+- `runtime/local/app/lines/Common/Scripts/Base/illegalCum.txt:17` - ISSETTINGDECLINED:cockControl SETSETTING:cockControl,true DELFLAG:cockControlNo and I'm taking away your right to your little stroke sessions without me since it's clear that you can't behave yourself
+- `runtime/local/app/lines/Common/Scripts/Base/illegalCum.txt:49` - ISSETTINGDECLINED:cockControl SETSETTING:cockControl,true DELFLAG:cockControlNo and I'm taking away your right to your little stroke sessions without me since it's clear that you can't behave yourself
+- `runtime/local/app/lines/Common/Scripts/Base/illegalCum.txt:53` - ISSETTINGDECLINED:cockControl SETSETTING:cockControl,true DELFLAG:cockControlNo and I'm taking away your right to your little stroke sessions without me since it's clear that you can't behave yourself
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:113` - DELFLAG:LOBBreak well maybe it's more realistic to say that you should beg and plead
+- `runtime/local/app/lines/Common/Scripts/Base/orgasmDecideNote.txt:67` - DELFLAG:note
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:22` - DELFLAG:vibratorNo SETSETTING:vibrator,true
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:27` - DELFLAG:plugNo SETSETTING:plug,true MOOD:3 so you finally got yourself a plug, interested in anal aren't you?
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:30` - DELFLAG:dildoNo SETSETTING:dildo,true MOOD:3 oh? are you perhaps interested in serving someone on the future?
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:34` - DELFLAG:stringNo SETSETTING:string,true MOOD:3 honestly I'm shocked you didn't have this laying around
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:37` - DELFLAG:waterLubeNo SETSETTING:waterLube,true MOOD:3 great, that should make everything nice and slick
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:40` - DELFLAG:collarNo SETSETTING:collar,true MOOD:3 who's a good doggie? you are!
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:43` - DELFLAG:treatsNo SETSETTING:treats,true MOOD:3 be honest, you just wanted a snack
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:46` - DELFLAG:clothesPinsNo SETSETTING:clothesPins,true MOOD:3 finally doing the laundry I see
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:64` - DELFLAG:cageNo SETSETTING:cage,true
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:170` - DELFLAG:task
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:171` - ISFLAG:hourSpentWatching DELFLAG:hourSpentWatching good @boy, then I'm sure your @cock must be crying by now
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:172` - ISFLAG:audioPorn DELFLAG:audioPorn good @boy, then I'm sure your @cock must be crying by now
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:173` - ISFLAG:plugWalk DELFLAG:plugWalk you're such a good slut for me
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:174` - ISFLAG:stoleSnacks DELFLAG:stoleSnacks then that hunger will help correct your behavior
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:185` - DELFLAG:analNo MOOD:3 oh, you don't even know how happy this makes me!
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:190` - DELFLAG:humiliationNo SETSETTING:humiliation,true now this is something I've been looking forward to
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:194` - DELFLAG:sphNo SETSETTING:sph,true so you've finally realized it
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:200` - DELFLAG:LOBNo SETSETTING:LOB,true good, I want to see just how horny you can get
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:203` - DELFLAG:LOB SETSETTING:LOB,false LOBNO: is it too much to handle?
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:208` - DELFLAG:asmrNo SETSETTING:asmr,true oh, has the idea grown on you?
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:211` - DELFLAG:hypnoNo SETSETTING:hypno,true I'll try my best, just remember to relax and slow your breathing
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:215` - DELFLAG:petPlayNo acting hard to get is a very cat like thing to do
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:221` - DELFLAG:ceiNo SETSETTING:cei,true
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:224` - DELFLAG:censorshipNo SETSETTING:censorship,true I knew you'd agree! then you'd best keep me happy from now on
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:228` - DELFLAG:petPlayAdvancedNo you're not needy enough right now, I'll ask you again during our session
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:231` - DELFLAG:breathPlayNo SETSETTING:breathPlay,true I'll have you squirming in no time at all
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:235` - DELFLAG:gayNo SETSETTING:gay,true SETSETTING:gayHumiliation,false
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:239` - DELFLAG:sissyNo SETSETTING:sissy,true
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:243` - DELFLAG:feetNo SETSETTING:feet,true
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:248` - DELFLAG:outsideSessionNo SETSETTING:outsideSession,true
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:256` - DELFLAG:cuckNo SETSETTING:cuck,true
+- `runtime/local/app/lines/Common/Scripts/Base/safeWord.txt:23` - DELFLAG:chastityDate
+- `runtime/local/app/lines/Common/Scripts/Base/safeWord.txt:24` - DELFLAG:chastityTime
+- `runtime/local/app/lines/Common/Scripts/Base/safeWord.txt:25` - DELFLAG:wearingChastity
+
+### FLAG
+
+- `runtime/local/app/lines/Common/Scripts/Base/anal.txt:51` - FLAG:prostateHidden
+- `runtime/local/app/lines/Common/Scripts/Base/anal.txt:157` - FLAG:analSecond
+- `runtime/local/app/lines/Common/Scripts/Base/anal.txt:209` - FLAG:analSecond
+- `runtime/local/app/lines/Common/Scripts/Base/ask.txt:40` - FLAG:censorDomme
+- `runtime/local/app/lines/Common/Scripts/Base/ask.txt:48` - FLAG:censorDommeNo
+- `runtime/local/app/lines/Common/Scripts/Base/ask.txt:292` - FLAG:fullBreathHold
+- `runtime/local/app/lines/Common/Scripts/Base/ask.txt:381` - FLAG:degrading
+- `runtime/local/app/lines/Common/Scripts/Base/ask.txt:927` - SETSETTING:LOB,true FLAG:LOBOn LOB: GOTO:end
+- `runtime/local/app/lines/Common/Scripts/Base/ask.txt:1152` - FLAG:petPlayAdvanced and sink deep into pleasure
+- `runtime/local/app/lines/Common/Scripts/Base/ask.txt:1189` - FLAG:hadBlowjob did you pay them or something?
+- `runtime/local/app/lines/Common/Scripts/Base/chastityWear.txt:98` - FLAGT:chastityJustClosed FLAG:chastityDate SETSETTING:wearingChastity,true
+- `runtime/local/app/lines/Common/Scripts/Base/factualFirst.txt:109` - FLAG:fullOrgasm
+- `runtime/local/app/lines/Common/Scripts/Base/factualFirst.txt:110` - FLAG:ruinedOrgasm
+- `runtime/local/app/lines/Common/Scripts/Base/game.txt:50` - FLAG:edgeHoldGame
+- `runtime/local/app/lines/Common/Scripts/Base/game.txt:69` - FLAG:edgeHoldGameTime
+- `runtime/local/app/lines/Common/Scripts/Base/game.txt:341` - FLAG:edgeHoldGameTime
+- `runtime/local/app/lines/Common/Scripts/Base/illegalCum.txt:16` - FLAG:fullOrgasm
+- `runtime/local/app/lines/Common/Scripts/Base/illegalCum.txt:20` - FLAG:ruinedOrgasm
+- `runtime/local/app/lines/Common/Scripts/Base/illegalCum.txt:77` - FLAG:audioPorn FLAG:task
+- `runtime/local/app/lines/Common/Scripts/Base/illegalCum.txt:89` - FLAG:plugWalk FLAG:task
+- `runtime/local/app/lines/Common/Scripts/Base/illegalCum.txt:97` - FLAG:longSession
+- `runtime/local/app/lines/Common/Scripts/Base/illegalEdge.txt:137` - FLAG:quickshot
+- `runtime/local/app/lines/Common/Scripts/Base/illegalEdge.txt:159` - FLAG:quickshotNo
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:127` - FLAG:LOBBreak but re-enable my program in your launch sequence again
+- `runtime/local/app/lines/Common/Scripts/Base/makeNote.txt:11` - FLAG:explainedNote GOTO:start
+- `runtime/local/app/lines/Common/Scripts/Base/makeNote.txt:38` - FLAG:note
+- `runtime/local/app/lines/Common/Scripts/Base/noTouch.txt:257` - FLAG:explainedHowToKneel
+- `runtime/local/app/lines/Common/Scripts/Base/ogasmDecideRuin.txt:40` - FLAG:ruinedOrgasm
+- `runtime/local/app/lines/Common/Scripts/Base/orgasmDecideConditional.txt:17` - FLAG:cumSlut
+- `runtime/local/app/lines/Common/Scripts/Base/orgasmDecideConditional.txt:34` - FLAG:fullOrgasm
+- `runtime/local/app/lines/Common/Scripts/Base/orgasmDecideConditional.txt:86` - FLAG:ruinedOrgasm hands off @subTitle
+- `runtime/local/app/lines/Common/Scripts/Base/orgasmDecideConditional.txt:87` - FLAG:debt did that help a little with the pressure in your balls?
+- `runtime/local/app/lines/Common/Scripts/Base/orgasmDecideCum.txt:60` - FLAG:fullOrgasm
+- `runtime/local/app/lines/Common/Scripts/Base/orgasmDecideFavor.txt:54` - FLAG:fullOrgasm sear this pleasure into your brain @subTitle
+- `runtime/local/app/lines/Common/Scripts/Base/orgasmDecideFavor.txt:59` - FLAG:ruinedOrgasm hands off @subTitle
+- `runtime/local/app/lines/Common/Scripts/Base/orgasmDecideNote.txt:68` - FLAG:fullOrgasm
+- `runtime/local/app/lines/Common/Scripts/Base/orgasmDecideRuin.txt:40` - FLAG:ruinedOrgasm
+- `runtime/local/app/lines/Common/Scripts/Base/punishment.txt:126` - FLAG:hourSpentWatching FLAG:task
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:108` - FLAG:task FLAG:audioPorn
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:129` - FLAG:task FLAG:stoleSnacks
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:486` - FLAG:fullBreathHold
+
+### getFlag
+
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:106` - if (mw.getFlag("degrading"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:110` - if (mw.getFlag("sph"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:114` - if (mw.getFlag("chastity"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:118` - if (mw.getFlag("quickshot"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:186` - if (mw.getFlag("removed"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:190` - if (mw.getFlag("pup") && mw.getTFlag("petPlay"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:194` - if (mw.getFlag("cat") && mw.getTFlag("petPlay"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:278` - if (mw.getFlag(text))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:284` - else if ((char.IsUpper(text, 0) && !mw.currentTags.Contains(text)) \|\| (!char.IsUpper(text, 0) && !mw.getFlag(text)))
+- `src/OpenEdge/OpenEdge.scripts/AskFlag.cs:26` - mw.getFlag("collar");
+- `src/OpenEdge/OpenEdge.scripts/CbtExtreme.cs:26` - if (mw.getFlag("degrading"))
+- `src/OpenEdge/OpenEdge.scripts/Commandments.cs:16` - if (!mw.getFlag("noPorn") && !mw.getFlag("watchPorn"))
+- `src/OpenEdge/OpenEdge.scripts/Commandments.cs:26` - if (!mw.getFlag("constantCei") && mw.isSettingEnabled("cei"))
+- `src/OpenEdge/OpenEdge.scripts/Commandments.cs:36` - if (mw.isSettingEnabled("plug") && !mw.getFlag("plugHour"))
+- `src/OpenEdge/OpenEdge.scripts/Commandments.cs:46` - if (!mw.getFlag("noPorn") && !mw.getFlag("watchPorn"))
+- `src/OpenEdge/OpenEdge.scripts/Commandments.cs:56` - if (!mw.getFlag("hypnoFiles") && mw.isSettingEnabled("hypno"))
+- `src/OpenEdge/OpenEdge.scripts/Edging.cs:49` - if (mw.getFlag("degrading"))
+- `src/OpenEdge/OpenEdge.scripts/Edging.cs:75` - if (mw.getFlag("quickshot"))
+- `src/OpenEdge/OpenEdge.scripts/Game.cs:95` - if (mw.isSettingEnabled("canRemove") && mw.getFlag("edgeHoldRecord"))
+- `src/OpenEdge/OpenEdge.scripts/IllegalCum.cs:48` - if (mw.isSettingEnabled("humiliation") && !mw.getFlag("note"))
+- `src/OpenEdge/OpenEdge.scripts/IllegalEdge.cs:119` - if (mw.getFlag("quickshot") && int.Parse(getVar("denied")) > 2 && mw.getFlag("removed"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:24` - if (mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:30` - if (mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:36` - if (mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:42` - if (mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:48` - if (mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:54` - if (!mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:60` - if (!mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:66` - if (!mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:72` - if (!mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:78` - if (!mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:108` - if (!mw.getFlag("explainedHowToKneel"))
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:150` - if (mw.getFlag("petPlayAdvanced") && mw.getTFlag("petPlay"))
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:161` - if (mw.getFlag("petPlayAdvanced") && mw.getTFlag("petPlay"))
+- `src/OpenEdge/OpenEdge.scripts/Punishment.cs:65` - if (mw.getFlag("censor") && mw.mood < 20 && !mw.getTFlag("noCensors"))
+- `src/OpenEdge/OpenEdge.scripts/Reward.cs:60` - if (mw.getFlag("censor"))
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:36` - if (mw.getFlag("nipplePlay"))
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:196` - if (!getFlag(text10))
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:238` - if (getFlag(text11))
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:265` - if (!getFlag(text15, temp: true))
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:274` - if (getFlag(text16, temp: true))
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1143` - public bool getFlag(string flagName, bool temp = false)
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1154` - return mw.getFlag(flagName);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1612` - if (!getFlag("closeWithoutSession", temp: true))
+- `src/OpenEdge/OpenEdge.vocab/MissTitle.cs:10` - if (mw.getFlag("domTitle"))
+- `src/OpenEdge/OpenEdge.vocab/Refuse.cs:12` - if (mw.getFlag("cat"))
+- `src/OpenEdge/OpenEdge.vocab/Yes.cs:12` - if (mw.getFlag("cat"))
+- `src/OpenEdge/OpenEdge/LineReader.cs:346` - return talkBaseClass.getFlag(text2);
+- `src/OpenEdge/OpenEdge/LineReader.cs:351` - return talkBaseClass.getFlag(text3, temp: true);
+- `src/OpenEdge/OpenEdge/LineReader.cs:356` - return !talkBaseClass.getFlag(text4);
+- `src/OpenEdge/OpenEdge/LineReader.cs:361` - return !talkBaseClass.getFlag(text5, temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:318` - if (!getFlag("sph"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:621` - if (!getTFlag("LOBScript") && getFlag("LOB") && getFlagTimeDays("LOB") >= 1)
+- `src/OpenEdge/OpenEdge/MainWindow.cs:735` - if (!getTFlag("LOBScript") && getFlag("LOB") && getFlagTimeDays("LOB") >= 1)
+- `src/OpenEdge/OpenEdge/MainWindow.cs:747` - public bool getFlag(string flagName)
+- `src/OpenEdge/OpenEdge/MainWindow.cs:879` - return getFlag(key);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1754` - if (getFlag("break"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1766` - else if (!getFlag("factualFirst"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1834` - if (getFlag("shortSession"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1839` - else if (getFlag("longSession"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1852` - if (getFlag("sessionLengthMod"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2104` - if (getFlag("noVideo") && getFlagTimeDays("noVideo") >= int.Parse(getVar("noVideoValue")))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2109` - if (secWindow.videoPaths.Count > 4 && !getFlag("noVideo"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2125` - if (secWindow.gifPaths.Count > 4 && !getFlag("noVideo"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2898` - if (getFlag("debt") && num2 >= 80)
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2909` - if (getFlag("note"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3898` - SessionTraceLogger.Info("hypnosis-strobe", "tick=" + even + " generation=" + generation + " subliminal=" + subliminal + " strobeFlag=" + getFlag("strobe"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3929` - if (!getFlag("strobe"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3941` - if (getFlag("strobe"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3970` - if (!getFlag("strobe"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3982` - if (getFlag("strobe"))
+
+### getVar
+
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:162` - if (int.Parse(mw.getVar("denied")) > 3)
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:166` - if (int.Parse(mw.getVar("denied")) < 2)
+- `src/OpenEdge/OpenEdge.scripts/AskFlag.cs:24` - if (mw.isSettingAnswered("safeWord") && mw.isSettingAnswered("edgeIntro") && mw.isSettingAnswered("edgeHold") && mw.isSettingAnswered("string") && mw.isSettingAnswered("clothesPins") && mw.isSettingAnswered("humiliation") && (!mw.isSettingEnabled("humiliation") \|\| mw.isSettingAnswered("virgin")) && mw.isSettingAnswered("asmr") && mw.isSettingAnswered("taskScreen") && (mw.isSettingAnswered("findom") \|\| int.Parse(mw.getVar("totalTribute")) <= 10) && mw.isSettingAnswered("gay") && mw.isSettingAnswered("petPlay") && mw.isSettingAnswered("cei") && (!mw.isSettingEnabled("humiliation") \|\| mw.isSettingAnswered("cuck")) && (!mw.isSettingEnabled("humiliation") \|\| mw.isSettingAnswered("censorship")) && mw.isSettingAnswered("feet") && mw.isSettingAnswered("palming") && mw.isSettingAnswered("hypno") && mw.isSettingAnswered("hands") && (!mw.isSettingEnabled("gayHumiliation") \|\| mw.isSettingAnswered("sissy")) && mw.isSettingAnswered("anal") && mw.isSettingAnswered("cockControl") && mw.isSettingAnswered("breathPlay") && (mw.isSettingAnswered("outsideSession") \|\| int.Parse(mw.getVar("sessions")) <= 3) && mw.isSettingAnswered("LOB") && mw.isSettingAnswered("canRemove") && !mw.getFlagAsked("petPlayAdvanced") && mw.isSettingEnabled("petPlay") && !mw.isSettingEnabled("treats"))
+- `src/OpenEdge/OpenEdge.scripts/Edging.cs:85` - if (mw.mood > 80 && int.Parse(mw.getVar("sessions")) > 7)
+- `src/OpenEdge/OpenEdge.scripts/Edging.cs:95` - if (mw.mood > 80 && int.Parse(mw.getVar("sessions")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/Ending.cs:27` - if (3 <= int.Parse(mw.getVar("denied")))
+- `src/OpenEdge/OpenEdge.scripts/Ending.cs:43` - if (3 <= int.Parse(mw.getVar("sessions")))
+- `src/OpenEdge/OpenEdge.scripts/Ending.cs:49` - if (3 <= int.Parse(mw.getVar("denied")))
+- `src/OpenEdge/OpenEdge.scripts/Ending.cs:55` - if (3 <= int.Parse(mw.getVar("denied")))
+- `src/OpenEdge/OpenEdge.scripts/Hypnosis.cs:145` - if (int.Parse(mw.getVar("illegalCum")) > 0)
+- `src/OpenEdge/OpenEdge.scripts/HypnosisMantra.cs:72` - if (int.Parse(mw.getVar("denied")) > 2)
+- `src/OpenEdge/OpenEdge.scripts/HypnosisMantra.cs:78` - if (int.Parse(mw.getVar("denied")) > 2)
+- `src/OpenEdge/OpenEdge.scripts/IllegalCum.cs:28` - if (mw.getFlagTimeDays("noVideo") >= int.Parse(mw.getVar("noVideoValue")))
+- `src/OpenEdge/OpenEdge.scripts/IllegalEdge.cs:119` - if (mw.getFlag("quickshot") && int.Parse(getVar("denied")) > 2 && mw.getFlag("removed"))
+- `src/OpenEdge/OpenEdge.scripts/LongEdge.cs:59` - if (10 < int.Parse(mw.getVar("strokeMod")))
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:76` - if (int.Parse(getVar("denied")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:82` - if (int.Parse(getVar("denied")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:132` - if (mw.isSettingEnabled("humiliation") && int.Parse(mw.getVar("sessions")) > 3 && !mw.getTFlag("petPlay"))
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:138` - if (mw.isSettingEnabled("humiliation") && mw.mood > 80 && int.Parse(mw.getVar("sessions")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/OrgasmDecideConditional.cs:26` - if (int.Parse(mw.getVar("denied")) >= 3)
+- `src/OpenEdge/OpenEdge.scripts/Punishment.cs:35` - if (int.Parse(mw.getVar("noVideoValue")) > 0)
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:87` - if (mw.getFlagTimeDays("failedSessionEnd") <= 1 && int.Parse(mw.getVar("sessions")) > 2)
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:119` - if (mw.getFlagTimeDays("failedSessionEnd") <= 1 && int.Parse(mw.getVar("sessions")) > 5)
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:125` - if (int.Parse(getVar("denied")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:136` - if (int.Parse(getVar("denied")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:147` - if (mw.getFlagTimeDays("failedSessionEnd") <= 1 && int.Parse(getVar("denied")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:369` - return getVar(text25) + text26;
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1302` - string text = getVar(flagName);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1314` - string text = getVar(flagName);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1328` - mw.setFavor(int.Parse(mw.getVar("favor")) - int.Parse(amount));
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1329` - mw.setVar("totalTribute", (int.Parse(amount) + int.Parse(mw.getVar("totalTribute"))).ToString() ?? "");
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1386` - string newValue = (int.Parse(array[1]) + int.Parse(mw.getVar(array[0]))).ToString() ?? "";
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1391` - public string getVar(string flagName)
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1394` - return mw.getVar(flagName);
+- `src/OpenEdge/OpenEdge.vocab/MissTitle.cs:12` - normal.AddRange(new string[1] { mw.getVar("domTitle") });
+- `src/OpenEdge/OpenEdge/LegacyStateAdapter.cs:52` - public string GetVar(string name, string defaultValue)
+- `src/OpenEdge/OpenEdge/LineReader.cs:444` - num = double.Parse(mw.getVar(text11.Split(":")[1].Trim()));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:507` - int num = requestChange + int.Parse(getVar("request"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:834` - public string getVar(string name, string errorValue = "0")
+- `src/OpenEdge/OpenEdge/MainWindow.cs:839` - return legacyStateAdapter.GetVar(name, errorValue);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:844` - return getVar(name, errorValue);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:952` - return int.TryParse(getVar(key, defaultValue.ToString()), out int result) ? result : defaultValue;
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1246` - return !isSettingEnabled("wearingChastity") && int.Parse(getVar("totalTribute")) > 10;
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1709` - mood = int.Parse(getVar("mood", "50"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1801` - int num = int.Parse(getVar("chastityTime"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1863` - sessionLength = int.Parse(getVar("sessionLength", "600")) + sessionLength;
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1864` - setVar("sessionLength", (sessionLength + int.Parse(getVar("extraTime"))).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1870` - setVar("mood", (int.Parse(getVar("mood", "10")) / 2 + 25).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1874` - sessionLength = int.Parse(getVar("sessionLength", "600"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1884` - if (getVar("strokeAmount") != "")
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1886` - strokeAmount += int.Parse(getVar("strokeAmount"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1888` - if (getVar("edgesDone") != "")
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1890` - edgesDone += int.Parse(getVar("edgesDone"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1892` - if (getVar("totalTimeOnEdge") != "")
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1894` - totalTimeOnEdge += int.Parse(getVar("totalTimeOnEdge"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2104` - if (getFlag("noVideo") && getFlagTimeDays("noVideo") >= int.Parse(getVar("noVideoValue")))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2115` - num3 += (double)int.Parse(getVar("videoMod"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2888` - int num = (int)((double)strokeAmount * 0.02 + (double)(daysSinceFull * 6) + (double)edgesDone * 0.2 + (double)totalTimeOnEdge * 0.05 + (double)(int.Parse(getVar("Denied")) * 4) - (double)(100 - mood) * difficulty);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2956` - int num2 = int.Parse(currentScript.getVar("strokeMod"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3432` - int num2 = 2000 * int.Parse(getVar("videoMod"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3639` - totalCurrency.Text = int.Parse(getVar("favor")).ToString() ?? "";
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3641` - return int.Parse(getVar("favor"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3646` - int oldFavor = int.Parse(getVar("favor"));
+
+### ISFLAG
+
+- `runtime/local/app/lines/Common/Scripts/Base/anal.txt:89` - ISFLAG:prostateHidden it's strange that you couldn't find your prostate
+- `runtime/local/app/lines/Common/Scripts/Base/anal.txt:211` - ISFLAG:analSecond
+- `runtime/local/app/lines/Common/Scripts/Base/ask.txt:24` - TAG:Feet TAG:Shows-Instructor,Nude ISFLAG:censorOn ISSETTING:feet ISSETTING:taskScreen ISNOFLAG:censorDomme ISNOFLAG:censorDommeNo
+- `runtime/local/app/lines/Common/Scripts/Base/ask.txt:727` - ISNOSETTING:LOB ISNOSETTINGDECLINED:LOB ISFLAG:supporter
+- `runtime/local/app/lines/Common/Scripts/Base/cbtExtreme.txt:29` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Scripts/Base/edging.txt:15` - ISFLAG:degrading you trying so desperately to show me a pathetic display
+- `runtime/local/app/lines/Common/Scripts/Base/edging.txt:16` - ISFLAG:degrading ISSETTING:sph even though I can barely even see your @cock from here
+- `runtime/local/app/lines/Common/Scripts/Base/edging.txt:97` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Scripts/Base/edging.txt:145` - ISFLAG:quickshot
+- `runtime/local/app/lines/Common/Scripts/Base/game.txt:42` - ISFLAG:edgeHoldGame GOTO:cont1
+- `runtime/local/app/lines/Common/Scripts/Base/game.txt:99` - ISFLAG:explainedEdgeChoice GOTO:skipExplain
+- `runtime/local/app/lines/Common/Scripts/Base/game.txt:318` - ISSETTING:edgeHold ISSETTING:canRemove ISFLAG:edgeHoldRecord ISNOSETTING:wearingChastity
+- `runtime/local/app/lines/Common/Scripts/Base/hypnosis.txt:967` - ISFLAG:dog you love to bark
+- `runtime/local/app/lines/Common/Scripts/Base/illegalEdge.txt:199` - ISFLAG:quickshot V>2:denied ISSETTING:removed
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:12` - ISFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:23` - ISFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:34` - ISFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:39` - ISFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:46` - ISFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:115` - ISFLAG:LOBOn ISNOFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/makeNote.txt:2` - ISFLAG:explainedNote GOTO:explainedNote
+- `runtime/local/app/lines/Common/Scripts/Base/orgasmDecideConditional.txt:13` - ISFLAG:cumSlut GOTO:hungry
+- `runtime/local/app/lines/Common/Scripts/Base/punishment.txt:93` - ISFLAG:censor V<20:mood ISNOFLAGT:noCensors
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:9` - ISFLAG:task GOTO:task
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:84` - ISFLAG:note [I lost my note]
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:160` - ISFLAG:hourSpentWatching I instructed you to spend an hour watching porn without stroking
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:161` - ISFLAG:audioPorn I instructed you to spend an hour listening to audio porn without stroking
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:162` - ISFLAG:plugWalk I instructed you to walk around your neighborhood plugged
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:163` - ISFLAG:stoleSnacks I instructed you to skip lunch today
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:171` - ISFLAG:hourSpentWatching DELFLAG:hourSpentWatching good @boy, then I'm sure your @cock must be crying by now
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:172` - ISFLAG:audioPorn DELFLAG:audioPorn good @boy, then I'm sure your @cock must be crying by now
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:173` - ISFLAG:plugWalk DELFLAG:plugWalk you're such a good slut for me
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:174` - ISFLAG:stoleSnacks DELFLAG:stoleSnacks then that hunger will help correct your behavior
+- `runtime/local/app/lines/Common/Scripts/Base/reporting.txt:581` - ISFLAG:guessName you already have permission to do so GOTO:end
+- `runtime/local/app/lines/Common/Scripts/Base/request.txt:64` - ISFLAG:wearingCage GOTO:cage
+- `runtime/local/app/lines/Common/Scripts/Base/reward.txt:95` - ISFLAG:censor
+- `runtime/local/app/lines/Common/Scripts/Base/sessionIntro.txt:96` - ISFLAG:nipplePlay ISNOSETTING:wearingChastity
+- `runtime/local/app/lines/Common/Scripts/Base/stories.txt:196` - ISFLAG:Anal that is if we'd use your @cock in that situation in the first place
+- `runtime/local/app/lines/Common/Scripts/Base/stories.txt:197` - ISFLAG:Anal I think your ass is much better suited at keeping me engaged
+- `runtime/local/app/lines/Common/Scripts/Base/stories.txt:511` - ISFLAG:degrading ISNOFLAGT:petPlay
+- `runtime/local/app/lines/Common/Scripts/Base/stories.txt:527` - ISFLAG:degrading ISNOFLAGT:petPlay
+- `runtime/local/app/lines/Common/Scripts/Base/stories.txt:538` - ISFLAG:degrading ISNOFLAGT:petPlay
+- `runtime/local/app/lines/Common/Scripts/Base/stories.txt:902` - ISSETTING:humiliation ISFLAG:guessName
+- `runtime/local/app/lines/Common/Scripts/Base/strokeStories.txt:42` - ISFLAG:quickshot normally it takes you just a few pumps
+- `runtime/local/app/lines/Common/Scripts/Base/strokeStories.txt:43` - ISFLAG:quickshot but now you have to hold back again and again
+- `runtime/local/app/lines/Common/Scripts/Base/strokeStories.txt:98` - ISFLAG:degrading ISNOFLAGT:petPlay
+- `runtime/local/app/lines/Common/Vocab/Base/anal.txt:30` - ISFLAG:quickshot
+- `runtime/local/app/lines/Common/Vocab/Base/anal.txt:44` - ISFLAG:cockControl{
+- `runtime/local/app/lines/Common/Vocab/Base/breathTease.txt:5` - ISFLAG:quickshot
+- `runtime/local/app/lines/Common/Vocab/Base/breathTease.txt:16` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/breathTease.txt:28` - ISFLAG:pup {
+- `runtime/local/app/lines/Common/Vocab/Base/breathTease.txt:31` - ISFLAG:cat {
+- `runtime/local/app/lines/Common/Vocab/Base/cbtBalls.txt:11` - ISFLAG:virgin
+- `runtime/local/app/lines/Common/Vocab/Base/cbtCock.txt:8` - ISFLAG:virgin
+- `runtime/local/app/lines/Common/Vocab/Base/cock.txt:35` - ISFLAG:quickshot
+- `runtime/local/app/lines/Common/Vocab/Base/cock.txt:44` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/cock.txt:53` - ISFLAG:virgin
+- `runtime/local/app/lines/Common/Vocab/Base/cock.txt:62` - ISFLAG:wearingChastity
+- `runtime/local/app/lines/Common/Vocab/Base/edge.txt:1` - ISFLAG:treats ISNOFLAGT:gag
+- `runtime/local/app/lines/Common/Vocab/Base/edge.txt:11` - ISFLAG:quickshot
+- `runtime/local/app/lines/Common/Vocab/Base/edge.txt:17` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/edge.txt:44` - ISFLAG:cat
+- `runtime/local/app/lines/Common/Vocab/Base/edge.txt:48` - ISFLAG:pup
+- `runtime/local/app/lines/Common/Vocab/Base/edge.txt:53` - ISFLAG:findom{
+- `runtime/local/app/lines/Common/Vocab/Base/edgeHold.txt:13` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/edgeHold.txt:24` - ISFLAG:quickshot
+- `runtime/local/app/lines/Common/Vocab/Base/edgeStop.txt:13` - ISFLAG:quickshot
+- `runtime/local/app/lines/Common/Vocab/Base/edgeTaunt.txt:26` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/edgeTaunt.txt:50` - ISFLAG:findom
+- `runtime/local/app/lines/Common/Vocab/Base/greetings.txt:9` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/kneel.txt:9` - ISFLAG:degrading{
+- `runtime/local/app/lines/Common/Vocab/Base/kneelNo.txt:9` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/lines.txt:19` - ISFLAG:findom{
+- `runtime/local/app/lines/Common/Vocab/Base/missTitle.txt:1` - ISFLAG:domTitle
+- `runtime/local/app/lines/Common/Vocab/Base/petPlayScold.txt:4` - ISFLAG:pup {
+- `runtime/local/app/lines/Common/Vocab/Base/petPlayScold.txt:8` - ISFLAG:cat {
+- `runtime/local/app/lines/Common/Vocab/Base/pup.txt:4` - ISFLAG:cat
+- `runtime/local/app/lines/Common/Vocab/Base/pup.txt:9` - ISFLAG:pup
+- `runtime/local/app/lines/Common/Vocab/Base/refuse.txt:1` - ISFLAG:cat ISFLAGT:petPlay{hiss}
+- `runtime/local/app/lines/Common/Vocab/Base/requestDenied.txt:16` - ISFLAG:gag ISNOFLAGT:gag{
+- `runtime/local/app/lines/Common/Vocab/Base/singleCensorText.txt:26` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/singleCensorText.txt:42` - ISFLAG:gayHumilliation
+- `runtime/local/app/lines/Common/Vocab/Base/singleCensorText.txt:46` - ISFLAG:sissy
+- `runtime/local/app/lines/Common/Vocab/Base/singleCensorText.txt:59` - ISFLAG:virgin
+- `runtime/local/app/lines/Common/Vocab/Base/singleCensorText.txt:72` - ISFLAG:findom
+- `runtime/local/app/lines/Common/Vocab/Base/singleCensorText.txt:79` - ISFLAG:pup {
+- `runtime/local/app/lines/Common/Vocab/Base/singleCensorText.txt:83` - ISFLAG:cat {
+- `runtime/local/app/lines/Common/Vocab/Base/stopStroking.txt:12` - ISFLAG:quickshot
+- `runtime/local/app/lines/Common/Vocab/Base/stopStroking.txt:20` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/strip.txt:17` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/strokingFaster.txt:11` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/strokingFastStart.txt:7` - ISFLAG:quickshot ISNOFLAGT:ona
+- `runtime/local/app/lines/Common/Vocab/Base/strokingFastStart.txt:18` - ISFLAG:quickshot{
+- `runtime/local/app/lines/Common/Vocab/Base/strokingSlower.txt:5` - ISFLAG:quickshot{
+- `runtime/local/app/lines/Common/Vocab/Base/strokingSlower.txt:10` - ISFLAG:degrading{
+- `runtime/local/app/lines/Common/Vocab/Base/strokingSlowStart.txt:6` - ISNOFLAGT:ona ISFLAG:quickshot{
+- `runtime/local/app/lines/Common/Vocab/Base/strokingSlowStart.txt:17` - ISFLAG:quickshot{
+- `runtime/local/app/lines/Common/Vocab/Base/strokingStart.txt:6` - ISNOFLAGT:ona ISFLAG:quickshot
+- `runtime/local/app/lines/Common/Vocab/Base/strokingStart.txt:14` - ISNOFLAGT:ona ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/strokingTease.txt:35` - ISFLAG:goon{
+- `runtime/local/app/lines/Common/Vocab/Base/strokingTease.txt:41` - ISFLAG:quickshot
+- `runtime/local/app/lines/Common/Vocab/Base/strokingTease.txt:66` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/strokingTease.txt:129` - ISFLAG:virgin{
+- `runtime/local/app/lines/Common/Vocab/Base/subliminals.txt:21` - ISFLAG:sissy
+- `runtime/local/app/lines/Common/Vocab/Base/subliminals.txt:43` - ISFLAG:virgin
+- `runtime/local/app/lines/Common/Vocab/Base/subliminals.txt:53` - ISFLAG:cei
+- `runtime/local/app/lines/Common/Vocab/Base/subliminals.txt:57` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/subliminals.txt:71` - ISFLAG:findom
+- `runtime/local/app/lines/Common/Vocab/Base/subTitle.txt:6` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/subTitle.txt:15` - ISFLAG:goon{
+- `runtime/local/app/lines/Common/Vocab/Base/subTitle.txt:19` - ISFLAG:goon ISFLAG:degrading{
+- `runtime/local/app/lines/Common/Vocab/Base/subTitle.txt:27` - ISFLAG:sissy
+- `runtime/local/app/lines/Common/Vocab/Base/subTitle.txt:31` - ISFLAG:cei
+- `runtime/local/app/lines/Common/Vocab/Base/subTitle.txt:41` - ISFLAG:gayHumilliation
+- `runtime/local/app/lines/Common/Vocab/Base/subTitle.txt:48` - ISFLAG:quickshot
+- `runtime/local/app/lines/Common/Vocab/Base/subTitle.txt:66` - ISFLAG:findom
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:36` - SETTAGGEDMEDIA:Leash ISFLAG:collar ISNOFLAGT:collar
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:193` - SETTAGGEDMEDIA:Blowjob ISFLAG:wearingChastity{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:199` - SETTAGGEDMEDIA:Feet ISSETTING:feet ISFLAG:wearingChastity{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:206` - SETTAGGEDMEDIA:Censored ISFLAG:wearingChastity{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:288` - SETTAGGEDMEDIA:Cum ISFLAG:cei{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:310` - SETTAGGEDMEDIA:Plug ISFLAG:plug{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:317` - SETTAGGEDMEDIA:Plug ISFLAG:plug ISNOFLAGT:plug{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:323` - SETTAGGEDMEDIA:Collar ISFLAG:collar ISNOFLAGT:collar{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:383` - SETTAGGEDMEDIA:Chastity ISFLAG:wearingChastity
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:399` - ISFLAG:virgin SETTAGGEDMEDIA:Vanilla-Sex,POV {
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:420` - SETTAGGEDMEDIA:Vanilla-Sex,POV ISFLAG:virgin {
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:425` - SETTAGGEDMEDIA:Vanilla-Sex ISFLAG:virgin{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:434` - SETTAGGEDMEDIA:Anal ISFLAG:analTraining{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:440` - SETTAGGEDMEDIA:Chastity,Anal ISFLAG:analTraining{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:450` - SETTAGGEDMEDIA:Dildo ISFLAG:dildo{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:483` - SETTAGGEDMEDIA:Blowjob,!Cum ISFLAG:quickshot{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:490` - SETTAGGEDMEDIA:Vanilla-Sex,!Cum ISFLAG:quickshot{
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:495` - SETTAGGEDMEDIA:Anal,Femboy ISFLAG:quickshot{
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:73` - ISFLAG:wearingChastity{
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:76` - ISFLAG:sissy{
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:82` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:110` - ISFLAG:quickshot ISNOFLAG:wearingChastity
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:116` - ISFLAG:quickshot
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:122` - ISFLAG:virgin
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:173` - ISNOFLAG:wearingChastity ISFLAG:cei
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:180` - ISFLAG:cei
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:202` - ISFLAG:sissy
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:326` - ISFLAG:findom
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:337` - ISFLAG:virgin ISFLAG:wearingChastity
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:346` - ISFLAG:wearingChastity
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:370` - ISFLAG:wearingChastity ISFLAG:illegalCum
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:384` - V<30:mood ISSETTING:chastity ISFLAG:cage ISNOFLAG:wearingChastity
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:389` - ISFLAG:wearingChastity
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:400` - ISFLAG:analTrainingNo
+- `runtime/local/app/lines/Common/Vocab/Base/vibeCommand.txt:8` - ISFLAG:wearingChastity
+- `runtime/local/app/lines/Common/Vocab/Base/vibeTaunt.txt:6` - ISFLAG:sissy{
+- `runtime/local/app/lines/Common/Vocab/Base/vibeTaunt.txt:32` - ISFLAG:wearingChastity V>0:vibeStrength
+- `runtime/local/app/lines/Common/Vocab/Base/wordWallText.txt:26` - ISFLAG:degrading
+- `runtime/local/app/lines/Common/Vocab/Base/wordWallText.txt:43` - ISFLAG:gayHumilliation
+- `runtime/local/app/lines/Common/Vocab/Base/wordWallText.txt:47` - ISFLAG:sissy
+- `runtime/local/app/lines/Common/Vocab/Base/wordWallText.txt:60` - ISFLAG:virgin
+- `runtime/local/app/lines/Common/Vocab/Base/wordWallText.txt:74` - ISFLAG:findom
+- `runtime/local/app/lines/Common/Vocab/Base/writeTask.txt:24` - TAG:Cock ISFLAG:sissy{
+- `runtime/local/app/lines/Common/Vocab/Base/writeTask.txt:30` - TAG:Cum ISFLAG:cei
+- `runtime/local/app/lines/Common/Vocab/Base/writeTask.txt:42` - TAG:Collar ISFLAG:collar{
+- `runtime/local/app/lines/Common/Vocab/Base/yes.txt:1` - ISFLAGT:petPlay ISFLAG:cat
+
+### ISNOFLAG
+
+- `runtime/local/app/lines/Common/Scripts/Base/anal.txt:105` - ISNOFLAG:analSecond ISSETTING:plug {
+- `runtime/local/app/lines/Common/Scripts/Base/anal.txt:159` - ISNOFLAG:analSecond ISSETTING:dildo {
+- `runtime/local/app/lines/Common/Scripts/Base/ask.txt:24` - TAG:Feet TAG:Shows-Instructor,Nude ISFLAG:censorOn ISSETTING:feet ISSETTING:taskScreen ISNOFLAG:censorDomme ISNOFLAG:censorDommeNo
+- `runtime/local/app/lines/Common/Scripts/Base/ask.txt:1331` - ISNOSETTING:toldAboutNecklace ISSETTING:chastity ISSETTING:wearingChastity ISNOFLAG:changedChastityState
+- `runtime/local/app/lines/Common/Scripts/Base/illegalCum.txt:101` - ISSETTING:humiliation ISNOFLAG:note
+- `runtime/local/app/lines/Common/Scripts/Base/illegalEdge.txt:132` - ISNOFLAG:quickshot ISNOFLAG:quickShotNo ISSETTING:humiliation ISNOFLAGT:petPlay
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:1` - ISFLAGT:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:12` - ISFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:23` - ISFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:34` - ISFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:39` - ISFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:46` - ISFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:56` - ISNOFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:68` - ISNOFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:78` - ISNOFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:90` - ISNOFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:101` - ISNOFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/LOB.txt:115` - ISFLAG:LOBOn ISNOFLAG:shutDown ISNOFLAG:LOBBreak
+- `runtime/local/app/lines/Common/Scripts/Base/noTouch.txt:242` - ISNOFLAG:explainedHowToKneel
+- `runtime/local/app/lines/Common/Scripts/Base/stories.txt:303` - ISNOFLAG:chastityDate{
+- `runtime/local/app/lines/Common/Vocab/Base/missTitle.txt:5` - ISNOFLAG:domTitle
+- `runtime/local/app/lines/Common/Vocab/Base/missTitle.txt:12` - ISSETTING:petPlay ISNOFLAG:domTitle
+- `runtime/local/app/lines/Common/Vocab/Base/missTitle.txt:17` - ISSETTING:chastity ISNOFLAG:domTitle
+- `runtime/local/app/lines/Common/Vocab/Base/refuse.txt:2` - ISNOFLAG:cat ISFLAGT:petPlay {growl}
+- `runtime/local/app/lines/Common/Vocab/Base/tagTease.txt:190` - SETTAGGEDMEDIA:Vanilla-Sex ISNOFLAG:virgin {
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:110` - ISFLAG:quickshot ISNOFLAG:wearingChastity
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:145` - ISSETTING:humiliation ISNOFLAG:wearingChastity
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:173` - ISNOFLAG:wearingChastity ISFLAG:cei
+- `runtime/local/app/lines/Common/Vocab/Base/tease.txt:384` - V<30:mood ISSETTING:chastity ISFLAG:cage ISNOFLAG:wearingChastity
+- `runtime/local/app/lines/Common/Vocab/Base/vibeCommand.txt:4` - ISNOFLAG:chastityDate
+- `runtime/local/app/lines/Common/Vocab/Base/yes.txt:6` - ISFLAGT:petPlay ISNOFLAG:cat
+
+### setFlag
+
+- `src/OpenEdge/OpenEdge.scripts/Anal.cs:9` - setFlag("FLAGT:sessionIntro", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/Anal.cs:11` - setFlag("FLAGT:anal", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/Cuck.cs:8` - setFlag("cuck", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/Game.cs:9` - setFlag("game", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/Hypnosis.cs:13` - setFlag("hypnosis", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/HypnosisMantra.cs:9` - setFlag("mantra", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/LeftEarly.cs:10` - setFlag("FLAGT:sessionIntro", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/LeftEarlyToday.cs:11` - setFlag("leftEarlyToday", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/LeftEarlyToday.cs:12` - setFlag("FLAGT:sessionIntro", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:9` - setFlag("LOBScript", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/LostConnection.cs:9` - setFlag("FLAGT:sessionIntro", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/Reward.cs:9` - setFlag("reward", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:8` - setFlag("FLAGT:sessionIntro", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:158` - setFlag("FLAG:strobe");
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:184` - setFlag(text8);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:253` - setFlag(text13, temp: true);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1121` - public void setFlag(string flagName, bool temp = false)
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1354` - setFlag("taskAdded", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1619` - setFlag("sessionEnd");
+- `src/OpenEdge/OpenEdge/LegacyStateAdapter.cs:76` - public void SetFlag(string flagName)
+- `src/OpenEdge/OpenEdge/MainWindow.cs:324` - currentScript.setFlag("strokeTwist", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:394` - currentScript.setFlag("censor", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:440` - currentScript.setFlag("failedSessionEnd");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:481` - currentScript.setFlag("queuedAskHandled", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:851` - legacyStateAdapter.SetFlag(flagName);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1351` - currentScript.setFlag("bluetoothPlug", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1363` - currentScript.setFlag("bluetoothVibe", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1375` - currentScript.setFlag("bluetoothOna", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1759` - currentScript.setFlag("closeWithoutSession", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1792` - currentScript.setFlag("closeWithoutSession", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1797` - currentScript.setFlag("leftEarly", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1807` - currentScript.setFlag("chastityDate", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1830` - currentScript.setFlag("hasVideo", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2407` - currentScript.setFlag("orgasmDenied", temp: true);
+
+### SETVAR
+
+- `runtime/local/app/lines/Common/Scripts/Base/game.txt:10` - SETVAR:gamble,-2 TRIBUTE:1
+- `runtime/local/app/lines/Common/Scripts/Base/game.txt:13` - SETVAR:gamble,-6 TRIBUTE:3
+- `runtime/local/app/lines/Common/Scripts/Base/game.txt:16` - SETVAR:gamble,-10 TRIBUTE:5
+- `runtime/local/app/lines/Common/Scripts/Base/game.txt:19` - SETVAR:gamble,-20 TRIBUTE:10
+- `runtime/local/app/lines/Common/Scripts/Base/game.txt:73` - ISVAR:edgeHoldGameTime,GETVAR:edgeHoldRecord SETVAR:edgeHoldRecord,GETTIME:edgeHoldGameTime GOTO:record
+- `runtime/local/app/lines/Common/Scripts/Base/game.txt:345` - ISVAR:edgeHoldGameTime,GETVAR:edgeHoldRecord SETVAR:edgeHoldRecord,GETTIME:edgeHoldGameTime GOTO:record
+- `runtime/local/app/lines/Common/Vocab/Base/vibe.txt:8` - have the vibe set to high and @vibeCommand SETVAR:vibeStrength,2
+- `runtime/local/app/lines/Common/Vocab/Base/vibe.txt:9` - set the vibe to high and @vibeCommand SETVAR:vibeStrength,2
+- `runtime/local/app/lines/Common/Vocab/Base/vibe.txt:10` - have the vibe set to low and @vibeCommand SETVAR:vibeStrength,1
+- `runtime/local/app/lines/Common/Vocab/Base/vibe.txt:11` - set the vibe to low and @vibeCommand SETVAR:vibeStrength,1
+- `runtime/local/app/lines/Common/Vocab/Base/vibe.txt:12` - put that vibrator at the max and @vibeCommand SETVAR:vibeStrength,3
+- `runtime/local/app/lines/Common/Vocab/Base/vibe.txt:13` - set the vibrator as hard as it can and @vibeCommand SETVAR:vibeStrength,3
+- `runtime/local/app/lines/Common/Vocab/Base/vibe.txt:14` - set the vibrator to max and @vibeCommand SETVAR:vibeStrength,3
+- `runtime/local/app/lines/Common/Vocab/Base/vibe.txt:15` - put your vibrator at full-throttle and @vibeCommand SETVAR:vibeStrength,3
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:295` - setVar(text19);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:963` - mw.setVar("extraTime", extraTime.ToString() ?? "");
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1157` - public void setVar(string flagName)
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1167` - mw.setVar(array[0], array[1]);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1308` - mw.setVar(flagName, text);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1320` - mw.setVar(flagName, text);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1329` - mw.setVar("totalTribute", (int.Parse(amount) + int.Parse(mw.getVar("totalTribute"))).ToString() ?? "");
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1388` - mw.setVar(array[0], newValue);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1621` - mw.setVar("sessionLength", "0");
+- `src/OpenEdge/OpenEdge/LegacyStateAdapter.cs:59` - SetVar(name, defaultValue);
+- `src/OpenEdge/OpenEdge/LegacyStateAdapter.cs:63` - public void SetVar(string name, string value)
+- `src/OpenEdge/OpenEdge/MainWindow.cs:294` - setVar("main", 0.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:295` - setVar("sub", 0.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:325` - setVar("main", 2.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:330` - setVar("main", 3.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:334` - setVar("main", 4.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:340` - setVar("main", 5.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:345` - setVar("main", 6.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:352` - setVar("main", 1.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:361` - setVar("sub", 1.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:365` - setVar("sub", 2.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:369` - setVar("sub", 2.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:373` - setVar("sub", 1.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:377` - setVar("sub", 1.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:442` - setVar("sessionLength", (sessionLength - (int)sessionTimer.Elapsed.TotalSeconds).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:443` - setVar("totalTimeOnEdge", totalTimeOnEdge.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:444` - setVar("strokeAmount", strokeAmount.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:445` - setVar("edgesDone", edgesDone.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:516` - setVar("request", num.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:531` - setVar("mood", mood.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:799` - public void setVar(string name, string value, int retryAttempts = 0)
+- `src/OpenEdge/OpenEdge/MainWindow.cs:810` - legacyStateAdapter.SetVar(name, value);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:815` - setVar(name, value, retryAttempts++);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1281` - setVar("pronoun", pronouns.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1864` - setVar("sessionLength", (sessionLength + int.Parse(getVar("extraTime"))).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1869` - setVar("extraTime", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1870` - setVar("mood", (int.Parse(getVar("mood", "10")) / 2 + 25).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1896` - setVar("sessionLength", sessionLength.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2106` - setVar("noVideoValue", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2881` - setVar("sessionLength", 0.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2901` - setVar("strokeAmount", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2903` - setVar("edgesDone", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2905` - setVar("totalTimeOnEdge", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2975` - setVar("fullOrgasm", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2976` - setVar("denied", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2983` - setVar("strokeAmount", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2985` - setVar("edgesDone", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2987` - setVar("totalTimeOnEdge", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3000` - setVar("denied", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3007` - setVar("strokeAmount", (strokeAmount / 2).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3009` - setVar("edgesDone", (edgesDone / 2).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3011` - setVar("totalTimeOnEdge", (totalTimeOnEdge / 2).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3017` - setVar("state", "-1");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3040` - setVar("state", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3163` - setVar("breathHoldProgress", (stopwatch.Elapsed.TotalSeconds / (double)holdLength).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3269` - setVar("bpm", bpm.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3508` - setVar("state", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3563` - setVar("state", "1");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3568` - setVar("state", "1");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3573` - setVar("state", "2");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3584` - setVar("state", "3");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3592` - setVar("state", "2");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3647` - setVar("favor", favorVal.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:4478` - setVar(askedForUserInput, userText.Text);
+

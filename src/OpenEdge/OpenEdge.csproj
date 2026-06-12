@@ -1,0 +1,135 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>OpenEdge</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+    <OutputPath>..\..\runtime\local\app\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>default</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace>OpenEdge</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="OpenEdge.App.xaml" />
+    <Page Include="OpenEdge.Bluetooth.xaml" />
+    <Page Include="OpenEdge.BluetoothDeviceTester.xaml" />
+    <Page Include="OpenEdge.BluetoothHelp.xaml" />
+    <Page Include="OpenEdge.BulkMoveDestinationDialog.xaml" />
+    <Page Include="OpenEdge.CompatibilityToolsPage.xaml" />
+    <Page Include="OpenEdge.FrameWindow.xaml" />
+    <Page Include="OpenEdge.HelpScreen.xaml" />
+    <Page Include="OpenEdge.Homework.xaml" />
+    <Page Include="OpenEdge.HomeworkPlayPauseScreen.xaml" />
+    <Page Include="OpenEdge.HomeworkScreen.xaml" />
+    <Page Include="OpenEdge.ImageTagger.xaml" />
+    <Page Include="OpenEdge.ImageTaggerBulkTagger.xaml" />
+    <Page Include="OpenEdge.ImageTaggerGroup.xaml" />
+    <Page Include="OpenEdge.LineReader.xaml" />
+    <Page Include="OpenEdge.MainWindow.xaml" />
+    <Page Include="OpenEdge.MediaBrowser.xaml" />
+    <Page Include="OpenEdge.MediaSourcesPage.xaml" />
+    <Page Include="OpenEdge.ModsPopup.xaml" />
+    <Page Include="OpenEdge.Page1.xaml" />
+    <Page Include="OpenEdge.SettingsPage.xaml" />
+    <Page Include="OpenEdge.PerpetualPage.xaml" />
+    <Page Include="OpenEdge.SecondWindow.xaml" />
+    <Page Include="OpenEdge.TaskPage.xaml" />
+    <Page Include="OpenEdge.WriteTask.xaml" />
+    <Page Include="scrollbar.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="app.ico" />
+    <None Remove="garbage.png" />
+    <None Remove="heartbgwhite.png" />
+    <None Remove="checkgreen.png" />
+    <None Remove="plugno.png" />
+    <None Remove="questionmark.png" />
+    <None Remove="_sckeep_1a56459f24cfb9b2e12c7ef2911f1a1d1cf1afad4941af418417758eec404120.png" />
+    <None Remove="onano.png" />
+    <None Remove="overbannerpatreon.png" />
+    <None Remove="wandno.png" />
+    <None Remove="gradientblacktrans.png" />
+    <None Remove="playgreen.png" />
+    <None Remove="ona.png" />
+    <None Remove="heartsbgblack.png" />
+    <None Remove="wand.png" />
+    <None Remove="click.wav" />
+    <None Remove="buttongradient.png" />
+    <None Remove="heartsbg.png" />
+    <None Remove="domme.png" />
+    <None Remove="heartbg.png" />
+    <None Remove="hypnooverlay.png" />
+    <None Remove="overbannerdiscord.png" />
+    <None Remove="buttonsurround.png" />
+    <None Remove="plug.png" />
+    <None Remove="openedgeilus.png" />
+    <None Remove="audio\snap.wav" />
+    <None Remove="blacktrans.png" />
+    <None Remove="background.png" />
+    <None Remove="spiralnew.png" />
+    <None Remove="bluetooth.png" />
+    <None Remove="checkbg.png" />
+    <None Remove="overbanneritch.png" />
+    <Resource Include="app.ico" />
+    <Resource Include="garbage.png" />
+    <Resource Include="heartbgwhite.png" />
+    <Resource Include="checkgreen.png" />
+    <Resource Include="plugno.png" />
+    <Resource Include="questionmark.png" />
+    <Resource Include="_sckeep_1a56459f24cfb9b2e12c7ef2911f1a1d1cf1afad4941af418417758eec404120.png" />
+    <Resource Include="onano.png" />
+    <Resource Include="overbannerpatreon.png" />
+    <Resource Include="wandno.png" />
+    <Resource Include="gradientblacktrans.png" />
+    <Resource Include="playgreen.png" />
+    <Resource Include="ona.png" />
+    <Resource Include="heartsbgblack.png" />
+    <Resource Include="wand.png" />
+    <Resource Include="click.wav" />
+    <Resource Include="buttongradient.png" />
+    <Resource Include="heartsbg.png" />
+    <Resource Include="domme.png" />
+    <Resource Include="heartbg.png" />
+    <Resource Include="hypnooverlay.png" />
+    <Resource Include="overbannerdiscord.png" />
+    <Resource Include="buttonsurround.png" />
+    <Resource Include="plug.png" />
+    <Resource Include="openedgeilus.png" />
+    <Resource Include="audio\snap.wav" />
+    <Resource Include="blacktrans.png" />
+    <Resource Include="background.png" />
+    <Resource Include="spiralnew.png" />
+    <Resource Include="bluetooth.png" />
+    <Resource Include="checkbg.png" />
+    <Resource Include="overbanneritch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Buttplug" Version="4.0.0" />
+    <PackageReference Include="NAudio.WinMM" Version="2.2.1" />
+    <PackageReference Include="System.Speech" Version="8.0.0" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\Data\resources\**\*.*">
+      <TargetPath>resources\%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Data\audio\**\*.*">
+      <TargetPath>audio\%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

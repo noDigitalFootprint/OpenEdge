@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Grid x:Class="OpenEdge.ModsPopup"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:OpenEdge"
+      Width="900"
+      Height="620">
+  <Border Background="#F0141018"
+          BorderBrush="#FF9F5CFF"
+          BorderThickness="2"
+          CornerRadius="14"
+          Padding="18">
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+
+      <Grid Grid.Row="0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+          <TextBlock Text="Mods"
+                     Foreground="#FFEDEDED"
+                     FontSize="34"
+                     FontFamily="Segoe UI"
+                     FontWeight="SemiBold" />
+          <TextBlock Text="Drop mods into runtime/local/app/mods. Toggle enabled mods here, then use Reload App so startup-loaded settings, tags, contexts, and lines refresh everywhere."
+                     Foreground="#FFC8B6F0"
+                     FontSize="14"
+                     FontFamily="Segoe UI"
+                     TextWrapping="Wrap"
+                     Margin="0,4,24,0" />
+        </StackPanel>
+        <Button Name="closePopUp"
+                Grid.Column="1"
+                Content="X"
+                Width="48"
+                Height="44"
+                FontSize="22"
+                Click="Button_ClickX" />
+      </Grid>
+
+      <WrapPanel Grid.Row="1" Margin="0,16,0,12">
+        <Button Content="Open Mods Folder"
+                Margin="0,0,8,8"
+                Padding="14,8"
+                Click="Button_Click_ModFolder" />
+        <Button Content="Refresh List"
+                Margin="0,0,8,8"
+                Padding="14,8"
+                Click="Refresh_Click" />
+        <Button x:Name="ReloadAppButton"
+                Content="Reload App"
+                Margin="0,0,8,8"
+                Padding="14,8"
+                IsEnabled="False"
+                ToolTip="Restart OpenEdge so mod settings, tags, contexts, and line roots reload everywhere."
+                Click="ReloadApp_Click" />
+        <Button Content="Create Example Mod"
+                Margin="0,0,8,8"
+                Padding="14,8"
+                Click="CreateExample_Click" />
+        <Button Content="Get Mods"
+                Margin="0,0,8,8"
+                Padding="14,8"
+                ToolTip="Open the OpenEdge Discord"
+                Click="Button_Click" />
+      </WrapPanel>
+
+      <Border Grid.Row="2"
+              Background="#AA1B1724"
+              BorderBrush="#448A6AB0"
+              BorderThickness="1"
+              CornerRadius="10"
+              Padding="10">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+          <StackPanel x:Name="ModsListPanel" />
+        </ScrollViewer>
+      </Border>
+
+      <TextBlock x:Name="StatusText"
+                 Grid.Row="3"
+                 Foreground="#FFC8B6F0"
+                 FontSize="13"
+                 FontFamily="Segoe UI"
+                 TextWrapping="Wrap"
+                 Margin="0,12,0,0" />
+    </Grid>
+  </Border>
+</Grid>

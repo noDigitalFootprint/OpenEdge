@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="OpenEdge.HomeworkScreen"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:OpenEdge"
+      Title="HomeworkScreen">
+  <Page.Resources>
+    <SolidColorBrush x:Key="PanelBrush" Color="#E0141018" />
+    <SolidColorBrush x:Key="SoftPanelBrush" Color="#AA1B1724" />
+    <SolidColorBrush x:Key="AccentBrush" Color="#FF9F5CFF" />
+    <SolidColorBrush x:Key="MutedTextBrush" Color="#FFC8B6F0" />
+    <SolidColorBrush x:Key="MainTextBrush" Color="#FFEDEDED" />
+
+    <Style x:Key="TaskColumnTitle" TargetType="TextBlock">
+      <Setter Property="Foreground" Value="{StaticResource MainTextBrush}" />
+      <Setter Property="FontSize" Value="24" />
+      <Setter Property="FontFamily" Value="Segoe UI" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="Margin" Value="0,0,0,10" />
+    </Style>
+  </Page.Resources>
+
+  <Page.Background>
+    <ImageBrush ImageSource="/background.png" Stretch="UniformToFill" />
+  </Page.Background>
+
+  <Grid>
+    <Grid.Background>
+      <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#D00B0810" Offset="0" />
+        <GradientStop Color="#A0160F20" Offset="0.55" />
+        <GradientStop Color="#D0060508" Offset="1" />
+      </LinearGradientBrush>
+    </Grid.Background>
+
+    <Grid Margin="18">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+
+      <Border Grid.Row="0"
+              Grid.ColumnSpan="3"
+              Background="#C0141018"
+              BorderBrush="#669F5CFF"
+              BorderThickness="1"
+              CornerRadius="14"
+              Padding="16"
+              Margin="0,0,0,14">
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+          </Grid.ColumnDefinitions>
+          <StackPanel>
+            <TextBlock Text="Tasks"
+                       Foreground="{StaticResource MainTextBrush}"
+                       FontSize="38"
+                       FontFamily="Segoe UI"
+                       FontWeight="SemiBold" />
+            <TextBlock Text="Buy, store, accept, and complete tasks for favor."
+                       Foreground="{StaticResource MutedTextBrush}"
+                       FontSize="14"
+                       FontFamily="Segoe UI" />
+          </StackPanel>
+          <Border Grid.Column="1"
+                  Background="{StaticResource SoftPanelBrush}"
+                  BorderBrush="#669F5CFF"
+                  BorderThickness="1"
+                  CornerRadius="999"
+                  Padding="14,8"
+                  VerticalAlignment="Center"
+                  Margin="12,0">
+            <StackPanel Orientation="Horizontal">
+              <Image Source="/heartbg.png" Width="28" Height="28" Margin="0,0,8,0" />
+              <TextBlock Name="totalCurrency"
+                         Text="100"
+                         FontSize="22"
+                         VerticalAlignment="Center"
+                         TextAlignment="Center"
+                         Foreground="{StaticResource MainTextBrush}"
+                         FontFamily="Segoe UI"
+                         FontWeight="SemiBold" />
+            </StackPanel>
+          </Border>
+          <Button Grid.Column="2"
+                  Content="?"
+                  Width="46"
+                  Height="42"
+                  FontSize="22"
+                  ToolTip="Task help"
+                  Click="Button_Click_OpenPopup" />
+        </Grid>
+      </Border>
+
+      <Border Grid.Row="1" Grid.Column="0" Background="{StaticResource PanelBrush}" BorderBrush="#669F5CFF" BorderThickness="1" CornerRadius="14" Padding="14" Margin="0,0,8,0">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <TextBlock Text="Available Tasks" Style="{StaticResource TaskColumnTitle}" />
+          <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Background="Transparent">
+            <StackPanel Name="shop" Orientation="Vertical" Margin="0" />
+          </ScrollViewer>
+        </Grid>
+      </Border>
+
+      <Border Grid.Row="1" Grid.Column="1" Background="{StaticResource PanelBrush}" BorderBrush="#669F5CFF" BorderThickness="1" CornerRadius="14" Padding="14" Margin="8,0">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <TextBlock Name="titleOwnedTasks" Text="Stored Tasks (5/5)" TextAlignment="Center" Style="{StaticResource TaskColumnTitle}" />
+          <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Background="Transparent">
+            <StackPanel Name="homeworkStack" Orientation="Vertical" Margin="0" />
+          </ScrollViewer>
+        </Grid>
+      </Border>
+
+      <Border Grid.Row="1" Grid.Column="2" Background="{StaticResource PanelBrush}" BorderBrush="#669F5CFF" BorderThickness="1" CornerRadius="14" Padding="14" Margin="8,0,0,0">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <TextBlock Name="titleAcceptedTasks" Text="Accepted Tasks (5/5)" TextAlignment="Center" Style="{StaticResource TaskColumnTitle}" IsHitTestVisible="False" />
+          <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Background="Transparent">
+            <StackPanel Name="acceptedHomeworkStack" Orientation="Vertical" Margin="0" />
+          </ScrollViewer>
+        </Grid>
+      </Border>
+
+      <Border Grid.Row="2"
+              Grid.ColumnSpan="3"
+              Background="#D0141018"
+              BorderBrush="#669F5CFF"
+              BorderThickness="1"
+              CornerRadius="14"
+              Padding="12"
+              Margin="0,14,0,0">
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+          </Grid.ColumnDefinitions>
+          <Button Name="backBtn" Content="Back" HorizontalAlignment="Left" Padding="18,10" Click="btnBackClick" />
+          <Grid Name="buyTasksBtn" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Visibility="Collapsed">
+            <Button Name="buyChallenges" Content="Buy selected tasks" FontSize="16" Padding="18,10" Click="acceptChallengesClick" />
+            <Border HorizontalAlignment="Right" Background="#CC21172D" CornerRadius="999" Padding="7" Margin="0,0,-12,0" IsHitTestVisible="False">
+              <Grid>
+                <Image Source="/heartbg.png" Width="32" Height="32" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <TextBlock Name="priceOfTask" Text="5" TextAlignment="Center" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource MainTextBrush}" />
+              </Grid>
+            </Border>
+          </Grid>
+          <Grid Name="acceptTasksBtn" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed">
+            <Button Name="acceptChallenges" Content="Accept selected tasks" FontSize="16" Padding="18,10" Click="acceptChallengesClick" />
+            <Border HorizontalAlignment="Right" Background="#CC21172D" CornerRadius="999" Padding="7" Margin="0,0,-12,0" IsHitTestVisible="False">
+              <Grid>
+                <Image Source="/heartbg.png" Width="32" Height="32" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <TextBlock Name="numberOfFavor" Text="5" TextAlignment="Center" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{StaticResource MainTextBrush}" />
+              </Grid>
+            </Border>
+          </Grid>
+          <Grid Name="beginTaskBtn" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Visibility="Collapsed">
+            <Button Name="beginChallenges" Content="Start selected task" FontSize="16" Padding="18,10" Click="acceptChallengesClick" />
+          </Grid>
+        </Grid>
+      </Border>
+    </Grid>
+
+    <Grid Name="popQuestionmark" Visibility="Hidden" ZIndex="10" Width="680" Height="760" HorizontalAlignment="Center" VerticalAlignment="Center">
+      <Border Background="#F0141018" BorderBrush="#FF9F5CFF" BorderThickness="2" CornerRadius="14" Padding="14">
+        <Grid>
+          <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,48,0,0">
+            <local:HelpScreen />
+          </ScrollViewer>
+          <Button Content="X" FontSize="22" Width="48" Height="42" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click_ClosePopup" />
+        </Grid>
+      </Border>
+    </Grid>
+
+    <Grid Name="playPausePop" ZIndex="5" Background="#99000000" IsHitTestVisible="True" Visibility="Collapsed">
+      <Grid Name="playPausePopContent" Height="400" Width="600" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Grid>
+  </Grid>
+</Page>

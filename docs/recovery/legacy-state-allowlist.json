@@ -1,0 +1,39 @@
+{
+  "$schema": "https://openedge.local/schemas/legacy-state-allowlist.schema.json",
+  "version": 1,
+  "notes": [
+    "Initial broad allowlist for the canonical settings/tags migration.",
+    "Phase 1 should replace these broad buckets with key-level classifications in legacy-state-map.json."
+  ],
+  "categories": [
+    {
+      "name": "temp-session-flags",
+      "description": "Short-lived runtime/session flags that should remain flags and must not promote into canonical settings.",
+      "examples": ["temp/open", "current session flow flags", "equipment currently active this session"]
+    },
+    {
+      "name": "runtime-counters",
+      "description": "Counters and runtime values that are progression/stat data rather than user preferences.",
+      "examples": ["orgasm counters", "edge counters", "timers", "session counters"]
+    },
+    {
+      "name": "known-compatibility-aliases",
+      "description": "Old yes/no/value keys that permanently mirror canonical settings for old scripts and old installs.",
+      "examples": ["cuck", "cuckNo", "gay", "gayNo", "domTitle", "sessionLengthMod"]
+    },
+    {
+      "name": "historical-progression-counters",
+      "description": "Long-term progression state that should be structured before any old key is removed.",
+      "examples": ["anal progression", "pet persona", "chastity history", "outside-session rules"]
+    },
+    {
+      "name": "media-tag-compatibility",
+      "description": "Legacy tag mirror files and path-based tag claims that should import/export through the media catalog.",
+      "examples": ["tags.txt", "legacy path tag entries"]
+    }
+  ],
+  "temporaryPolicy": {
+    "failOnUnknown": false,
+    "reason": "Phase 0 only proves audit tooling works. Phase 1 will classify exact keys."
+  }
+}

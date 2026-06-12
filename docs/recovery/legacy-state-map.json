@@ -1,0 +1,1168 @@
+{
+  "version": 1,
+  "generated": "2026-06-02T14:24:03",
+  "notes": [
+    "Initial machine-readable classification generated from script/source audit. Review and refine during later phases."
+  ],
+  "categories": [
+    "canonical-setting-alias",
+    "structured-setting-substate",
+    "runtime-session-temp",
+    "historical-progression-counter",
+    "media-tag-compatibility",
+    "compatibility-only-deprecated",
+    "dead-or-unused"
+  ],
+  "entries": [
+    {
+      "key": "-1",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "0",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "1",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "10",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "2",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "3",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "50",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "600",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "Anal",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "Cuckold",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "Denied",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "LOB",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "LOB"
+    },
+    {
+      "key": "LOBBreak",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "LOBMod",
+      "category": "structured-setting-substate",
+      "canonicalKey": null
+    },
+    {
+      "key": "LOBNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "LOB"
+    },
+    {
+      "key": "LOBOn",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "LOBScript",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "anal",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "anal"
+    },
+    {
+      "key": "analExtreme",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "analNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "anal"
+    },
+    {
+      "key": "analSecond",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "analTrainingNo",
+      "category": "structured-setting-substate",
+      "canonicalKey": null
+    },
+    {
+      "key": "analTraining{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "askedForName",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "askedForName"
+    },
+    {
+      "key": "asmr",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "asmr"
+    },
+    {
+      "key": "asmrNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "asmr"
+    },
+    {
+      "key": "audioPorn",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "bluetoothOna",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "bluetoothPlug",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "bluetoothVibe",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "bpm",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "break",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "breathHoldProgress",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "breathPlay",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "breathPlay"
+    },
+    {
+      "key": "breathPlayNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "breathPlay"
+    },
+    {
+      "key": "breathTime",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "breathTime"
+    },
+    {
+      "key": "cage",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "cage"
+    },
+    {
+      "key": "cageNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "cage"
+    },
+    {
+      "key": "cageType",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "cageType"
+    },
+    {
+      "key": "canRemove",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "canRemove"
+    },
+    {
+      "key": "canRemoveNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "canRemove"
+    },
+    {
+      "key": "cat",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "cat"
+    },
+    {
+      "key": "catNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "cat"
+    },
+    {
+      "key": "cbt",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "cbtExtreme",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "cei",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "cei"
+    },
+    {
+      "key": "ceiNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "cei"
+    },
+    {
+      "key": "cei{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "censor",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "censorDomme",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "censorDommeNo",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "censorIncrease",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "censorIncrease"
+    },
+    {
+      "key": "censorOn",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "censorship",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "censorship"
+    },
+    {
+      "key": "censorshipNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "censorship"
+    },
+    {
+      "key": "changedChastityState",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "chastity",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "chastity"
+    },
+    {
+      "key": "chastityDate",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "chastityDate"
+    },
+    {
+      "key": "chastityDate{",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "chastityNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "chastity"
+    },
+    {
+      "key": "chastityTime",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "chastityTime"
+    },
+    {
+      "key": "chastiyTime",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "closeWithoutSession",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "clothesPins",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "clothesPins"
+    },
+    {
+      "key": "clothesPinsNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "clothesPins"
+    },
+    {
+      "key": "cockControl",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "cockControl"
+    },
+    {
+      "key": "cockControlNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "cockControl"
+    },
+    {
+      "key": "cockControl{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "collar",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "collar"
+    },
+    {
+      "key": "collarNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "collar"
+    },
+    {
+      "key": "collar{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "constantCei",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "constantCei"
+    },
+    {
+      "key": "cuck",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "cuck"
+    },
+    {
+      "key": "cuckNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "cuck"
+    },
+    {
+      "key": "cumSlut",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "debt",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "degrading",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "degrading{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "denied",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "dildo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "dildo"
+    },
+    {
+      "key": "dildoNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "dildo"
+    },
+    {
+      "key": "dildo{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "dog",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "domTitle",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "domTitle"
+    },
+    {
+      "key": "earlyLOB",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "earlyLOB"
+    },
+    {
+      "key": "edgeHold",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "edgeHold"
+    },
+    {
+      "key": "edgeHoldGame",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "edgeHoldGameTime",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "edgeHoldNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "edgeHold"
+    },
+    {
+      "key": "edgeHoldRecord",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "edgeIntro",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "edgeIntro"
+    },
+    {
+      "key": "edgeIntroNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "edgeIntro"
+    },
+    {
+      "key": "edgesDone",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "explainedEdgeChoice",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "explainedHowToKneel",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "explainedNote",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "explanationFactualFirst",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "explanationFactualFirst"
+    },
+    {
+      "key": "extraTime",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "factualFirst",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "factualFirst"
+    },
+    {
+      "key": "failedSessionEnd",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "favor",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "feet",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "feet"
+    },
+    {
+      "key": "feetNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "feet"
+    },
+    {
+      "key": "findom",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "findom"
+    },
+    {
+      "key": "findomNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "findom"
+    },
+    {
+      "key": "findom{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "fullBreathHold",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "fullOrgasm",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "gag",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "gag"
+    },
+    {
+      "key": "gagNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "gag"
+    },
+    {
+      "key": "gamble",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "game",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "gay",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "gay"
+    },
+    {
+      "key": "gayHumiliation",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "gayHumiliation"
+    },
+    {
+      "key": "gayHumiliationNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "gayHumiliation"
+    },
+    {
+      "key": "gayHumilliation",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "gayNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "gay"
+    },
+    {
+      "key": "goon",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "goon"
+    },
+    {
+      "key": "goonNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "goon"
+    },
+    {
+      "key": "goon{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "guessName",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "guessName"
+    },
+    {
+      "key": "hadBlowJob",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "hadBlowJob"
+    },
+    {
+      "key": "hadBlowJobNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "hadBlowJob"
+    },
+    {
+      "key": "hadBlowjob",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "hands",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "hands"
+    },
+    {
+      "key": "handsNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "hands"
+    },
+    {
+      "key": "hasVideo",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "hourSpentWatching",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "humiliation",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "humiliation"
+    },
+    {
+      "key": "humiliationNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "humiliation"
+    },
+    {
+      "key": "hypno",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "hypno"
+    },
+    {
+      "key": "hypnoFiles",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "hypnoFiles"
+    },
+    {
+      "key": "hypnoNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "hypno"
+    },
+    {
+      "key": "hypnosis",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "hypnosis-strobe",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "illegalCum",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "lateLOB",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "lateLOB"
+    },
+    {
+      "key": "leftEarly",
+      "category": "runtime-session-temp",
+      "canonicalKey": null
+    },
+    {
+      "key": "leftEarlyToday",
+      "category": "runtime-session-temp",
+      "canonicalKey": null
+    },
+    {
+      "key": "longSession",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "lostKey",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "lostKey"
+    },
+    {
+      "key": "main",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "mantra",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "mood",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "nipplePlay",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "noCensors",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "noPorn",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "noPorn"
+    },
+    {
+      "key": "noVideo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "noVideo"
+    },
+    {
+      "key": "noVideoValue",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "noVideoValue"
+    },
+    {
+      "key": "note",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "orgasmDenied",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "outsideSession",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "outsideSession"
+    },
+    {
+      "key": "outsideSessionNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "outsideSession"
+    },
+    {
+      "key": "palming",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "palming"
+    },
+    {
+      "key": "palmingNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "palming"
+    },
+    {
+      "key": "petName",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "petName"
+    },
+    {
+      "key": "petPlay",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "petPlay"
+    },
+    {
+      "key": "petPlayAdvanced",
+      "category": "structured-setting-substate",
+      "canonicalKey": null
+    },
+    {
+      "key": "petPlayAdvancedNo",
+      "category": "structured-setting-substate",
+      "canonicalKey": null
+    },
+    {
+      "key": "petPlayDone",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "petPlayNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "petPlay"
+    },
+    {
+      "key": "plug",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "plug"
+    },
+    {
+      "key": "plugHour",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "plugHour"
+    },
+    {
+      "key": "plugNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "plug"
+    },
+    {
+      "key": "plugWalk",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "plug{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "pronoun",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "pronoun"
+    },
+    {
+      "key": "prostateHidden",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "pup",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "pup"
+    },
+    {
+      "key": "pupNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "pup"
+    },
+    {
+      "key": "queuedAskHandled",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "quickShotNo",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "quickshot",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "quickshotNo",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "quickshot{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "removed",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "removed"
+    },
+    {
+      "key": "removedNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "removed"
+    },
+    {
+      "key": "request",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "reward",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "ruinedOrgasm",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "safeWord",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "safeWord"
+    },
+    {
+      "key": "safeWordNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "safeWord"
+    },
+    {
+      "key": "scoreMod",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "scoreMod"
+    },
+    {
+      "key": "sessionEnd",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "sessionLength",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "sessionLengthMod",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "sessionLengthMod"
+    },
+    {
+      "key": "sessions",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "shortSession",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "shutDown",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "sissy",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "sissy"
+    },
+    {
+      "key": "sissyNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "sissy"
+    },
+    {
+      "key": "sissy{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "sph",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "sph"
+    },
+    {
+      "key": "sphNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "sph"
+    },
+    {
+      "key": "state",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "stoleSnacks",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "string",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "string"
+    },
+    {
+      "key": "stringNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "string"
+    },
+    {
+      "key": "strobe",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "strobe"
+    },
+    {
+      "key": "strobeNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "strobe"
+    },
+    {
+      "key": "strokeAmount",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "strokeMod",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "strokeTwist",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "sub",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "subName",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "subName"
+    },
+    {
+      "key": "supporter",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "task",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "taskAdded",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "taskScreen",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "taskScreen"
+    },
+    {
+      "key": "taskScreenNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "taskScreen"
+    },
+    {
+      "key": "taskTime",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "taskTime"
+    },
+    {
+      "key": "toldAboutNecklace",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "toldAboutNecklace"
+    },
+    {
+      "key": "totalTimeOnEdge",
+      "category": "historical-progression-counter",
+      "canonicalKey": null
+    },
+    {
+      "key": "totalTribute",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "treats",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "treats"
+    },
+    {
+      "key": "treatsNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "treats"
+    },
+    {
+      "key": "vibe",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "vibeStrength",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "vibrator",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "vibrator"
+    },
+    {
+      "key": "vibratorNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "vibrator"
+    },
+    {
+      "key": "videoMod",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "videoMod"
+    },
+    {
+      "key": "virgin",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "virgin"
+    },
+    {
+      "key": "virginNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "virgin"
+    },
+    {
+      "key": "virgin{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "watchPorn",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "watchPorn"
+    },
+    {
+      "key": "waterLube",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "waterLube"
+    },
+    {
+      "key": "waterLubeNo",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "waterLube"
+    },
+    {
+      "key": "wearingCage",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    },
+    {
+      "key": "wearingChastity",
+      "category": "canonical-setting-alias",
+      "canonicalKey": "wearingChastity"
+    },
+    {
+      "key": "wearingChastity{",
+      "category": "compatibility-only-deprecated",
+      "canonicalKey": null
+    }
+  ]
+}

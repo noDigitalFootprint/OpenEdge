@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Grid x:Class="OpenEdge.Homework"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:OpenEdge"
+      Margin="0,0,0,10">
+  <Grid.Resources>
+    <Style x:Key="MetaLabel" TargetType="TextBlock">
+      <Setter Property="Foreground" Value="#FFC8B6F0" />
+      <Setter Property="FontSize" Value="11" />
+      <Setter Property="FontFamily" Value="Segoe UI" />
+      <Setter Property="VerticalAlignment" Value="Center" />
+      <Setter Property="Margin" Value="0,0,4,0" />
+    </Style>
+    <Style x:Key="MetaValue" TargetType="TextBlock">
+      <Setter Property="Foreground" Value="#FFEDEDED" />
+      <Setter Property="FontSize" Value="13" />
+      <Setter Property="FontFamily" Value="Segoe UI" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+  </Grid.Resources>
+
+  <Border Background="#CC1B1724"
+          BorderBrush="#668A6AB0"
+          BorderThickness="1"
+          CornerRadius="10"
+          Padding="12">
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+
+      <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,0,12,0">
+        <TextBlock Name="titleText"
+                   Text="Add Images"
+                   TextWrapping="Wrap"
+                   FontSize="18"
+                   Foreground="#FFEDEDED"
+                   FontFamily="Segoe UI"
+                   FontWeight="SemiBold"
+                   LineHeight="22" />
+        <TextBlock Name="timeText"
+                   Text="complete within X Hours"
+                   TextWrapping="Wrap"
+                   FontSize="12"
+                   Foreground="#FFC8B6F0"
+                   FontFamily="Segoe UI"
+                   Margin="0,3,0,0" />
+      </StackPanel>
+
+      <Grid Grid.Row="0" Grid.Column="1" Width="38" Height="38" VerticalAlignment="Top">
+        <Image Name="acceptBtn" Source="/checkbg.png" Width="34" Height="34" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Image Name="checkMark" Width="34" Height="34" Visibility="Hidden" IsHitTestVisible="False" HorizontalAlignment="Center" VerticalAlignment="Center" />
+      </Grid>
+
+      <TextBlock Name="descriptionText"
+                 Grid.Row="1"
+                 Grid.ColumnSpan="2"
+                 Text="add at least 20 images to the imagefolder"
+                 TextWrapping="Wrap"
+                 FontSize="13"
+                 Foreground="#FFD8D0EA"
+                 FontFamily="Segoe UI"
+                 LineHeight="18"
+                 Margin="0,8,0,10" />
+
+      <WrapPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0,0,2">
+        <Border Background="#6634204A" CornerRadius="999" Padding="8,4" Margin="0,0,6,6">
+          <StackPanel Orientation="Horizontal">
+            <TextBlock Name="durationText" Text="20 minutes" Style="{StaticResource MetaValue}" />
+          </StackPanel>
+        </Border>
+
+        <Border Background="#6634204A" CornerRadius="999" Padding="8,4" Margin="0,0,6,6">
+          <StackPanel Orientation="Horizontal">
+            <TextBlock Name="rewardBuyText" Text="Reward" Style="{StaticResource MetaLabel}" />
+            <Image Name="heartsEarned" Width="18" Height="18" Source="/heartbg.png" Margin="0,0,3,0" />
+            <TextBlock Name="rewardText" Text="5" Style="{StaticResource MetaValue}" />
+          </StackPanel>
+        </Border>
+
+        <Border Background="#6634204A" CornerRadius="999" Padding="8,4" Margin="0,0,6,6">
+          <StackPanel Orientation="Horizontal">
+            <TextBlock Name="costBuyText" Text="Cost" Style="{StaticResource MetaLabel}" />
+            <Image Name="heartsCost" Width="18" Height="18" Source="/heartbg.png" Margin="0,0,3,0" />
+            <TextBlock Name="costText" Text="5" Style="{StaticResource MetaValue}" />
+          </StackPanel>
+        </Border>
+      </WrapPanel>
+
+      <Grid Name="progressbarGrid"
+            Grid.Row="3"
+            Grid.ColumnSpan="2"
+            Visibility="Collapsed"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Margin="0,8,0,0"
+            Width="210"
+            Height="24">
+        <Rectangle Name="progressbarBg" Fill="#5534204A" HorizontalAlignment="Left" Width="200" Height="20" RadiusX="8" RadiusY="8" />
+        <Rectangle Name="progressBarRect" Fill="#FF9F5CFF" HorizontalAlignment="Left" Width="160" Height="20" RadiusX="8" RadiusY="8" />
+        <TextBlock Name="timeRemainingOnTask" Foreground="#FFEDEDED" Text="15:03" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" FontFamily="Segoe UI" />
+      </Grid>
+
+      <Rectangle Name="rectWithDetect"
+                 Grid.ColumnSpan="2"
+                 Grid.RowSpan="4"
+                 StrokeThickness="1"
+                 Fill="#00FFFFFF"
+                 MouseLeftButtonUp="acceptBtn_MouseLeftButtonUp"
+                 RadiusX="10"
+                 RadiusY="10"
+                 IsHitTestVisible="True">
+        <Shape.Stroke>
+          <SolidColorBrush Color="#559F5CFF" />
+        </Shape.Stroke>
+      </Rectangle>
+    </Grid>
+  </Border>
+</Grid>

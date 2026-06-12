@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>OpenEdge.SettingsHarness</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\RuntimePaths.cs" Link="OpenEdge\RuntimePaths.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\CompatibilityStateModels.cs" Link="OpenEdge\CompatibilityStateModels.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\CompatibilityStateService.cs" Link="OpenEdge\CompatibilityStateService.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\MediaCatalogModels.cs" Link="OpenEdge\MediaCatalogModels.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\MediaCatalogService.cs" Link="OpenEdge\MediaCatalogService.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\ImageFileSafety.cs" Link="OpenEdge\ImageFileSafety.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\MediaTagCompatibilityAdapter.cs" Link="OpenEdge\MediaTagCompatibilityAdapter.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\BulkTaggingModels.cs" Link="OpenEdge\BulkTaggingModels.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\ModModels.cs" Link="OpenEdge\ModModels.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\ModService.cs" Link="OpenEdge\ModService.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\SettingsRegistry.cs" Link="OpenEdge\SettingsRegistry.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\LineSelectionBag.cs" Link="OpenEdge\LineSelectionBag.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\ScriptSettingPredicateEvaluator.cs" Link="OpenEdge\ScriptSettingPredicateEvaluator.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\LegacyStateAdapter.cs" Link="OpenEdge\LegacyStateAdapter.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\SessionFlagStore.cs" Link="OpenEdge\SessionFlagStore.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\SessionTraceLogger.cs" Link="OpenEdge\SessionTraceLogger.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\ScriptStructuredPredicateEvaluator.cs" Link="OpenEdge\ScriptStructuredPredicateEvaluator.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\ScriptSettingCommandExecutor.cs" Link="OpenEdge\ScriptSettingCommandExecutor.cs" />
+  </ItemGroup>
+</Project>

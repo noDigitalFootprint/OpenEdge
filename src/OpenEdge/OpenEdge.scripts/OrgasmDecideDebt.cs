@@ -1,0 +1,23 @@
+namespace OpenEdge.scripts;
+
+internal class OrgasmDecideDebt : InteruptTalk
+{
+	public OrgasmDecideDebt(MainWindow mw, TalkBaseClass homeTalk)
+		: base(mw, homeTalk)
+	{
+		allText = mw.lr.getScript("orgasmDecideDebt");
+	}
+
+	private string[] decide()
+	{
+		if (getMyScript() == 0)
+		{
+			return new string[13]
+			{
+				"do you regret taking my deal?", "you could have had an orgasm right now", "a full one, a real one", "enough pleasure to make you scream", "but no, you just had to have a ruined orgasm", "do you even remember how it felt?", "was it worth it?", "I wonder what would happen if I gave you another deal", "another easy way out, laced in poison", "would you take it?",
+				"DENY:", "ISFLAGT:taskAdded don't forget about that task I gave you", "ENDSESSION"
+			};
+		}
+		return decide();
+	}
+}

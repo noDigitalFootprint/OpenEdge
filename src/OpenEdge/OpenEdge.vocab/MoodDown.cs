@@ -1,0 +1,12 @@
+using OpenEdge.helper;
+
+namespace OpenEdge.vocab;
+
+internal class MoodDown : BaseVocab
+{
+	public MoodDown(Voc voc)
+		: base(voc)
+	{
+		normal.AddRange(new string[6] { "I expected better from you", "it seems my expectations were set too high", "you disappoint me @subTitle", "you bore me @subTitle", "surely you can do better", "I deserve more than this" });
+	}
+}

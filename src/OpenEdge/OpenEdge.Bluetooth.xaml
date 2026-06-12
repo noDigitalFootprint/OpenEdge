@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="OpenEdge.Bluetooth" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:OpenEdge" Title="Bluetooth">
+  <Page.Background>
+    <ImageBrush ImageSource="/background.png" Stretch="UniformToFill" />
+  </Page.Background>
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="24*" />
+      <ColumnDefinition Width="50*" />
+      <ColumnDefinition Width="150*" />
+      <ColumnDefinition Width="24*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition />
+      <RowDefinition Height="0.3*" />
+      <RowDefinition />
+      <RowDefinition />
+    </Grid.RowDefinitions>
+    <StackPanel Orientation="Vertical" Margin="40,40,40,40" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" VerticalAlignment="Top">
+      <Button Name="searchBt" MinHeight="48" Content="Start Scanning" FontSize="26" FontFamily="Times New Roman" Margin="10" Click="searchBt_Click" />
+      <Button Name="findIC" Content="Find IC" MinHeight="48" Grid.Row="1" FontSize="26" FontFamily="Times New Roman" Margin="10" Click="findIC_Click" />
+      <Button Name="launchBt" Content="Launch IC" MinHeight="48" Grid.Row="1" FontSize="26" FontFamily="Times New Roman" Margin="10" Click="launchBt_Click" />
+      <Grid Margin="10" MinHeight="48" Background="#99000000" Tag="0" PreviewMouseLeftButtonUp="Grid_PreviewMouseLeftButtonUp">
+        <TextBlock Text="Launch IC on Startup" Foreground="#FFFFFFFF" IsHitTestVisible="False" TextAlignment="Left" FontSize="24" FontFamily="Times New Roman" VerticalAlignment="Center" Margin="10" />
+        <CheckBox Name="onStartupIC" Foreground="#FFFFFFFF" Tag="0" IsHitTestVisible="False" HorizontalAlignment="Right" VerticalAlignment="Center" BorderBrush="#00707070" Background="#FFFFFFFF" Margin="10" Click="onStartupIC_Click">
+          <FrameworkElement.LayoutTransform>
+            <ScaleTransform ScaleX="2.2" ScaleY="2.2" />
+          </FrameworkElement.LayoutTransform>
+        </CheckBox>
+      </Grid>
+      <Button Name="backBtn" FontSize="32" MinHeight="48" FontFamily="Times New Roman" Content="Back" Margin="10" Click="btnBackClick" />
+    </StackPanel>
+    <StackPanel Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Margin="30">
+      <StackPanel Orientation="Horizontal">
+        <Label Content="IC server address:" FontSize="26" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Times New Roman" Foreground="#FFFFFFFF" />
+        <TextBox Name="serverAddress" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="32" Height="40" FontFamily="Times New Roman" Width="600" Text="ws://localhost:12345" Foreground="#FFFFFFFF" Background="#99000000" BorderBrush="#00ABADB3" SelectionBrush="#FFAE00D7" KeyUp="serverAddress_KeyUp" />
+      </StackPanel>
+    </StackPanel>
+    <ScrollViewer Name="btTextScroll" VerticalScrollBarVisibility="Auto" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="20,40,20,40">
+      <Control.Background>
+        <ImageBrush ImageSource="/background.png" />
+      </Control.Background>
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="6*" />
+          <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Name="btText" Background="#00FFFFFF" FontSize="24" TextAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="20,0,20,0" TextDecorations="Underline" />
+        <TextBlock Name="btTextTimestamp" Grid.Column="1" Background="#00FFFFFF" FontSize="24" TextAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="20,0,20,0" />
+      </Grid>
+    </ScrollViewer>
+    <TextBlock Grid.Column="2" Grid.ColumnSpan="1" FontSize="32" FontFamily="Times New Roman" Grid.RowSpan="1" Foreground="#FFFFFFFF" Text="  System Events  " Margin="10,30,20,40" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#411843" />
+    <ScrollViewer Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Row="2" Margin="40,40,20,40">
+      <Control.Background>
+        <ImageBrush ImageSource="/background.png" />
+      </Control.Background>
+      <StackPanel Name="bluetoothDevicesStack" Orientation="Vertical" />
+    </ScrollViewer>
+    <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Row="2" Margin="30,30,40,20" FontSize="32" FontFamily="Times New Roman" Foreground="#FFFFFFFF" Text="  Availible Devices  " Background="#411843" HorizontalAlignment="Left" VerticalAlignment="Top" />
+    <Image Source="/questionmark.png" Grid.Column="8" VerticalAlignment="Top" Margin="40,40,40,20" HorizontalAlignment="Right" MaxHeight="60" MouseLeftButtonUp="Image_MouseLeftButtonUp" />
+    <Grid Name="popQuestionmark" Visibility="Hidden" ColumnSpan="9" RowSpan="12" ZIndex="10" Width="640" Height="800">
+      <Panel.Background>
+        <ImageBrush ImageSource="/background.png" />
+      </Panel.Background>
+      <ScrollViewer VerticalScrollBarVisibility="Hidden">
+        <Grid>
+          <local:BluetoothHelp />
+        </Grid>
+      </ScrollViewer>
+      <Rectangle StrokeThickness="5">
+        <Shape.Stroke>
+          <LinearGradientBrush EndPoint="0,1" StartPoint="1,0">
+            <GradientStop Color="#FF130613" Offset="1" />
+            <GradientStop Color="#FFF53FFF" Offset="0" />
+          </LinearGradientBrush>
+        </Shape.Stroke>
+      </Rectangle>
+      <Button Content="X" FontSize="48" Background="#007E2882" VerticalAlignment="Top" HorizontalAlignment="Right" BorderBrush="#FFFFFFFF" Foreground="#FFFFFFFF" Height="60" Click="Button_Click" />
+    </Grid>
+  </Grid>
+</Page>

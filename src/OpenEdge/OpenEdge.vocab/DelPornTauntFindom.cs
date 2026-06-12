@@ -1,0 +1,16 @@
+using OpenEdge.helper;
+
+namespace OpenEdge.vocab;
+
+internal class DelPornTauntFindom : BaseVocab
+{
+	public DelPornTauntFindom(Voc voc)
+		: base(voc)
+	{
+		normal.AddRange(new string[13]
+		{
+			"it's going to take more than that", "I've decided it's going to be just a little bit more expensive", "come on, keep coughing up that favor", "it's just a bit more, honest", "keep spending @subTitle", "you must really love this", "it's going to take a bit more than that", "maybe just a bit more", "you can afford this right?", "you're not getting close to being in favor debt are you?",
+			"you're such a good wallet for letting me drain you", "I don't feel like giving up just yet", "I can take a little more from you right?"
+		});
+	}
+}

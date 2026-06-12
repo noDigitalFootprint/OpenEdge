@@ -1,0 +1,26 @@
+using System;
+
+namespace OpenEdge.scripts;
+
+internal class CbtTaunt : TalkBaseClass
+{
+	public CbtTaunt(MainWindow mw)
+		: base(mw)
+	{
+		createTaunt();
+		allText = mw.lr.getScript("cbtTaunt");
+	}
+
+	private void createTaunt()
+	{
+		switch (new Random().Next(1))
+		{
+		case 0:
+			_ = new string[6] { "Only a small part of this is to educate you", "the rest is just for my entertainment", "I deserve to enjoy myself after all", "and I don't really care that you get hurt in the process", "complaining is one of the rights you've given up after all", "and what kind of a @missTitle wouldn't use an obedient slave to it's fullest extent" };
+			break;
+		case 1:
+			_ = new string[7] { "trust me, I'm being kind to you by just making you hit yourself", "ISSETTING:dildo I could make you choke on that dildo of yours till you black out", "ISSETTING:plug your ass could be plugged for hours", "even edging will turn into torture if done correctly", "so after every hit I want you to thank me out loud", "I'm taking the time to train a useless slave like you", "so it's the least you can do to show your appreciation" };
+			break;
+		}
+	}
+}

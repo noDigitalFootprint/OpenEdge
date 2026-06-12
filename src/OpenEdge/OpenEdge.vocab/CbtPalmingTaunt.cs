@@ -1,0 +1,12 @@
+using OpenEdge.helper;
+
+namespace OpenEdge.vocab;
+
+internal class CbtPalmingTaunt : CbtTauntBase
+{
+	public CbtPalmingTaunt(Voc voc)
+		: base(voc)
+	{
+		normal.AddRange(new string[8] { "run your hand over that @cock", "it may feel like your brain is about to break but keep going", "I'll break your brain with just the palm of your hand", "did you realize before just how weak you are? a palm is enough to drive you mad", "is it difficult? too bad", "keep everything slick", "that @cock is about to break", "you may whine and wince as much as you want but keep going" });
+	}
+}

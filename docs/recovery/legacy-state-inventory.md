@@ -1,0 +1,763 @@
+# Legacy State Inventory
+
+Generated: 2026-06-02 14:24:03
+
+## Summary
+
+- Unique legacy keys: 230
+- Script legacy command occurrences: 375
+- App-code legacy method occurrences: 245
+
+### Script command counts
+
+- ADDVAR: 65
+- DELFLAG: 46
+- FLAG: 46
+- ISFLAG: 165
+- ISNOFLAG: 39
+- SETVAR: 14
+
+### App-code method counts
+
+- getFlag: 90
+- getVar: 62
+- setFlag: 32
+- setVar: 61
+
+## Classification counts
+
+- canonical-setting-alias: 115
+- compatibility-only-deprecated: 94
+- historical-progression-counter: 15
+- runtime-session-temp: 2
+- structured-setting-substate: 4
+
+## Canonical setting aliases
+
+- `LOB`: `LOB`, `LOBNo`
+- `anal`: `anal`, `analNo`
+- `askedForName`: `askedForName`
+- `asmr`: `asmr`, `asmrNo`
+- `breathPlay`: `breathPlay`, `breathPlayNo`
+- `breathTime`: `breathTime`
+- `cage`: `cage`, `cageNo`
+- `cageType`: `cageType`
+- `canRemove`: `canRemove`, `canRemoveNo`
+- `cat`: `cat`, `catNo`
+- `cei`: `cei`, `ceiNo`
+- `censorIncrease`: `censorIncrease`
+- `censorship`: `censorship`, `censorshipNo`
+- `chastity`: `chastity`, `chastityNo`
+- `chastityDate`: `chastityDate`
+- `chastityTime`: `chastityTime`
+- `clothesPins`: `clothesPins`, `clothesPinsNo`
+- `cockControl`: `cockControl`, `cockControlNo`
+- `collar`: `collar`, `collarNo`
+- `constantCei`: `constantCei`
+- `cuck`: `cuck`, `cuckNo`
+- `dildo`: `dildo`, `dildoNo`
+- `domTitle`: `domTitle`, `domTitle`
+- `earlyLOB`: `earlyLOB`
+- `edgeHold`: `edgeHold`, `edgeHoldNo`
+- `edgeIntro`: `edgeIntro`, `edgeIntroNo`
+- `explanationFactualFirst`: `explanationFactualFirst`
+- `factualFirst`: `factualFirst`
+- `feet`: `feet`, `feetNo`
+- `findom`: `findom`, `findomNo`
+- `gag`: `gag`, `gagNo`
+- `gay`: `gay`, `gayNo`
+- `gayHumiliation`: `gayHumiliation`, `gayHumiliationNo`
+- `goon`: `goon`, `goonNo`
+- `guessName`: `guessName`
+- `hadBlowJob`: `hadBlowJob`, `hadBlowJobNo`
+- `hands`: `hands`, `handsNo`
+- `humiliation`: `humiliation`, `humiliationNo`
+- `hypno`: `hypno`, `hypnoNo`
+- `hypnoFiles`: `hypnoFiles`
+- `lateLOB`: `lateLOB`
+- `lostKey`: `lostKey`
+- `noPorn`: `noPorn`
+- `noVideo`: `noVideo`
+- `noVideoValue`: `noVideoValue`
+- `outsideSession`: `outsideSession`, `outsideSessionNo`
+- `palming`: `palming`, `palmingNo`
+- `petName`: `petName`
+- `petPlay`: `petPlay`, `petPlayNo`
+- `plug`: `plug`, `plugNo`
+- `plugHour`: `plugHour`
+- `pronoun`: `pronoun`
+- `pup`: `pup`, `pupNo`
+- `removed`: `removed`, `removedNo`
+- `safeWord`: `safeWord`, `safeWordNo`
+- `scoreMod`: `scoreMod`
+- `sessionLengthMod`: `sessionLengthMod`
+- `sissy`: `sissy`, `sissyNo`
+- `sph`: `sph`, `sphNo`
+- `string`: `string`, `stringNo`
+- `strobe`: `strobe`, `strobeNo`
+- `subName`: `subName`
+- `taskScreen`: `taskScreen`, `taskScreenNo`
+- `taskTime`: `taskTime`
+- `toldAboutNecklace`: `toldAboutNecklace`
+- `treats`: `treats`, `treatsNo`
+- `vibrator`: `vibrator`, `vibratorNo`
+- `videoMod`: `videoMod`
+- `virgin`: `virgin`, `virginNo`
+- `watchPorn`: `watchPorn`
+- `waterLube`: `waterLube`, `waterLubeNo`
+- `wearingChastity`: `wearingChastity`
+
+## Key classifications
+
+### canonical-setting-alias
+
+- `LOB` -> `LOB`
+- `LOBNo` -> `LOB`
+- `anal` -> `anal`
+- `analNo` -> `anal`
+- `askedForName` -> `askedForName`
+- `asmr` -> `asmr`
+- `asmrNo` -> `asmr`
+- `breathPlay` -> `breathPlay`
+- `breathPlayNo` -> `breathPlay`
+- `breathTime` -> `breathTime`
+- `cage` -> `cage`
+- `cageNo` -> `cage`
+- `cageType` -> `cageType`
+- `canRemove` -> `canRemove`
+- `canRemoveNo` -> `canRemove`
+- `cat` -> `cat`
+- `catNo` -> `cat`
+- `cei` -> `cei`
+- `ceiNo` -> `cei`
+- `censorIncrease` -> `censorIncrease`
+- `censorship` -> `censorship`
+- `censorshipNo` -> `censorship`
+- `chastity` -> `chastity`
+- `chastityDate` -> `chastityDate`
+- `chastityNo` -> `chastity`
+- `chastityTime` -> `chastityTime`
+- `clothesPins` -> `clothesPins`
+- `clothesPinsNo` -> `clothesPins`
+- `cockControl` -> `cockControl`
+- `cockControlNo` -> `cockControl`
+- `collar` -> `collar`
+- `collarNo` -> `collar`
+- `constantCei` -> `constantCei`
+- `cuck` -> `cuck`
+- `cuckNo` -> `cuck`
+- `dildo` -> `dildo`
+- `dildoNo` -> `dildo`
+- `domTitle` -> `domTitle`
+- `earlyLOB` -> `earlyLOB`
+- `edgeHold` -> `edgeHold`
+- `edgeHoldNo` -> `edgeHold`
+- `edgeIntro` -> `edgeIntro`
+- `edgeIntroNo` -> `edgeIntro`
+- `explanationFactualFirst` -> `explanationFactualFirst`
+- `factualFirst` -> `factualFirst`
+- `feet` -> `feet`
+- `feetNo` -> `feet`
+- `findom` -> `findom`
+- `findomNo` -> `findom`
+- `gag` -> `gag`
+- `gagNo` -> `gag`
+- `gay` -> `gay`
+- `gayHumiliation` -> `gayHumiliation`
+- `gayHumiliationNo` -> `gayHumiliation`
+- `gayNo` -> `gay`
+- `goon` -> `goon`
+- `goonNo` -> `goon`
+- `guessName` -> `guessName`
+- `hadBlowJob` -> `hadBlowJob`
+- `hadBlowJobNo` -> `hadBlowJob`
+- `hands` -> `hands`
+- `handsNo` -> `hands`
+- `humiliation` -> `humiliation`
+- `humiliationNo` -> `humiliation`
+- `hypno` -> `hypno`
+- `hypnoFiles` -> `hypnoFiles`
+- `hypnoNo` -> `hypno`
+- `lateLOB` -> `lateLOB`
+- `lostKey` -> `lostKey`
+- `noPorn` -> `noPorn`
+- `noVideo` -> `noVideo`
+- `noVideoValue` -> `noVideoValue`
+- `outsideSession` -> `outsideSession`
+- `outsideSessionNo` -> `outsideSession`
+- `palming` -> `palming`
+- `palmingNo` -> `palming`
+- `petName` -> `petName`
+- `petPlay` -> `petPlay`
+- `petPlayNo` -> `petPlay`
+- `plug` -> `plug`
+- `plugHour` -> `plugHour`
+- `plugNo` -> `plug`
+- `pronoun` -> `pronoun`
+- `pup` -> `pup`
+- `pupNo` -> `pup`
+- `removed` -> `removed`
+- `removedNo` -> `removed`
+- `safeWord` -> `safeWord`
+- `safeWordNo` -> `safeWord`
+- `scoreMod` -> `scoreMod`
+- `sessionLengthMod` -> `sessionLengthMod`
+- `sissy` -> `sissy`
+- `sissyNo` -> `sissy`
+- `sph` -> `sph`
+- `sphNo` -> `sph`
+- `string` -> `string`
+- `stringNo` -> `string`
+- `strobe` -> `strobe`
+- `strobeNo` -> `strobe`
+- `subName` -> `subName`
+- `taskScreen` -> `taskScreen`
+- `taskScreenNo` -> `taskScreen`
+- `taskTime` -> `taskTime`
+- `toldAboutNecklace` -> `toldAboutNecklace`
+- `treats` -> `treats`
+- `treatsNo` -> `treats`
+- `vibrator` -> `vibrator`
+- `vibratorNo` -> `vibrator`
+- `videoMod` -> `videoMod`
+- `virgin` -> `virgin`
+- `virginNo` -> `virgin`
+- `watchPorn` -> `watchPorn`
+- `waterLube` -> `waterLube`
+- `waterLubeNo` -> `waterLube`
+- `wearingChastity` -> `wearingChastity`
+
+### compatibility-only-deprecated
+
+- `-1`
+- `0`
+- `1`
+- `10`
+- `2`
+- `3`
+- `50`
+- `600`
+- `Anal`
+- `Cuckold`
+- `Denied`
+- `LOBBreak`
+- `LOBOn`
+- `LOBScript`
+- `analExtreme`
+- `analSecond`
+- `analTraining{`
+- `audioPorn`
+- `bluetoothOna`
+- `bluetoothPlug`
+- `bluetoothVibe`
+- `bpm`
+- `break`
+- `breathHoldProgress`
+- `cbt`
+- `cbtExtreme`
+- `cei{`
+- `censor`
+- `censorDomme`
+- `censorDommeNo`
+- `censorOn`
+- `changedChastityState`
+- `closeWithoutSession`
+- `cockControl{`
+- `collar{`
+- `debt`
+- `degrading`
+- `degrading{`
+- `denied`
+- `dildo{`
+- `dog`
+- `explainedHowToKneel`
+- `explainedNote`
+- `failedSessionEnd`
+- `favor`
+- `findom{`
+- `fullBreathHold`
+- `gamble`
+- `game`
+- `gayHumilliation`
+- `goon{`
+- `hadBlowjob`
+- `hasVideo`
+- `hourSpentWatching`
+- `hypnosis`
+- `hypnosis-strobe`
+- `longSession`
+- `main`
+- `mantra`
+- `mood`
+- `nipplePlay`
+- `noCensors`
+- `note`
+- `petPlayDone`
+- `plugWalk`
+- `plug{`
+- `prostateHidden`
+- `queuedAskHandled`
+- `quickShotNo`
+- `quickshot`
+- `quickshotNo`
+- `quickshot{`
+- `request`
+- `reward`
+- `sessionEnd`
+- `sessionLength`
+- `sessions`
+- `shortSession`
+- `shutDown`
+- `sissy{`
+- `state`
+- `stoleSnacks`
+- `strokeAmount`
+- `strokeTwist`
+- `sub`
+- `supporter`
+- `task`
+- `taskAdded`
+- `totalTribute`
+- `vibe`
+- `vibeStrength`
+- `virgin{`
+- `wearingCage`
+- `wearingChastity{`
+
+### historical-progression-counter
+
+- `chastityDate{`
+- `chastiyTime`
+- `cumSlut`
+- `edgeHoldGame`
+- `edgeHoldGameTime`
+- `edgeHoldRecord`
+- `edgesDone`
+- `explainedEdgeChoice`
+- `extraTime`
+- `fullOrgasm`
+- `illegalCum`
+- `orgasmDenied`
+- `ruinedOrgasm`
+- `strokeMod`
+- `totalTimeOnEdge`
+
+### runtime-session-temp
+
+- `leftEarly`
+- `leftEarlyToday`
+
+### structured-setting-substate
+
+- `LOBMod`
+- `analTrainingNo`
+- `petPlayAdvanced`
+- `petPlayAdvancedNo`
+
+## Script usage by command/key
+
+This section lists counts only; run `docs/recovery/audit-legacy-state.ps1` for exact file/line matches.
+
+- `ADDVAR:LOBMod`: 11
+- `ADDVAR:censorIncrease`: 2
+- `ADDVAR:chastityTime`: 1
+- `ADDVAR:chastiyTime`: 2
+- `ADDVAR:illegalCum`: 1
+- `ADDVAR:noVideoValue`: 2
+- `ADDVAR:request`: 26
+- `ADDVAR:scoreMod`: 2
+- `ADDVAR:sessionLengthMod`: 2
+- `ADDVAR:strokeMod`: 14
+- `ADDVAR:videoMod`: 2
+- `DELFLAG:LOB`: 1
+- `DELFLAG:LOBBreak`: 1
+- `DELFLAG:LOBNo`: 1
+- `DELFLAG:analNo`: 1
+- `DELFLAG:asmrNo`: 1
+- `DELFLAG:audioPorn`: 1
+- `DELFLAG:break`: 1
+- `DELFLAG:breathPlayNo`: 1
+- `DELFLAG:cageNo`: 1
+- `DELFLAG:ceiNo`: 1
+- `DELFLAG:censorshipNo`: 1
+- `DELFLAG:chastityDate`: 2
+- `DELFLAG:chastityTime`: 2
+- `DELFLAG:clothesPinsNo`: 1
+- `DELFLAG:cockControlNo`: 3
+- `DELFLAG:collarNo`: 1
+- `DELFLAG:cuck`: 2
+- `DELFLAG:cuckNo`: 1
+- `DELFLAG:dildoNo`: 1
+- `DELFLAG:feetNo`: 1
+- `DELFLAG:gayNo`: 1
+- `DELFLAG:hourSpentWatching`: 1
+- `DELFLAG:humiliationNo`: 1
+- `DELFLAG:hypnoNo`: 1
+- `DELFLAG:lostKey`: 1
+- `DELFLAG:note`: 1
+- `DELFLAG:outsideSessionNo`: 1
+- `DELFLAG:petPlayAdvancedNo`: 1
+- `DELFLAG:petPlayNo`: 1
+- `DELFLAG:plugNo`: 1
+- `DELFLAG:plugWalk`: 1
+- `DELFLAG:sissyNo`: 1
+- `DELFLAG:sphNo`: 1
+- `DELFLAG:stoleSnacks`: 1
+- `DELFLAG:stringNo`: 1
+- `DELFLAG:task`: 1
+- `DELFLAG:treatsNo`: 1
+- `DELFLAG:vibratorNo`: 1
+- `DELFLAG:waterLubeNo`: 1
+- `DELFLAG:wearingChastity`: 2
+- `FLAG:LOBBreak`: 1
+- `FLAG:LOBOn`: 1
+- `FLAG:analSecond`: 2
+- `FLAG:audioPorn`: 2
+- `FLAG:censorDomme`: 1
+- `FLAG:censorDommeNo`: 1
+- `FLAG:chastityDate`: 1
+- `FLAG:cumSlut`: 1
+- `FLAG:debt`: 1
+- `FLAG:degrading`: 1
+- `FLAG:edgeHoldGame`: 1
+- `FLAG:edgeHoldGameTime`: 2
+- `FLAG:explainedHowToKneel`: 1
+- `FLAG:explainedNote`: 1
+- `FLAG:fullBreathHold`: 2
+- `FLAG:fullOrgasm`: 6
+- `FLAG:hadBlowjob`: 1
+- `FLAG:hourSpentWatching`: 1
+- `FLAG:longSession`: 1
+- `FLAG:note`: 1
+- `FLAG:petPlayAdvanced`: 1
+- `FLAG:plugWalk`: 1
+- `FLAG:prostateHidden`: 1
+- `FLAG:quickshot`: 1
+- `FLAG:quickshotNo`: 1
+- `FLAG:ruinedOrgasm`: 6
+- `FLAG:stoleSnacks`: 1
+- `FLAG:task`: 5
+- `ISFLAG:Anal`: 2
+- `ISFLAG:LOBOn`: 1
+- `ISFLAG:analSecond`: 1
+- `ISFLAG:analTrainingNo`: 1
+- `ISFLAG:analTraining{`: 2
+- `ISFLAG:audioPorn`: 2
+- `ISFLAG:cage`: 1
+- `ISFLAG:cat`: 7
+- `ISFLAG:cei`: 5
+- `ISFLAG:cei{`: 1
+- `ISFLAG:censor`: 2
+- `ISFLAG:censorOn`: 1
+- `ISFLAG:cockControl{`: 1
+- `ISFLAG:collar`: 2
+- `ISFLAG:collar{`: 1
+- `ISFLAG:cumSlut`: 1
+- `ISFLAG:degrading`: 25
+- `ISFLAG:degrading{`: 3
+- `ISFLAG:dildo{`: 1
+- `ISFLAG:dog`: 1
+- `ISFLAG:domTitle`: 1
+- `ISFLAG:edgeHoldGame`: 1
+- `ISFLAG:edgeHoldRecord`: 1
+- `ISFLAG:explainedEdgeChoice`: 1
+- `ISFLAG:explainedNote`: 1
+- `ISFLAG:findom`: 6
+- `ISFLAG:findom{`: 2
+- `ISFLAG:gag`: 1
+- `ISFLAG:gayHumilliation`: 3
+- `ISFLAG:goon`: 1
+- `ISFLAG:goon{`: 2
+- `ISFLAG:guessName`: 2
+- `ISFLAG:hourSpentWatching`: 2
+- `ISFLAG:illegalCum`: 1
+- `ISFLAG:nipplePlay`: 1
+- `ISFLAG:note`: 1
+- `ISFLAG:plug`: 1
+- `ISFLAG:plugWalk`: 2
+- `ISFLAG:plug{`: 1
+- `ISFLAG:prostateHidden`: 1
+- `ISFLAG:pup`: 5
+- `ISFLAG:quickshot`: 17
+- `ISFLAG:quickshot{`: 7
+- `ISFLAG:shutDown`: 5
+- `ISFLAG:sissy`: 5
+- `ISFLAG:sissy{`: 3
+- `ISFLAG:stoleSnacks`: 2
+- `ISFLAG:supporter`: 1
+- `ISFLAG:task`: 1
+- `ISFLAG:treats`: 1
+- `ISFLAG:virgin`: 10
+- `ISFLAG:virgin{`: 2
+- `ISFLAG:wearingCage`: 1
+- `ISFLAG:wearingChastity`: 8
+- `ISFLAG:wearingChastity{`: 4
+- `ISNOFLAG:LOBBreak`: 12
+- `ISNOFLAG:analSecond`: 2
+- `ISNOFLAG:cat`: 2
+- `ISNOFLAG:censorDomme`: 1
+- `ISNOFLAG:censorDommeNo`: 1
+- `ISNOFLAG:changedChastityState`: 1
+- `ISNOFLAG:chastityDate`: 1
+- `ISNOFLAG:chastityDate{`: 1
+- `ISNOFLAG:domTitle`: 3
+- `ISNOFLAG:explainedHowToKneel`: 1
+- `ISNOFLAG:note`: 1
+- `ISNOFLAG:quickShotNo`: 1
+- `ISNOFLAG:quickshot`: 1
+- `ISNOFLAG:shutDown`: 6
+- `ISNOFLAG:virgin`: 1
+- `ISNOFLAG:wearingChastity`: 4
+- `SETVAR:edgeHoldRecord`: 2
+- `SETVAR:gamble`: 4
+- `SETVAR:vibeStrength`: 8
+
+## App-code legacy method locations
+
+Exact source locations with line snippets:
+
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:106` `getFlag` - if (mw.getFlag("degrading"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:110` `getFlag` - if (mw.getFlag("sph"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:114` `getFlag` - if (mw.getFlag("chastity"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:118` `getFlag` - if (mw.getFlag("quickshot"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:162` `getVar` - if (int.Parse(mw.getVar("denied")) > 3)
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:166` `getVar` - if (int.Parse(mw.getVar("denied")) < 2)
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:186` `getFlag` - if (mw.getFlag("removed"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:190` `getFlag` - if (mw.getFlag("pup") && mw.getTFlag("petPlay"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:194` `getFlag` - if (mw.getFlag("cat") && mw.getTFlag("petPlay"))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:278` `getFlag` - if (mw.getFlag(text))
+- `src/OpenEdge/OpenEdge.helper/BaseVocab.cs:284` `getFlag` - else if ((char.IsUpper(text, 0) && !mw.currentTags.Contains(text)) \|\| (!char.IsUpper(text, 0) && !mw.getFlag(text)))
+- `src/OpenEdge/OpenEdge.scripts/Anal.cs:9` `setFlag` - setFlag("FLAGT:sessionIntro", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/Anal.cs:11` `setFlag` - setFlag("FLAGT:anal", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/AskFlag.cs:24` `getVar` - if (mw.isSettingAnswered("safeWord") && mw.isSettingAnswered("edgeIntro") && mw.isSettingAnswered("edgeHold") && mw.isSettingAnswered("string") && mw.isSettingAnswered("clothesPins") && mw.isSettingAnswered("humiliation") && (!mw.isSettingEnabled("humiliation") \|\| mw.isSettingAnswered("virgin")) && mw.isSettingAnswered("asmr") && mw.isSettingAnswered("taskScreen") && (mw.isSettingAnswered("findom") \|\| int.Parse(mw.getVar("totalTribute")) <= 10) && mw.isSettingAnswered("gay") && mw.isSettingAnswered("petPlay") && mw.isSettingAnswered("cei") && (!mw.isSettingEnabled("humiliation") \|\| mw.isSettingAnswered("cuck")) && (!mw.isSettingEnabled("humiliation") \|\| mw.isSettingAnswered("censorship")) && mw.isSettingAnswered("feet") && mw.isSettingAnswered("palming") && mw.isSettingAnswered("hypno") && mw.isSettingAnswered("hands") && (!mw.isSettingEnabled("gayHumiliation") \|\| mw.isSettingAnswered("sissy")) && mw.isSettingAnswered("anal") && mw.isSettingAnswered("cockControl") && mw.isSettingAnswered("breathPlay") && (mw.isSettingAnswered("outsideSession") \|\| int.Parse(mw.getVar("sessions")) <= 3) && mw.isSettingAnswered("LOB") && mw.isSettingAnswered("canRemove") && !mw.getFlagAsked("petPlayAdvanced") && mw.isSettingEnabled("petPlay") && !mw.isSettingEnabled("treats"))
+- `src/OpenEdge/OpenEdge.scripts/AskFlag.cs:26` `getFlag` - mw.getFlag("collar");
+- `src/OpenEdge/OpenEdge.scripts/CbtExtreme.cs:26` `getFlag` - if (mw.getFlag("degrading"))
+- `src/OpenEdge/OpenEdge.scripts/Commandments.cs:16` `getFlag` - if (!mw.getFlag("noPorn") && !mw.getFlag("watchPorn"))
+- `src/OpenEdge/OpenEdge.scripts/Commandments.cs:26` `getFlag` - if (!mw.getFlag("constantCei") && mw.isSettingEnabled("cei"))
+- `src/OpenEdge/OpenEdge.scripts/Commandments.cs:36` `getFlag` - if (mw.isSettingEnabled("plug") && !mw.getFlag("plugHour"))
+- `src/OpenEdge/OpenEdge.scripts/Commandments.cs:46` `getFlag` - if (!mw.getFlag("noPorn") && !mw.getFlag("watchPorn"))
+- `src/OpenEdge/OpenEdge.scripts/Commandments.cs:56` `getFlag` - if (!mw.getFlag("hypnoFiles") && mw.isSettingEnabled("hypno"))
+- `src/OpenEdge/OpenEdge.scripts/Cuck.cs:8` `setFlag` - setFlag("cuck", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/Edging.cs:49` `getFlag` - if (mw.getFlag("degrading"))
+- `src/OpenEdge/OpenEdge.scripts/Edging.cs:75` `getFlag` - if (mw.getFlag("quickshot"))
+- `src/OpenEdge/OpenEdge.scripts/Edging.cs:85` `getVar` - if (mw.mood > 80 && int.Parse(mw.getVar("sessions")) > 7)
+- `src/OpenEdge/OpenEdge.scripts/Edging.cs:95` `getVar` - if (mw.mood > 80 && int.Parse(mw.getVar("sessions")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/Ending.cs:27` `getVar` - if (3 <= int.Parse(mw.getVar("denied")))
+- `src/OpenEdge/OpenEdge.scripts/Ending.cs:43` `getVar` - if (3 <= int.Parse(mw.getVar("sessions")))
+- `src/OpenEdge/OpenEdge.scripts/Ending.cs:49` `getVar` - if (3 <= int.Parse(mw.getVar("denied")))
+- `src/OpenEdge/OpenEdge.scripts/Ending.cs:55` `getVar` - if (3 <= int.Parse(mw.getVar("denied")))
+- `src/OpenEdge/OpenEdge.scripts/Game.cs:9` `setFlag` - setFlag("game", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/Game.cs:95` `getFlag` - if (mw.isSettingEnabled("canRemove") && mw.getFlag("edgeHoldRecord"))
+- `src/OpenEdge/OpenEdge.scripts/Hypnosis.cs:13` `setFlag` - setFlag("hypnosis", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/Hypnosis.cs:145` `getVar` - if (int.Parse(mw.getVar("illegalCum")) > 0)
+- `src/OpenEdge/OpenEdge.scripts/HypnosisMantra.cs:9` `setFlag` - setFlag("mantra", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/HypnosisMantra.cs:72` `getVar` - if (int.Parse(mw.getVar("denied")) > 2)
+- `src/OpenEdge/OpenEdge.scripts/HypnosisMantra.cs:78` `getVar` - if (int.Parse(mw.getVar("denied")) > 2)
+- `src/OpenEdge/OpenEdge.scripts/IllegalCum.cs:28` `getVar` - if (mw.getFlagTimeDays("noVideo") >= int.Parse(mw.getVar("noVideoValue")))
+- `src/OpenEdge/OpenEdge.scripts/IllegalCum.cs:48` `getFlag` - if (mw.isSettingEnabled("humiliation") && !mw.getFlag("note"))
+- `src/OpenEdge/OpenEdge.scripts/IllegalEdge.cs:119` `getFlag` - if (mw.getFlag("quickshot") && int.Parse(getVar("denied")) > 2 && mw.getFlag("removed"))
+- `src/OpenEdge/OpenEdge.scripts/IllegalEdge.cs:119` `getVar` - if (mw.getFlag("quickshot") && int.Parse(getVar("denied")) > 2 && mw.getFlag("removed"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:9` `setFlag` - setFlag("LOBScript", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:24` `getFlag` - if (mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:30` `getFlag` - if (mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:36` `getFlag` - if (mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:42` `getFlag` - if (mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:48` `getFlag` - if (mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:54` `getFlag` - if (!mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:60` `getFlag` - if (!mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:66` `getFlag` - if (!mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:72` `getFlag` - if (!mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LOB.cs:78` `getFlag` - if (!mw.getFlag("shutDown"))
+- `src/OpenEdge/OpenEdge.scripts/LeftEarly.cs:10` `setFlag` - setFlag("FLAGT:sessionIntro", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/LeftEarlyToday.cs:11` `setFlag` - setFlag("leftEarlyToday", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/LeftEarlyToday.cs:12` `setFlag` - setFlag("FLAGT:sessionIntro", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/LongEdge.cs:59` `getVar` - if (10 < int.Parse(mw.getVar("strokeMod")))
+- `src/OpenEdge/OpenEdge.scripts/LostConnection.cs:9` `setFlag` - setFlag("FLAGT:sessionIntro", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:76` `getVar` - if (int.Parse(getVar("denied")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:82` `getVar` - if (int.Parse(getVar("denied")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:108` `getFlag` - if (!mw.getFlag("explainedHowToKneel"))
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:132` `getVar` - if (mw.isSettingEnabled("humiliation") && int.Parse(mw.getVar("sessions")) > 3 && !mw.getTFlag("petPlay"))
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:138` `getVar` - if (mw.isSettingEnabled("humiliation") && mw.mood > 80 && int.Parse(mw.getVar("sessions")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:150` `getFlag` - if (mw.getFlag("petPlayAdvanced") && mw.getTFlag("petPlay"))
+- `src/OpenEdge/OpenEdge.scripts/NoTouch.cs:161` `getFlag` - if (mw.getFlag("petPlayAdvanced") && mw.getTFlag("petPlay"))
+- `src/OpenEdge/OpenEdge.scripts/OrgasmDecideConditional.cs:26` `getVar` - if (int.Parse(mw.getVar("denied")) >= 3)
+- `src/OpenEdge/OpenEdge.scripts/Punishment.cs:35` `getVar` - if (int.Parse(mw.getVar("noVideoValue")) > 0)
+- `src/OpenEdge/OpenEdge.scripts/Punishment.cs:65` `getFlag` - if (mw.getFlag("censor") && mw.mood < 20 && !mw.getTFlag("noCensors"))
+- `src/OpenEdge/OpenEdge.scripts/Reward.cs:9` `setFlag` - setFlag("reward", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/Reward.cs:60` `getFlag` - if (mw.getFlag("censor"))
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:8` `setFlag` - setFlag("FLAGT:sessionIntro", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:36` `getFlag` - if (mw.getFlag("nipplePlay"))
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:87` `getVar` - if (mw.getFlagTimeDays("failedSessionEnd") <= 1 && int.Parse(mw.getVar("sessions")) > 2)
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:119` `getVar` - if (mw.getFlagTimeDays("failedSessionEnd") <= 1 && int.Parse(mw.getVar("sessions")) > 5)
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:125` `getVar` - if (int.Parse(getVar("denied")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:136` `getVar` - if (int.Parse(getVar("denied")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/SessionIntro.cs:147` `getVar` - if (mw.getFlagTimeDays("failedSessionEnd") <= 1 && int.Parse(getVar("denied")) > 3)
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:158` `setFlag` - setFlag("FLAG:strobe");
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:184` `setFlag` - setFlag(text8);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:196` `getFlag` - if (!getFlag(text10))
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:238` `getFlag` - if (getFlag(text11))
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:253` `setFlag` - setFlag(text13, temp: true);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:265` `getFlag` - if (!getFlag(text15, temp: true))
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:274` `getFlag` - if (getFlag(text16, temp: true))
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:295` `setVar` - setVar(text19);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:369` `getVar` - return getVar(text25) + text26;
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:963` `setVar` - mw.setVar("extraTime", extraTime.ToString() ?? "");
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1121` `setFlag` - public void setFlag(string flagName, bool temp = false)
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1143` `getFlag` - public bool getFlag(string flagName, bool temp = false)
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1154` `getFlag` - return mw.getFlag(flagName);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1157` `setVar` - public void setVar(string flagName)
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1167` `setVar` - mw.setVar(array[0], array[1]);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1302` `getVar` - string text = getVar(flagName);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1308` `setVar` - mw.setVar(flagName, text);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1314` `getVar` - string text = getVar(flagName);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1320` `setVar` - mw.setVar(flagName, text);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1328` `getVar` - mw.setFavor(int.Parse(mw.getVar("favor")) - int.Parse(amount));
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1329` `getVar` - mw.setVar("totalTribute", (int.Parse(amount) + int.Parse(mw.getVar("totalTribute"))).ToString() ?? "");
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1329` `setVar` - mw.setVar("totalTribute", (int.Parse(amount) + int.Parse(mw.getVar("totalTribute"))).ToString() ?? "");
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1354` `setFlag` - setFlag("taskAdded", temp: true);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1386` `getVar` - string newValue = (int.Parse(array[1]) + int.Parse(mw.getVar(array[0]))).ToString() ?? "";
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1388` `setVar` - mw.setVar(array[0], newValue);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1391` `getVar` - public string getVar(string flagName)
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1394` `getVar` - return mw.getVar(flagName);
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1612` `getFlag` - if (!getFlag("closeWithoutSession", temp: true))
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1619` `setFlag` - setFlag("sessionEnd");
+- `src/OpenEdge/OpenEdge.scripts/TalkBaseClass.cs:1621` `setVar` - mw.setVar("sessionLength", "0");
+- `src/OpenEdge/OpenEdge.vocab/MissTitle.cs:10` `getFlag` - if (mw.getFlag("domTitle"))
+- `src/OpenEdge/OpenEdge.vocab/MissTitle.cs:12` `getVar` - normal.AddRange(new string[1] { mw.getVar("domTitle") });
+- `src/OpenEdge/OpenEdge.vocab/Refuse.cs:12` `getFlag` - if (mw.getFlag("cat"))
+- `src/OpenEdge/OpenEdge.vocab/Yes.cs:12` `getFlag` - if (mw.getFlag("cat"))
+- `src/OpenEdge/OpenEdge/LineReader.cs:346` `getFlag` - return talkBaseClass.getFlag(text2);
+- `src/OpenEdge/OpenEdge/LineReader.cs:351` `getFlag` - return talkBaseClass.getFlag(text3, temp: true);
+- `src/OpenEdge/OpenEdge/LineReader.cs:356` `getFlag` - return !talkBaseClass.getFlag(text4);
+- `src/OpenEdge/OpenEdge/LineReader.cs:361` `getFlag` - return !talkBaseClass.getFlag(text5, temp: true);
+- `src/OpenEdge/OpenEdge/LineReader.cs:444` `getVar` - num = double.Parse(mw.getVar(text11.Split(":")[1].Trim()));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:294` `setVar` - setVar("main", 0.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:295` `setVar` - setVar("sub", 0.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:318` `getFlag` - if (!getFlag("sph"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:324` `setFlag` - currentScript.setFlag("strokeTwist", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:325` `setVar` - setVar("main", 2.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:330` `setVar` - setVar("main", 3.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:334` `setVar` - setVar("main", 4.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:340` `setVar` - setVar("main", 5.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:345` `setVar` - setVar("main", 6.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:352` `setVar` - setVar("main", 1.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:361` `setVar` - setVar("sub", 1.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:365` `setVar` - setVar("sub", 2.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:369` `setVar` - setVar("sub", 2.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:373` `setVar` - setVar("sub", 1.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:377` `setVar` - setVar("sub", 1.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:394` `setFlag` - currentScript.setFlag("censor", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:440` `setFlag` - currentScript.setFlag("failedSessionEnd");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:442` `setVar` - setVar("sessionLength", (sessionLength - (int)sessionTimer.Elapsed.TotalSeconds).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:443` `setVar` - setVar("totalTimeOnEdge", totalTimeOnEdge.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:444` `setVar` - setVar("strokeAmount", strokeAmount.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:445` `setVar` - setVar("edgesDone", edgesDone.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:481` `setFlag` - currentScript.setFlag("queuedAskHandled", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:490` `getFlag` - else if (!getFlag("wearingChastity"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:507` `getVar` - int num = requestChange + int.Parse(getVar("request"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:516` `setVar` - setVar("request", num.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:531` `setVar` - setVar("mood", mood.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:536` `getFlag` - if (!getTFlag("petPlay") && !getFlag("wearingChastity"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:614` `getFlag` - if (sessionTimer.Elapsed.TotalMinutes > 4.0 && getFlag("petPlayAdvanced") && !getTFlag("petPlayDone"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:621` `getFlag` - if (!getTFlag("LOBScript") && getFlag("LOB") && getFlagTimeDays("LOB") >= 1)
+- `src/OpenEdge/OpenEdge/MainWindow.cs:629` `getFlag` - else if (petPlayScripts < random.Next(4, 60) && !getFlag("wearingChastity"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:669` `getFlag` - if (!getFlag("wearingChastity"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:674` `getFlag` - if (!getFlag("wearingChastity"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:692` `getFlag` - if (getFlag("vibrator") \|\| getTFlag("vibe"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:704` `getFlag` - if (getFlag("vibrator") \|\| getTFlag("vibe"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:727` `getFlag` - if (getFlag("vibrator") \|\| getTFlag("vibe"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:735` `getFlag` - if (!getTFlag("LOBScript") && getFlag("LOB") && getFlagTimeDays("LOB") >= 1)
+- `src/OpenEdge/OpenEdge/MainWindow.cs:746` `getFlag` - public bool getFlag(string flagName)
+- `src/OpenEdge/OpenEdge/MainWindow.cs:796` `setVar` - public void setVar(string name, string value, int retryAttempts = 0)
+- `src/OpenEdge/OpenEdge/MainWindow.cs:812` `setVar` - setVar(name, value, retryAttempts++);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:830` `getVar` - public string getVar(string name, string errorValue = "0")
+- `src/OpenEdge/OpenEdge/MainWindow.cs:840` `getVar` - return getVar(name, errorValue);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:873` `getFlag` - return getFlag(key);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:946` `getVar` - return int.TryParse(getVar(key, defaultValue.ToString()), out int result) ? result : defaultValue;
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1240` `getFlag` - return !getFlag("wearingChastity") && int.Parse(getVar("totalTribute")) > 10;
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1240` `getVar` - return !getFlag("wearingChastity") && int.Parse(getVar("totalTribute")) > 10;
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1248` `getFlag` - return !getFlag("wearingChastity");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1250` `getFlag` - return !getFlag("wearingChastity") && atLeastXMedia("Cuckold", 1);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1275` `setVar` - setVar("pronoun", pronouns.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1345` `setFlag` - currentScript.setFlag("bluetoothPlug", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1357` `setFlag` - currentScript.setFlag("bluetoothVibe", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1369` `setFlag` - currentScript.setFlag("bluetoothOna", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1703` `getVar` - mood = int.Parse(getVar("mood", "50"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1748` `getFlag` - if (getFlag("break"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1753` `setFlag` - currentScript.setFlag("closeWithoutSession", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1760` `getFlag` - else if (!getFlag("factualFirst"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1786` `setFlag` - currentScript.setFlag("closeWithoutSession", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1791` `setFlag` - currentScript.setFlag("leftEarly", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1793` `getFlag` - if (getFlag("wearingChastity"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1795` `getVar` - int num = int.Parse(getVar("chastityTime"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1801` `setFlag` - currentScript.setFlag("chastityDate", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1824` `setFlag` - currentScript.setFlag("hasVideo", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1828` `getFlag` - if (getFlag("shortSession"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1833` `getFlag` - else if (getFlag("longSession"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1846` `getFlag` - if (getFlag("sessionLengthMod"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1848` `getVar` - double num2 = int.Parse(getVar("sessionLengthMod"), CultureInfo.InvariantCulture);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1857` `getVar` - sessionLength = int.Parse(getVar("sessionLength", "600")) + sessionLength;
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1858` `getVar` - setVar("sessionLength", (sessionLength + int.Parse(getVar("extraTime"))).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1858` `setVar` - setVar("sessionLength", (sessionLength + int.Parse(getVar("extraTime"))).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1863` `setVar` - setVar("extraTime", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1864` `getVar` - setVar("mood", (int.Parse(getVar("mood", "10")) / 2 + 25).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1864` `setVar` - setVar("mood", (int.Parse(getVar("mood", "10")) / 2 + 25).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1868` `getVar` - sessionLength = int.Parse(getVar("sessionLength", "600"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1878` `getVar` - if (getVar("strokeAmount") != "")
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1880` `getVar` - strokeAmount += int.Parse(getVar("strokeAmount"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1882` `getVar` - if (getVar("edgesDone") != "")
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1884` `getVar` - edgesDone += int.Parse(getVar("edgesDone"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1886` `getVar` - if (getVar("totalTimeOnEdge") != "")
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1888` `getVar` - totalTimeOnEdge += int.Parse(getVar("totalTimeOnEdge"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:1890` `setVar` - setVar("sessionLength", sessionLength.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2098` `getFlag` - if (getFlag("noVideo") && getFlagTimeDays("noVideo") >= int.Parse(getVar("noVideoValue")))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2098` `getVar` - if (getFlag("noVideo") && getFlagTimeDays("noVideo") >= int.Parse(getVar("noVideoValue")))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2100` `setVar` - setVar("noVideoValue", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2103` `getFlag` - if (secWindow.videoPaths.Count > 4 && !getFlag("noVideo"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2109` `getVar` - num3 += (double)int.Parse(getVar("videoMod"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2119` `getFlag` - if (secWindow.gifPaths.Count > 4 && !getFlag("noVideo"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2401` `setFlag` - currentScript.setFlag("orgasmDenied", temp: true);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2875` `setVar` - setVar("sessionLength", 0.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2882` `getVar` - int num = (int)((double)strokeAmount * 0.02 + (double)(daysSinceFull * 6) + (double)edgesDone * 0.2 + (double)totalTimeOnEdge * 0.05 + (double)(int.Parse(getVar("Denied")) * 4) - (double)(100 - mood) * difficulty);
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2892` `getFlag` - if (getFlag("debt") && num2 >= 80)
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2895` `setVar` - setVar("strokeAmount", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2897` `setVar` - setVar("edgesDone", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2899` `setVar` - setVar("totalTimeOnEdge", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2903` `getFlag` - if (getFlag("note"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2950` `getVar` - int num2 = int.Parse(currentScript.getVar("strokeMod"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2969` `setVar` - setVar("fullOrgasm", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2970` `setVar` - setVar("denied", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2977` `setVar` - setVar("strokeAmount", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2979` `setVar` - setVar("edgesDone", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2981` `setVar` - setVar("totalTimeOnEdge", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:2994` `setVar` - setVar("denied", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3001` `setVar` - setVar("strokeAmount", (strokeAmount / 2).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3003` `setVar` - setVar("edgesDone", (edgesDone / 2).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3005` `setVar` - setVar("totalTimeOnEdge", (totalTimeOnEdge / 2).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3011` `setVar` - setVar("state", "-1");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3014` `getFlag` - if (!getFlag("wearingChastity"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3034` `setVar` - setVar("state", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3041` `getFlag` - if (getFlag("vibrator") \|\| getTFlag("vibe"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3157` `setVar` - setVar("breathHoldProgress", (stopwatch.Elapsed.TotalSeconds / (double)holdLength).ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3263` `setVar` - setVar("bpm", bpm.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3372` `getFlag` - else if (getFlag("wearingChastity"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3394` `getFlag` - if (!getFlag("wearingChastity") \|\| currentState == "anal" \|\| currentState == "cbt" \|\| currentState == "analExtreme" \|\| currentState == "cbtExtreme")
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3426` `getVar` - int num2 = 2000 * int.Parse(getVar("videoMod"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3500` `getFlag` - if (!getTFlag("vibe") && !getFlag("wearingChastity"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3502` `setVar` - setVar("state", "0");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3557` `setVar` - setVar("state", "1");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3562` `setVar` - setVar("state", "1");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3567` `setVar` - setVar("state", "2");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3578` `setVar` - setVar("state", "3");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3586` `setVar` - setVar("state", "2");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3605` `getFlag` - if (getFlag("wearingChastity"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3633` `getVar` - totalCurrency.Text = int.Parse(getVar("favor")).ToString() ?? "";
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3635` `getVar` - return int.Parse(getVar("favor"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3640` `getVar` - int oldFavor = int.Parse(getVar("favor"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3641` `setVar` - setVar("favor", favorVal.ToString() ?? "");
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3892` `getFlag` - SessionTraceLogger.Info("hypnosis-strobe", "tick=" + even + " generation=" + generation + " subliminal=" + subliminal + " strobeFlag=" + getFlag("strobe"));
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3923` `getFlag` - if (!getFlag("strobe"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3935` `getFlag` - if (getFlag("strobe"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3964` `getFlag` - if (!getFlag("strobe"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:3976` `getFlag` - if (getFlag("strobe"))
+- `src/OpenEdge/OpenEdge/MainWindow.cs:4472` `setVar` - setVar(askedForUserInput, userText.Text);

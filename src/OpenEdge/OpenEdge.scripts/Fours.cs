@@ -1,0 +1,15 @@
+namespace OpenEdge.scripts;
+
+internal class Fours : InteruptTalk
+{
+	public Fours(MainWindow mw, TalkBaseClass homeTalk)
+		: base(mw, homeTalk)
+	{
+		_ = new string[18]
+		{
+			"ISFLAGT:fours GOTO:end", "STOPSTROKING:", "COMMAND: @fours", "[@yes]", "FLAGT:fours GOTO:cont1,cont2,cont3,cont4", "(cont1)", "good pet", "GOTO:end", "(cont2)", "that's better",
+			"GOTO:end", "(cont3)", "doesn't that make you feel so much more submissive?", "GOTO:end", "(cont4)", "stay there @pup", "GOTO:end", "(end)"
+		};
+		allText = mw.lr.getScript("fours");
+	}
+}

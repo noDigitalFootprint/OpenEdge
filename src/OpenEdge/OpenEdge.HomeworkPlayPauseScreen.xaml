@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Grid x:Class="OpenEdge.HomeworkPlayPauseScreen" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:OpenEdge">
+  <Grid>
+    <Panel.Background>
+      <ImageBrush ImageSource="/background.png" Stretch="UniformToFill" />
+    </Panel.Background>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+      <ColumnDefinition />
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+    </Grid.RowDefinitions>
+    <TextBlock Name="titleText" FontFamily="Times New Roman" TextWrapping="Wrap" Text="Add Images" Grid.ColumnSpan="3" FontSize="32" TextAlignment="Center" Foreground="#FFFFFFFF" Margin="20" />
+    <TextBlock Name="descriptionText" FontFamily="Times New Roman" Grid.ColumnSpan="3" Text="add at least 20 images to the imagefolder" Grid.Row="1" Margin="5" TextAlignment="Center" TextWrapping="Wrap" FontSize="18" Foreground="#FFFFFFFF" />
+    <TextBlock Name="timeText" FontFamily="Times New Roman" TextWrapping="Wrap" Text="complete within X Hours" Grid.Column="0" TextAlignment="Center" Grid.Row="1" Grid.ColumnSpan="3" FontSize="18" Foreground="#FFFFFFFF" VerticalAlignment="Bottom" Margin="10" />
+    <Grid Name="progressbarGrid" Visibility="Visible" Column="0" Row="1" ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+      <Rectangle Name="progressbarBg" Fill="#53156b" HorizontalAlignment="Left" Width="500" Height="40" />
+      <Rectangle Name="progressBarRect" Fill="#c61a68" HorizontalAlignment="Left" Width="160" />
+      <TextBlock Name="timeRemainingOnTask" Foreground="#FFFFFFFF" VerticalAlignment="Center" FontSize="20" Text="15:03" HorizontalAlignment="Center" />
+    </Grid>
+    <Rectangle Name="rectWithDetect" Grid.ColumnSpan="3" Grid.RowSpan="3" StrokeThickness="3" Fill="#00FFFFFF">
+      <Shape.Stroke>
+        <LinearGradientBrush EndPoint="0,1" StartPoint="1,0">
+          <GradientStop Color="#FF130613" Offset="1" />
+          <GradientStop Color="#FFF53FFF" Offset="0" />
+        </LinearGradientBrush>
+      </Shape.Stroke>
+    </Rectangle>
+    <StackPanel Grid.Column="2" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+      <Button Height="48" Width="100" Margin="10" Click="DiscardBtn" />
+      <Grid Name="discardGrid">
+        <Image Source="/heartbg.png" Height="48" />
+        <TextBlock Name="costOfDiscard" Text="-5" FontSize="22" Foreground="#FF8B0000" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,5" />
+      </Grid>
+    </StackPanel>
+    <Image Grid.Column="2" Grid.Row="2" Source="/garbage.png" IsHitTestVisible="False" Height="48" VerticalAlignment="Top" Margin="35,10,35,10" HorizontalAlignment="Left" />
+    <Button Name="closePopUp" Content="X" Grid.Row="0" Grid.Column="2" FontSize="48" Background="#007E2882" VerticalAlignment="Top" HorizontalAlignment="Right" BorderBrush="#FFFFFFFF" Foreground="#FFFFFFFF" Height="60" Click="Button_ClickX" />
+    <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+      <Grid Name="pauseGrid">
+        <Image Source="/heartbg.png" Height="48" />
+        <TextBlock Name="costOfPause" Text="-1" FontSize="22" Foreground="#FF8B0000" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,5" />
+      </Grid>
+      <Button Height="48" Width="100" Margin="10" Click="PlayBtn" />
+    </StackPanel>
+    <Button Name="folderBtn" Visibility="Collapsed" Height="48" Width="100" Content="Folder" FontFamily="Times New Roman" Margin="10" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" Click="FolderBtn" />
+      <Image Name="playPauseImg" Grid.Column="0" Grid.Row="2" Source="/playgreen.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="48" IsHitTestVisible="False" Margin="35,10,35,10" />
+    <Grid Name="completeScreen" ColumnSpan="3" RowSpan="3" Visibility="Collapsed" IsHitTestVisible="True" Background="#00FFFFFF">
+      <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Complete" FontSize="124" FontFamily="Times New Roman" Foreground="#FF38B501" RenderTransformOrigin="0.5,0.5">
+        <UIElement.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform />
+            <SkewTransform />
+            <RotateTransform Angle="32.0" />
+            <TranslateTransform />
+          </TransformGroup>
+        </UIElement.RenderTransform>
+      </TextBlock>
+    </Grid>
+  </Grid>
+</Grid>

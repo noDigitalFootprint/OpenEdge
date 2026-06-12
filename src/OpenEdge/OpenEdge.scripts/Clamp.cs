@@ -1,0 +1,15 @@
+namespace OpenEdge.scripts;
+
+internal class Clamp : InteruptTalk
+{
+	public Clamp(MainWindow mw, TalkBaseClass homeTalk)
+		: base(mw, homeTalk)
+	{
+		_ = new string[19]
+		{
+			"ISFLAGT:clothesPins GOTO:end", "STOPSTROKING:", "COMMAND: @clamp", "[@yes]", "FLAGT:clothesPins GOTO:cont1,cont2,cont3,cont4", "(cont1)", "they shouldn't hurt too much at the start", "but don't worry, they will hurt more and more as time goes on", "GOTO:end", "(cont2)",
+			"you're getting your sensitive nipples teased, lucky you", "GOTO:end", "(cont3)", "lets make those nipples poke out", "GOTO:end", "(cont4)", "you look so good like this", "GOTO:end", "(end)"
+		};
+		allText = mw.lr.getScript("clamp");
+	}
+}

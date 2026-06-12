@@ -1,0 +1,17 @@
+# Build output
+bin/
+obj/
+runtime/local/
+
+# Local IDE/user state
+.vs/
+.vscode/
+*.user
+*.suo
+*.lscache
+*.cache
+
+# Generated or local-only artifacts
+.codegraph/
+vendor/
+LOB.exe
