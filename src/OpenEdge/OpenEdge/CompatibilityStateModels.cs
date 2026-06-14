@@ -33,6 +33,19 @@ public sealed class CompatibilityTransferPackage
 	public MediaIdentityStore MediaIdentityStore { get; set; } = new MediaIdentityStore();
 }
 
+public sealed class EverEdgeImportResult
+{
+	public string Report { get; set; } = "";
+
+	public string DataDirectory { get; set; } = "";
+
+	public string LegacyTagsFile { get; set; } = "";
+
+	public string ImagesDirectory { get; set; } = "";
+
+	public string VideosDirectory { get; set; } = "";
+}
+
 public sealed class CompatibilityStateSummary
 {
 	public int PersistentEntryCount { get; init; }

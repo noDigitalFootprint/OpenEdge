@@ -212,7 +212,7 @@ public partial class Page1 : Page, IComponentConnector
 	private void MigrationTools_Click(object sender, RoutedEventArgs e)
 	{
 		playClickSound();
-		compatibilityToolsPage = new CompatibilityToolsPage(compatibilityStateService, settingsRegistry);
+		compatibilityToolsPage = new CompatibilityToolsPage(compatibilityStateService, settingsRegistry, imageTagger.MediaCatalog);
 		base.NavigationService.Navigate(compatibilityToolsPage);
 		saveOptions();
 	}
@@ -220,7 +220,7 @@ public partial class Page1 : Page, IComponentConnector
 	public void OpenMigrationTools(NavigationService navigationService)
 	{
 		playClickSound();
-		compatibilityToolsPage = new CompatibilityToolsPage(compatibilityStateService, settingsRegistry);
+		compatibilityToolsPage = new CompatibilityToolsPage(compatibilityStateService, settingsRegistry, imageTagger.MediaCatalog);
 		navigationService?.Navigate(compatibilityToolsPage);
 		saveOptions();
 	}

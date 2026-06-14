@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Text.Json;
 
 namespace OpenEdge;
@@ -73,6 +74,71 @@ public sealed class CompatibilityStateService
 		}
 	}
 
+	public EverEdgeImportResult ImportEverEdgeData(string selectedPath, bool createBackup)
+	{
+		lock (gate)
+		{
+			EnsureInitialized();
+			string dataDirectory = ResolveEverEdgeDataDirectory(selectedPath);
+			if (string.IsNullOrWhiteSpace(dataDirectory))
+			{
+				throw new InvalidOperationException("Select an EverEdge folder that contains a Data folder, or select the Data folder itself.");
+			}
+			if (createBackup)
+			{
+				CreateBackupSnapshot();
+			}
+			Directory.CreateDirectory(RuntimePaths.FlagsDir);
+			List<string> copiedFiles = new List<string>();
+			string legacyTagsFile = Path.Combine(dataDirectory, "tags.txt");
+			foreach (string sourceFile in Directory.GetFiles(dataDirectory, "*.txt", SearchOption.TopDirectoryOnly))
+			{
+				if (string.Equals(Path.GetFileName(sourceFile), "tags.txt", StringComparison.OrdinalIgnoreCase))
+				{
+					continue;
+				}
+				string destinationPath = Path.Combine(RuntimePaths.RuntimeRoot, Path.GetFileName(sourceFile));
+				File.Copy(sourceFile, destinationPath, overwrite: true);
+				copiedFiles.Add(Path.GetFileName(sourceFile));
+			}
+			string sourceFlagsDirectory = Path.Combine(dataDirectory, "flags");
+			int copiedFlagCount = 0;
+			if (Directory.Exists(sourceFlagsDirectory))
+			{
+				foreach (string sourceFile in Directory.GetFiles(sourceFlagsDirectory, "*.txt", SearchOption.TopDirectoryOnly))
+				{
+					File.Copy(sourceFile, Path.Combine(RuntimePaths.FlagsDir, Path.GetFileName(sourceFile)), overwrite: true);
+					copiedFlagCount++;
+				}
+			}
+			state = BuildStateFromLegacyFiles();
+			SaveStateToDisk();
+			StringBuilder report = new StringBuilder();
+			report.AppendLine("EverEdge data imported successfully.");
+			report.AppendLine();
+			report.AppendLine("Source: " + dataDirectory);
+			report.AppendLine("Text files imported: " + copiedFiles.Count);
+			foreach (string copiedFile in copiedFiles.OrderBy((string item) => item, StringComparer.OrdinalIgnoreCase))
+			{
+				report.AppendLine("- " + copiedFile);
+			}
+			report.AppendLine("Flag files imported: " + copiedFlagCount);
+			report.AppendLine("Compatibility entries rebuilt: " + state.PersistentEntries.Count);
+			if (File.Exists(legacyTagsFile))
+			{
+				report.AppendLine("Legacy tags queued for canonical media import: " + legacyTagsFile);
+			}
+			return new EverEdgeImportResult
+			{
+				Report = report.ToString(),
+				DataDirectory = dataDirectory,
+				LegacyTagsFile = legacyTagsFile,
+				ImagesDirectory = Path.Combine(dataDirectory, "images"),
+				VideosDirectory = Path.Combine(dataDirectory, "videos")
+			};
+		}
+	}
+
 	public void ExportTransferPackage(string filePath, bool createBackup)
 	{
 		lock (gate)
@@ -120,10 +186,27 @@ public sealed class CompatibilityStateService
 			MirrorPersistentEntriesToLegacyFiles();
 			WriteOptionalText(RuntimePaths.OptionsFile, compatibilityTransferPackage.OptionsContent);
 			WriteOptionalLines(RuntimePaths.TasksFile, compatibilityTransferPackage.TaskLines);
-			WriteOptionalLines(RuntimePaths.TagsFile, compatibilityTransferPackage.LegacyTagLines);
 			WriteOptionalJson(sourcesFilePath, compatibilityTransferPackage.MediaSources);
 			WriteOptionalJson(identityFilePath, compatibilityTransferPackage.MediaIdentityStore);
 		}
+	}
+
+	private static string ResolveEverEdgeDataDirectory(string selectedPath)
+	{
+		if (string.IsNullOrWhiteSpace(selectedPath) || !Directory.Exists(selectedPath))
+		{
+			return null;
+		}
+		if (Directory.Exists(Path.Combine(selectedPath, "flags")) || File.Exists(Path.Combine(selectedPath, "options.txt")) || File.Exists(Path.Combine(selectedPath, "tasks.txt")) || File.Exists(Path.Combine(selectedPath, "tags.txt")))
+		{
+			return selectedPath;
+		}
+		string childDataDirectory = Path.Combine(selectedPath, "Data");
+		if (Directory.Exists(childDataDirectory))
+		{
+			return childDataDirectory;
+		}
+		return null;
 	}
 
 	public bool PersistentEntryExists(string name)
