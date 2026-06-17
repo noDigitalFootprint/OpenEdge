@@ -79,6 +79,7 @@ public partial class Page1 : Page, IComponentConnector
 		this.bt = bt;
 		loadOptions();
 		spa = span;
+		gotEnoughImages();
 	}
 
 	public void setHomeWorkScreen(HomeworkScreen homeworkScreen)
@@ -375,6 +376,11 @@ public partial class Page1 : Page, IComponentConnector
 	public void loadOptions()
 	{
 		bool flag = false;
+		if (!File.Exists(RuntimePaths.OptionsFile))
+		{
+			SessionTraceLogger.Info("first-run", "options.txt missing; writing default options");
+			saveOptions();
+		}
 		try
 		{
 			string text;
@@ -428,8 +434,9 @@ public partial class Page1 : Page, IComponentConnector
 			ttsVolume.Value = double.Parse(loadDataString("ttsVolumeValue", array2));
 			ttsVolumeValue = ttsVolume.Value;
 		}
-		catch (Exception)
+		catch (Exception ex)
 		{
+			SessionTraceLogger.Error("options", "Failed to load options.txt; keeping in-memory defaults", ex);
 		}
 		if (!flag && settingsRegistry.GetRawValue("pronoun") != null)
 		{
