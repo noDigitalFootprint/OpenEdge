@@ -2648,6 +2648,8 @@ public partial class MainWindow : Page, IComponentConnector
 	{
 		if (!isSettingEnabled("edgeHold"))
 		{
+			SessionTraceLogger.Info("edgehold", "edgeHold disabled; falling back to normal edge");
+			methodEdge();
 			return;
 		}
 		currentScript.talkLocked = true;
@@ -2770,6 +2772,8 @@ public partial class MainWindow : Page, IComponentConnector
 	{
 		if (!isSettingEnabled("edgeHold"))
 		{
+			SessionTraceLogger.Info("edgehold", "timed edgeHold disabled; falling back to normal edge from " + s);
+			methodEdge();
 			return;
 		}
 		string[] array = s.Split("EDGEHOLD:");

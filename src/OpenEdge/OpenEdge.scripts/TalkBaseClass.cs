@@ -66,15 +66,17 @@ public class TalkBaseClass
 			{
 				location++;
 			}
+			bool outputCameFromThisLine = true;
 			if (!hasContent && sentence == "")
 			{
+				outputCameFromThisLine = false;
 				sentence = mw.currentScript.Talk();
 			}
 			if (sentence == "EMPTY")
 			{
 				sentence = "";
 			}
-			if (!string.IsNullOrWhiteSpace(sentence))
+			if (outputCameFromThisLine && !string.IsNullOrWhiteSpace(sentence))
 			{
 				SessionTraceLogger.Info("script-output", GetType().Name + "[" + (location - 1) + "] text=" + sentence);
 			}
@@ -1408,13 +1410,17 @@ public class TalkBaseClass
 		flagName = flagName.Replace("DELFLAG:", "");
 		flagName = flagName.Replace("DELFLAGT:", "");
 		flagName = flagName.Trim();
-		SessionTraceLogger.Info("state-write", "delete flag temp=" + temp + " name=" + flagName);
 		if (temp)
 		{
+			if (mw.getTFlag(flagName))
+			{
+				SessionTraceLogger.Info("state-write", "delete flag temp=" + temp + " name=" + flagName);
+			}
 			mw.deleteTFlag(flagName);
 		}
 		else
 		{
+			SessionTraceLogger.Info("state-write", "delete flag temp=" + temp + " name=" + flagName);
 			mw.deletePersistentFlag(flagName);
 		}
 	}
