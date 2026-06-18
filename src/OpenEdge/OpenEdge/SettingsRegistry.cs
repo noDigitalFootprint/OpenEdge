@@ -249,6 +249,7 @@ public sealed class SettingsRegistry
 		new SettingDefinition { Key = "plug", Label = "Plug", Kind = SettingKind.Toggle, StructuredParentKey = "anal", LegacyEnabledFlag = "plug", LegacyDisabledFlag = "plugNo" },
 		new SettingDefinition { Key = "dildo", Label = "Dildo", Kind = SettingKind.Toggle, StructuredParentKey = "anal", LegacyEnabledFlag = "dildo", LegacyDisabledFlag = "dildoNo" },
 		new SettingDefinition { Key = "waterLube", Label = "Water Lube", Kind = SettingKind.Toggle, StructuredParentKey = "anal", LegacyEnabledFlag = "waterLube", LegacyDisabledFlag = "waterLubeNo" },
+		new SettingDefinition { Key = "prostateOrgasm", Label = "Prostate Orgasm", Kind = SettingKind.Toggle, StructuredParentKey = "anal", LegacyEnabledFlag = "prostateOrgasm", LegacyDisabledFlag = "prostateOrgasmNo" },
 		new SettingDefinition { Key = "collar", Label = "Collar", Kind = SettingKind.Toggle, StructuredParentKey = "petPlay", LegacyEnabledFlag = "collar", LegacyDisabledFlag = "collarNo" },
 		new SettingDefinition { Key = "treats", Label = "Treats", Kind = SettingKind.Toggle, StructuredParentKey = "petPlay", LegacyEnabledFlag = "treats", LegacyDisabledFlag = "treatsNo" },
 		new SettingDefinition { Key = "pup", Label = "Pup Persona", Kind = SettingKind.Toggle, StructuredParentKey = "petPlay", LegacyEnabledFlag = "pup", LegacyDisabledFlag = "pupNo" },
