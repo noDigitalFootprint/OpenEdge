@@ -49,6 +49,9 @@ internal static class Program
 		Run("line selection bag avoids repeats before exhaustion", LineSelectionBagAvoidsRepeatsBeforeExhaustion);
 		Run("line selection bag avoids immediate reshuffle repeat", LineSelectionBagAvoidsImmediateReshuffleRepeat);
 		Run("clear session state preserves progression", ClearSessionStatePreservesProgression);
+		Run("session length under cap consumes bank and clears it", SessionLengthUnderCapConsumesBankAndClearsIt);
+		Run("session length over cap banks the overflow", SessionLengthOverCapBanksOverflow);
+		Run("session length banked overflow carries into next session", SessionLengthBankedOverflowCarriesIntoNextSession);
 
 		if (Failures.Count == 0)
 		{
@@ -1062,6 +1065,40 @@ internal static class Program
 		{
 			throw new InvalidOperationException(message + " (" + path + ")");
 		}
+	}
+
+	private static void SessionLengthUnderCapConsumesBankAndClearsIt()
+	{
+		// owed (from an unfinished session) + new roll + banked extraTime, all under the cap.
+		SessionLengthCalculator.Result result = SessionLengthCalculator.CarryOverAndBank(1500, 1200, 300);
+		AssertEqual(3000, result.ActiveLength, "active session should be the sum when under the cap");
+		AssertEqual(0, result.BankedExtraTime, "bank should be cleared when nothing overflows");
+	}
+
+	private static void SessionLengthOverCapBanksOverflow()
+	{
+		// The repro: large owed remainder (6612) + a fresh roll (1688) = 8300 > 7200 cap.
+		SessionLengthCalculator.Result result = SessionLengthCalculator.CarryOverAndBank(6612, 1688, 0);
+		AssertEqual(SessionLengthCalculator.MaxSessionLength, result.ActiveLength, "active session should clamp to the cap");
+		AssertEqual(1100, result.BankedExtraTime, "time beyond the cap should be banked, not discarded");
+
+		// Exactly at the cap banks nothing.
+		SessionLengthCalculator.Result exact = SessionLengthCalculator.CarryOverAndBank(7000, 200, 0);
+		AssertEqual(SessionLengthCalculator.MaxSessionLength, exact.ActiveLength, "exactly the cap should run the full cap");
+		AssertEqual(0, exact.BankedExtraTime, "exactly the cap should bank nothing");
+	}
+
+	private static void SessionLengthBankedOverflowCarriesIntoNextSession()
+	{
+		// Session 1 overflows and banks the remainder.
+		SessionLengthCalculator.Result first = SessionLengthCalculator.CarryOverAndBank(6612, 1688, 0);
+		AssertEqual(1100, first.BankedExtraTime, "session 1 should bank the overflow");
+
+		// Session 2 is completed (no owed remainder) but the bank from session 1 is applied
+		// on top of the new roll, and the bank is consumed (cleared) afterwards.
+		SessionLengthCalculator.Result second = SessionLengthCalculator.CarryOverAndBank(0, 1500, first.BankedExtraTime);
+		AssertEqual(2600, second.ActiveLength, "banked time should extend the next session");
+		AssertEqual(0, second.BankedExtraTime, "the bank should be consumed once it fits under the cap");
 	}
 
 	private static void AssertTrue(bool condition, string message)

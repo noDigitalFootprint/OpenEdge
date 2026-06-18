@@ -1914,13 +1914,12 @@ public partial class MainWindow : Page, IComponentConnector
 		}
 		if (!lostConnection && !getTFlag("closeWithoutSession"))
 		{
-			sessionLength = int.Parse(getVar("sessionLength", "600")) + sessionLength;
-			setVar("sessionLength", (sessionLength + int.Parse(getVar("extraTime"))).ToString() ?? "");
-			if (sessionLength > 7200)
-			{
-				sessionLength = 7200;
-			}
-			setVar("extraTime", "0");
+			SessionLengthCalculator.Result carryOver = SessionLengthCalculator.CarryOverAndBank(
+				int.Parse(getVar("sessionLength", "600")), sessionLength, int.Parse(getVar("extraTime", "0")));
+			sessionLength = carryOver.ActiveLength;
+			// Bank any time beyond the cap so it carries into the next session
+			// instead of being silently discarded.
+			setVar("extraTime", carryOver.BankedExtraTime.ToString() ?? "");
 			setVar("mood", (int.Parse(getVar("mood", "10")) / 2 + 25).ToString() ?? "");
 		}
 		else if (lostConnection)

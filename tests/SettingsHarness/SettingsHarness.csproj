@@ -18,6 +18,7 @@
     <Compile Include="..\..\src\OpenEdge\OpenEdge\ModModels.cs" Link="OpenEdge\ModModels.cs" />
     <Compile Include="..\..\src\OpenEdge\OpenEdge\ModService.cs" Link="OpenEdge\ModService.cs" />
     <Compile Include="..\..\src\OpenEdge\OpenEdge\SettingsRegistry.cs" Link="OpenEdge\SettingsRegistry.cs" />
+    <Compile Include="..\..\src\OpenEdge\OpenEdge\SessionLengthCalculator.cs" Link="OpenEdge\SessionLengthCalculator.cs" />
     <Compile Include="..\..\src\OpenEdge\OpenEdge\LineSelectionBag.cs" Link="OpenEdge\LineSelectionBag.cs" />
     <Compile Include="..\..\src\OpenEdge\OpenEdge\ScriptSettingPredicateEvaluator.cs" Link="OpenEdge\ScriptSettingPredicateEvaluator.cs" />
     <Compile Include="..\..\src\OpenEdge\OpenEdge\LegacyStateAdapter.cs" Link="OpenEdge\LegacyStateAdapter.cs" />
