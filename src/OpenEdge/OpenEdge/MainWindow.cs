@@ -1254,6 +1254,8 @@ public partial class MainWindow : Page, IComponentConnector
 		case "canRemove":
 		case "censorship":
 			return true;
+		case "prostateOrgasm":
+			return isSettingEnabled("anal");
 		case "hands":
 			return atLeastXMedia("Hands", 1);
 		case "gay":
@@ -2620,10 +2622,16 @@ public partial class MainWindow : Page, IComponentConnector
 		scriptPaused = true;
 		Task.Delay(timeBeforeBeat).ContinueWith(delegate
 		{
-			setTPText(lr.getVocab("edge"));
-			currentScript.talkLocked = false;
-			specialButtons("I'm on the edge", 1);
-			specialButtons("I came", 3);
+			try
+			{
+				setTPText(lr.getVocab("edge"));
+				specialButtons("I'm on the edge", 1);
+				specialButtons("I came", 3);
+			}
+			finally
+			{
+				currentScript.talkLocked = false;
+			}
 		});
 	}
 
@@ -2647,10 +2655,16 @@ public partial class MainWindow : Page, IComponentConnector
 		scriptPaused = true;
 		Task.Delay(timeBeforeBeat).ContinueWith(delegate
 		{
-			setTPText(lr.getVocab("edge"));
-			currentScript.talkLocked = false;
-			specialButtons("I'm on the edge", 1);
-			specialButtons("I came", 3);
+			try
+			{
+				setTPText(lr.getVocab("edge"));
+				specialButtons("I'm on the edge", 1);
+				specialButtons("I came", 3);
+			}
+			finally
+			{
+				currentScript.talkLocked = false;
+			}
 		});
 	}
 
@@ -2667,12 +2681,24 @@ public partial class MainWindow : Page, IComponentConnector
 		setTPText(lr.getVocab("edgeStop"));
 		Task.Delay(2000).ContinueWith(delegate
 		{
-			setTPText(lr.getVocab("break"));
-			Task.Delay(6000).ContinueWith(delegate
+			try
 			{
-				removeSpecialButtons("I came", 3);
-				scriptPaused = false;
-			});
+				setTPText(lr.getVocab("break"));
+			}
+			finally
+			{
+				Task.Delay(6000).ContinueWith(delegate
+				{
+					try
+					{
+						removeSpecialButtons("I came", 3);
+					}
+					finally
+					{
+						scriptPaused = false;
+					}
+				});
+			}
 		});
 	}
 
@@ -2957,12 +2983,34 @@ public partial class MainWindow : Page, IComponentConnector
 			}
 			num2 = 1;
 		}
+		if (isSettingEnabled("prostateOrgasm") && getTFlag("anal"))
+		{
+			int analBuildup = (int)(edgesDone * 3.0 + totalTimeOnEdge * 0.1 + 30.0);
+			if (analBuildup > 75)
+			{
+				analBuildup = 75;
+			}
+			if (random.Next(100) < analBuildup && !getFlag("note"))
+			{
+				methodAnalOrgasm(handsFree: true);
+				currentScript = new OrgasmDecideAnalOrgasm(this, currentScript);
+				return;
+			}
+		}
 		if (num2 >= 100)
 		{
 			if (num2 >= 120)
 			{
-				methodCumming();
-				currentScript = new OrgasmDecideCum(this, currentScript);
+				if (isSettingEnabled("prostateOrgasm") && getTFlag("anal") && !isSettingEnabled("wearingChastity"))
+				{
+					methodAnalOrgasm(handsFree: false);
+					currentScript = new OrgasmDecideAnalOrgasm(this, currentScript);
+				}
+				else
+				{
+					methodCumming();
+					currentScript = new OrgasmDecideCum(this, currentScript);
+				}
 			}
 			else
 			{
@@ -3051,6 +3099,25 @@ public partial class MainWindow : Page, IComponentConnector
 		edgesDone /= 2;
 		setVar("totalTimeOnEdge", (totalTimeOnEdge / 2).ToString() ?? "");
 		totalTimeOnEdge /= 2;
+	}
+
+	public void methodAnalOrgasm(bool handsFree)
+	{
+		stroking = true;
+		setNewSpeed(maxBpm);
+		scriptPaused = true;
+		if (handsFree)
+		{
+			currentScript.setFlag("prostateHandsFree", temp: true);
+			currentState = "prostateOrgasm";
+		}
+		else
+		{
+			currentScript.deleteFlag("prostateHandsFree", temp: true);
+			currentState = "cum";
+		}
+		setTPText(lr.getVocab("analOrgasm"));
+		cumButtons();
 	}
 
 	private void strokeLink()
@@ -3421,7 +3488,7 @@ public partial class MainWindow : Page, IComponentConnector
 			{
 				try
 				{
-					if (currentState == "anal" || currentState == "cbt" || currentState == "analExtreme" || currentState == "cbtExtreme")
+					if (currentState == "anal" || currentState == "cbt" || currentState == "analExtreme" || currentState == "cbtExtreme" || currentState == "prostateOrgasm")
 				{
 					if (wantsBeatBar)
 					{
@@ -3452,7 +3519,7 @@ public partial class MainWindow : Page, IComponentConnector
 				{
 					sendAllTypes(ona, 0.0);
 				}
-				if (!isSettingEnabled("wearingChastity") || currentState == "anal" || currentState == "cbt" || currentState == "analExtreme" || currentState == "cbtExtreme")
+				if (!isSettingEnabled("wearingChastity") || currentState == "anal" || currentState == "cbt" || currentState == "analExtreme" || currentState == "cbtExtreme" || currentState == "prostateOrgasm")
 				{
 					if (stroking && !subliminal)
 					{
@@ -3667,6 +3734,9 @@ public partial class MainWindow : Page, IComponentConnector
 				oD();
 				break;
 			case "cum":
+				currentState = "module";
+				break;
+			case "prostateOrgasm":
 				currentState = "module";
 				break;
 			case "ruin":

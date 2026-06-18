@@ -251,6 +251,11 @@ internal class AskFlag : TalkBaseClass
 				"you see, I'm not going to deny your dick", "I'm going to deny your eyes", "you've been blessed to live in a time where porn is everywhere", "that doesn't mean you'll get to see it though", "ASK:do you deserve to see all these sexy images?", "[yes @missTitle]", "then you'd best keep me happy or I'll take them from you", "FLAG:censorshipNo", "[no @missTitle]", "you're such a good @boy for me",
 				"and don't worry, as long as you keep my happy you'll barely notice the difference", "but one foot out of line and you'll miss what you've given up", "FLAG:censorship"
 			}, 
+			"prostateOrgasm" => new string[]
+			{
+				"STOPSTROKING:", "I've been eyeing that ass of yours @subTitle", "there's a deeper kind of pleasure I want to pull out of you", "an orgasm milked straight from your prostate, with no hands at all", "ASK: did you ever have a prostate orgasm?", "[yes @missTitle]", "then you already know how good that deep release can feel", "I'll be chasing it out of you when I see fit", "FLAG:prostateOrgasm", "GOTO:end",
+				"[not yet, but I want to]", "good @boy, I'll train that hole until it can cum all on its own", "FLAG:prostateOrgasm", "GOTO:end", "[no, and I'd rather not]", "then I won't push a hands-free orgasm on you", "FLAG:prostateOrgasmNo", "(end)", ""
+			},
 			_ => new string[0], 
 		};
 	}

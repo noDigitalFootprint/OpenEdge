@@ -1,0 +1,70 @@
+ISFLAGT:prostateHandsFree
+{
+keep working that prostate, you're so close now
+SPEED:300
+don't you dare touch your @cock, this orgasm is going to be hands-free
+ride the beat and milk it out of yourself
+SPEED:200
+feel it building from deep inside
+SPEED:100
+let it wash over you, just from your hole
+SPEED:30
+good @boy, ease off slowly now
+STOPSTROKING:
+breathe, let yourself come down from it
+that is what it feels like to be owned all the way through
+till next time @subTitle
+}
+ISFLAGT:prostateHandsFree
+{
+keep that rhythm going, milk your prostate for me
+SPEED:300
+no hands on your @cock, you don't need it
+SPEED:200
+let the ache turn into something so much deeper
+SPEED:100
+let go and cum untouched for me
+SPEED:30
+slow it right down now, you've done so well
+STOPSTROKING:
+stay full a little longer and savour what I just gave you
+sleep well @subTitle
+}
+ISNOFLAGT:prostateHandsFree
+{
+keep that plug buried deep and stroke for me
+SPEED:300
+I want you to cum with your ass full
+SPEED:200
+feel how much harder it hits like this
+SPEED:100
+empty yourself completely
+SPEED:30
+you may stop stroking now
+SILENTSTOP:
+leave it in a while longer and savour it
+till next time @subTitle
+}
+ISNOFLAGT:prostateHandsFree
+{
+stroke that @cock while your ass stays stuffed
+SPEED:300
+this is what it feels like to be filled and used at once
+SPEED:200
+don't slow down, give me everything
+SPEED:100
+let it all out for me
+SPEED:30
+you can stop those strokes now
+SILENTSTOP:
+rest in it, you earned this one @subTitle
+}
+END:
+{
+ISSETTING:outsideSession CHANCE:30 COMMANDMENTS:
+and that concludes our session for today, see you soon!
+ISFLAGT:taskAdded don't forget about that task I gave you
+and remember, no touching!
+FLAG:fullAnalOrgasm
+ENDSESSION
+}

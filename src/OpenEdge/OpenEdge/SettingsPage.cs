@@ -102,6 +102,8 @@ public partial class SettingsPage : Page, IComponentConnector
 
 	private CheckBox analPlugBox;
 
+	private CheckBox analProstateOrgasmBox;
+
 	private CheckBox lobEnabledBox;
 
 	private TextBlock lobAnsweredText;
@@ -640,9 +642,11 @@ public partial class SettingsPage : Page, IComponentConnector
 		analWaterLubeBox = CreateDarkCheckBox("Water lube", analState.WaterLubeEnabled);
 		analDildoBox = CreateDarkCheckBox("Dildo", analState.DildoEnabled);
 		analPlugBox = CreateDarkCheckBox("Plug", analState.PlugEnabled);
+		analProstateOrgasmBox = CreateDarkCheckBox("Prostate orgasm", analState.ProstateOrgasmEnabled);
 		wrapPanel3.Children.Add(analWaterLubeBox);
 		wrapPanel3.Children.Add(analDildoBox);
 		wrapPanel3.Children.Add(analPlugBox);
+		wrapPanel3.Children.Add(analProstateOrgasmBox);
 		stackPanel.Children.Add(wrapPanel3);
 		return stackPanel;
 	}
@@ -1370,6 +1374,7 @@ public partial class SettingsPage : Page, IComponentConnector
 			|| analState.WaterLubeEnabled != (analWaterLubeBox.IsChecked == true)
 			|| analState.DildoEnabled != (analDildoBox.IsChecked == true)
 			|| analState.PlugEnabled != (analPlugBox.IsChecked == true)
+			|| analState.ProstateOrgasmEnabled != (analProstateOrgasmBox.IsChecked == true)
 			|| lobState.Enabled != (lobEnabledBox.IsChecked == true)
 			|| lobState.RuntimeEnabled != (lobRuntimeBox.IsChecked == true)
 			|| lobState.EarlyHour.ToString(CultureInfo.InvariantCulture) != lobEarlyBox.Text
@@ -1481,6 +1486,7 @@ public partial class SettingsPage : Page, IComponentConnector
 			SaveHiddenToggleSetting("waterLube", analWaterLubeBox.IsChecked == true, queuedAskKeys);
 			SaveHiddenToggleSetting("dildo", analDildoBox.IsChecked == true, queuedAskKeys);
 			SaveHiddenToggleSetting("plug", analPlugBox.IsChecked == true, queuedAskKeys);
+			SaveHiddenToggleSetting("prostateOrgasm", analProstateOrgasmBox.IsChecked == true, queuedAskKeys);
 		}
 		else
 		{
@@ -1495,7 +1501,8 @@ public partial class SettingsPage : Page, IComponentConnector
 				TrainingDeclined = analTrainingDeclinedBox.IsChecked == true,
 				WaterLubeEnabled = analWaterLubeBox.IsChecked == true,
 				DildoEnabled = analDildoBox.IsChecked == true,
-				PlugEnabled = analPlugBox.IsChecked == true
+				PlugEnabled = analPlugBox.IsChecked == true,
+				ProstateOrgasmEnabled = analProstateOrgasmBox.IsChecked == true
 			});
 		}
 		if (!lobState.Answered)

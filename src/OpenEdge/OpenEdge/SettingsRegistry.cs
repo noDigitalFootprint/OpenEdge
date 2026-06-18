@@ -130,6 +130,8 @@ public sealed class AnalSettingState
 	public bool DildoEnabled { get; set; }
 
 	public bool PlugEnabled { get; set; }
+
+	public bool ProstateOrgasmEnabled { get; set; }
 }
 
 public sealed class LobSettingState
@@ -209,7 +211,7 @@ public sealed class SettingsRegistry
 
 	private static readonly IReadOnlySet<string> QueueableAskSettingKeys = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
 	{
-		"safeWord", "hands", "virgin", "gay", "feet", "taskScreen", "findom", "cei", "humiliation", "cuck", "string", "anal", "palming", "edgeIntro", "edgeHold", "cockControl", "asmr", "clothesPins", "hypno", "breathPlay", "outsideSession", "LOB", "canRemove", "petPlay", "petPlayAdvanced", "censorship"
+		"safeWord", "hands", "virgin", "gay", "feet", "taskScreen", "findom", "cei", "humiliation", "cuck", "string", "anal", "palming", "edgeIntro", "edgeHold", "cockControl", "asmr", "clothesPins", "hypno", "breathPlay", "outsideSession", "LOB", "canRemove", "petPlay", "petPlayAdvanced", "censorship", "prostateOrgasm"
 	};
 
 	private static readonly IReadOnlyList<SettingDefinition> Definitions = new List<SettingDefinition>
@@ -679,7 +681,8 @@ public sealed class SettingsRegistry
 			TrainingDeclined = compatibilityStateService.PersistentEntryExists("analTrainingNo"),
 			WaterLubeEnabled = IsEnabled("waterLube"),
 			DildoEnabled = IsEnabled("dildo"),
-			PlugEnabled = IsEnabled("plug")
+			PlugEnabled = IsEnabled("plug"),
+			ProstateOrgasmEnabled = IsEnabled("prostateOrgasm")
 		};
 	}
 
@@ -737,6 +740,7 @@ public sealed class SettingsRegistry
 		SetEnabled("waterLube", state.WaterLubeEnabled);
 		SetEnabled("dildo", state.DildoEnabled);
 		SetEnabled("plug", state.PlugEnabled);
+		SetEnabled("prostateOrgasm", state.ProstateOrgasmEnabled);
 	}
 
 	public bool HasCompletedFirstAnalSession()
