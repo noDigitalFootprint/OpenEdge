@@ -87,9 +87,9 @@ public partial class MainWindow : Page, IComponentConnector
 	// Flip to true in source + recompile to enable. Never wire this to an in-app
 	// control. When enabled, these keys fire while a session is active:
 	//   F9  -> end the session via the real ending flow (Ending/ChastitySessionEnd/PetPlayOff)
-	//   F10 -> force a hands-free prostate orgasm (Option B)
-	//   F11 -> force a full anal/penile orgasm (Option A)
-	private const bool DebugMenuEnabled = true;
+	//   F10 -> force a hands-free prostate orgasm 
+	//   F11 -> force a full anal/penile orgasm 
+	private const bool DebugMenuEnabled = false;
 
 	public bool scriptPaused;
 
