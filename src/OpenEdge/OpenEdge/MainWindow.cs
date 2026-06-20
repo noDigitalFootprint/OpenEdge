@@ -82,6 +82,15 @@ public partial class MainWindow : Page, IComponentConnector
 
 	public bool sessionActive;
 
+	// ===== Debug menu (developer testing aid) =====
+	// Compile-time gate ONLY. MUST stay false in any build handed to users.
+	// Flip to true in source + recompile to enable. Never wire this to an in-app
+	// control. When enabled, these keys fire while a session is active:
+	//   F9  -> end the session via the real ending flow (Ending/ChastitySessionEnd/PetPlayOff)
+	//   F10 -> force a hands-free prostate orgasm (Option B)
+	//   F11 -> force a full anal/penile orgasm (Option A)
+	private const bool DebugMenuEnabled = true;
+
 	public bool scriptPaused;
 
 	public Stopwatch stopwatch = new Stopwatch();
@@ -277,6 +286,19 @@ public partial class MainWindow : Page, IComponentConnector
 		secWindow.setMw(this);
 		anglePlayer = new AnglePlayer();
 		createBallPit();
+#pragma warning disable CS0162 // Unreachable when DebugMenuEnabled is the default (false) compile-time gate.
+		if (DebugMenuEnabled)
+		{
+			base.Loaded += delegate
+			{
+				Window window = Window.GetWindow(this);
+				if (window != null)
+				{
+					window.PreviewKeyDown += debugMenuKeyDown;
+				}
+			};
+		}
+#pragma warning restore CS0162
 	}
 
 	public void preLoad(Page1 p)
@@ -4652,6 +4674,70 @@ public partial class MainWindow : Page, IComponentConnector
 		base.Dispatcher.InvokeAsync(delegate
 		{
 			Application.Current.Shutdown();
+		});
+	}
+
+	// ===== Debug menu handlers (only wired up when DebugMenuEnabled is true) =====
+	private void debugMenuKeyDown(object sender, KeyEventArgs e)
+	{
+		if (!DebugMenuEnabled || !sessionActive)
+		{
+			return;
+		}
+		// F10 (and Alt-combos) arrive as Key.System with the real key in SystemKey; normalize so F10 matches.
+		Key key = ((e.Key == Key.System) ? e.SystemKey : e.Key);
+		switch (key)
+		{
+		case Key.F9:
+			debugForceSessionEnd();
+			e.Handled = true;
+			break;
+		case Key.F10:
+			debugForceAnalOrgasm(handsFree: true);
+			e.Handled = true;
+			break;
+		case Key.F11:
+			debugForceAnalOrgasm(handsFree: false);
+			e.Handled = true;
+			break;
+		}
+	}
+
+	// Mirrors the end-of-session branch of pickScript() so the real ending script runs now.
+	private void debugForceSessionEnd()
+	{
+		base.Dispatcher.Invoke(delegate
+		{
+			sessionLength = 0;
+			removeSpecialButtons("Please...", 6);
+			removeSpecialButtons("I'm on the edge", 1);
+			removeSpecialButtons("I came", 3);
+			currentState = "module";
+			if (getTFlag("petPlay"))
+			{
+				currentScript = new PetPlayOff(this);
+			}
+			else if (!isSettingEnabled("wearingChastity"))
+			{
+				currentScript = new Ending(this);
+			}
+			else
+			{
+				currentScript = new ChastitySessionEnd(this);
+			}
+			currentScript.talkLocked = false;
+			scriptPaused = false;
+		});
+	}
+
+	// Mirrors the anal-orgasm branch of oD() so the OrgasmDecideAnalOrgasm flow runs on demand.
+	private void debugForceAnalOrgasm(bool handsFree)
+	{
+		base.Dispatcher.Invoke(delegate
+		{
+			setTFlag("anal");
+			methodAnalOrgasm(handsFree);
+			currentScript = new OrgasmDecideAnalOrgasm(this, currentScript);
 		});
 	}
 
