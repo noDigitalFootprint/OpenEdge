@@ -85,11 +85,9 @@ public partial class MainWindow : Page, IComponentConnector
 	// ===== Debug menu (developer testing aid) =====
 	// Compile-time gate ONLY. MUST stay false in any build handed to users.
 	// Flip to true in source + recompile to enable. Never wire this to an in-app
-	// control. When enabled, these keys fire while a session is active:
-	//   F9  -> end the session via the real ending flow (Ending/ChastitySessionEnd/PetPlayOff)
-	//   F10 -> force a hands-free prostate orgasm 
-	//   F11 -> force a full anal/penile orgasm 
-	private const bool DebugMenuEnabled = false;
+	private const bool DebugMenuEnabled = true;
+
+	private StackPanel debugMenuOptions;
 
 	public bool scriptPaused;
 
@@ -289,14 +287,7 @@ public partial class MainWindow : Page, IComponentConnector
 #pragma warning disable CS0162 // Unreachable when DebugMenuEnabled is the default (false) compile-time gate.
 		if (DebugMenuEnabled)
 		{
-			base.Loaded += delegate
-			{
-				Window window = Window.GetWindow(this);
-				if (window != null)
-				{
-					window.PreviewKeyDown += debugMenuKeyDown;
-				}
-			};
+			buildDebugMenu();
 		}
 #pragma warning restore CS0162
 	}
@@ -2719,7 +2710,7 @@ public partial class MainWindow : Page, IComponentConnector
 		sendAllTypes(ona, 0.0);
 		stopOna = true;
 		setNewSpeed(50f);
-		setTPText(lr.getVocab("edgeStop"));
+		setTPText(lr.getVocab((currentState == "analEdge") ? "analEdgeStop" : "edgeStop"));
 		Task.Delay(2000).ContinueWith(delegate
 		{
 			try
@@ -2741,6 +2732,67 @@ public partial class MainWindow : Page, IComponentConnector
 				});
 			}
 		});
+	}
+
+	// Anal edge: same mechanic as methodEdge but prostate/plug-driven with anal dialogue,
+	// and it uses the "analEdge" state so it bypasses the chastity beat-mute (works caged).
+	// Gated on the prostateOrgasm unlock; falls back to a normal edge if not unlocked.
+	public void methodAnalEdge()
+	{
+		if (!isSettingEnabled("prostateOrgasm"))
+		{
+			methodEdge();
+			return;
+		}
+		analEdgeCore();
+	}
+
+	// The anal-edge body without the prostateOrgasm gate, so the debug menu can force it directly.
+	private void analEdgeCore()
+	{
+		currentScript.talkLocked = true;
+		stroking = true;
+		setNewSpeed(maxBpm);
+		currentState = "analEdge";
+		edgeAllowed = true;
+		if (random.Next(1, 100) > 90 && secWindow.imageCaptionPaths.Count > 10)
+		{
+			secWindow.showCaptionImage();
+		}
+		longEdge();
+		scriptPaused = true;
+		Task.Delay(timeBeforeBeat).ContinueWith(delegate
+		{
+			try
+			{
+				setTPText(lr.getVocab("analEdge"));
+				specialButtons("I'm on the edge", 1);
+				specialButtons("I came", 3);
+			}
+			finally
+			{
+				currentScript.talkLocked = false;
+			}
+		});
+	}
+
+	// ANALEDGE:n -> chain n anal edges (mirrors methodEdgeMultiple).
+	public void methodAnalEdgeMultiple(string s)
+	{
+		string[] array = s.Split("ANALEDGE:");
+		try
+		{
+			edgeAllowed = true;
+			specialButtons("I'm on the edge", 1);
+			longEdge();
+			int num = int.Parse(array[1]) - 1;
+			promissedEdges += num;
+			methodAnalEdge();
+		}
+		catch
+		{
+			Console.Write("couldn't convert the string to an int, the string was: " + array[1]);
+		}
 	}
 
 	public void methodOrgasmDecide()
@@ -3531,7 +3583,7 @@ public partial class MainWindow : Page, IComponentConnector
 			{
 				try
 				{
-					if (currentState == "anal" || currentState == "cbt" || currentState == "analExtreme" || currentState == "cbtExtreme" || currentState == "prostateOrgasm")
+					if (currentState == "anal" || currentState == "cbt" || currentState == "analExtreme" || currentState == "cbtExtreme" || currentState == "prostateOrgasm" || currentState == "analEdge")
 				{
 					if (wantsBeatBar)
 					{
@@ -3562,7 +3614,7 @@ public partial class MainWindow : Page, IComponentConnector
 				{
 					sendAllTypes(ona, 0.0);
 				}
-				if (!isSettingEnabled("wearingChastity") || currentState == "anal" || currentState == "cbt" || currentState == "analExtreme" || currentState == "cbtExtreme" || currentState == "prostateOrgasm")
+				if (!isSettingEnabled("wearingChastity") || currentState == "anal" || currentState == "cbt" || currentState == "analExtreme" || currentState == "cbtExtreme" || currentState == "prostateOrgasm" || currentState == "analEdge")
 				{
 					if (stroking && !subliminal)
 					{
@@ -3690,6 +3742,7 @@ public partial class MainWindow : Page, IComponentConnector
 				StrokeTaunting();
 				break;
 			case "edge":
+			case "analEdge":
 				methodEdgeRelease();
 				currentState = "module";
 				break;
@@ -4505,10 +4558,14 @@ public partial class MainWindow : Page, IComponentConnector
 					promissedEdges--;
 					scriptPaused = true;
 					stroking = false;
-					setTPText(lr.getVocab("edgeStop"));
+					setTPText(lr.getVocab((currentState == "analEdge") ? "analEdgeStop" : "edgeStop"));
 					Task.Delay(random.Next(4000, 14000)).ContinueWith(delegate
 					{
-						if (random.Next(10) > 7)
+						if (currentState == "analEdge")
+						{
+							methodAnalEdge();
+						}
+						else if (random.Next(10) > 7)
 						{
 							methodEdgeHold();
 						}
@@ -4698,30 +4755,108 @@ public partial class MainWindow : Page, IComponentConnector
 		});
 	}
 
-	// ===== Debug menu handlers (only wired up when DebugMenuEnabled is true) =====
-	private void debugMenuKeyDown(object sender, KeyEventArgs e)
+	// ===== Debug menu (only built when DebugMenuEnabled is true) =====
+	// A collapsible drop-down panel docked top-right, listing every debug action.
+	// Replaces the old F9/F10/F11 hotkeys. Never exposed unless the compile-time gate is flipped.
+	private void buildDebugMenu()
 	{
-		if (!DebugMenuEnabled || !sessionActive)
+		base.Dispatcher.Invoke(delegate
 		{
-			return;
-		}
-		// F10 (and Alt-combos) arrive as Key.System with the real key in SystemKey; normalize so F10 matches.
-		Key key = ((e.Key == Key.System) ? e.SystemKey : e.Key);
-		switch (key)
+			StackPanel bar = new StackPanel
+			{
+				Orientation = Orientation.Vertical,
+				HorizontalAlignment = HorizontalAlignment.Right
+			};
+			Button header = makeDebugButton("▶ DEBUG");
+			debugMenuOptions = new StackPanel { Orientation = Orientation.Vertical };
+			header.Click += delegate
+			{
+				bool show = debugMenuOptions.Visibility != Visibility.Visible;
+				debugMenuOptions.Visibility = (show ? Visibility.Visible : Visibility.Collapsed);
+				((TextBlock)header.Content).Text = (show ? "▼ DEBUG" : "▶ DEBUG");
+			};
+			addDebugMenuOption("End session", delegate
+			{
+				debugForceSessionEnd();
+			});
+			addDebugMenuOption("Prostate orgasm (hands-free)", delegate
+			{
+				debugForceAnalOrgasm(handsFree: true);
+			});
+			addDebugMenuOption("Prostate orgasm (full)", delegate
+			{
+				debugForceAnalOrgasm(handsFree: false);
+			});
+			addDebugMenuOption("Anal edge", delegate
+			{
+				debugForceAnalEdge();
+			});
+			debugMenuOptions.Visibility = Visibility.Collapsed;
+			bar.Children.Add(header);
+			bar.Children.Add(debugMenuOptions);
+			Border container = new Border
+			{
+				Background = new SolidColorBrush(Color.FromArgb(210, 18, 18, 18)),
+				BorderBrush = Brushes.DimGray,
+				BorderThickness = new Thickness(1.0),
+				CornerRadius = new CornerRadius(6.0),
+				Padding = new Thickness(4.0),
+				Margin = new Thickness(0.0, 8.0, 8.0, 0.0),
+				HorizontalAlignment = HorizontalAlignment.Right,
+				VerticalAlignment = VerticalAlignment.Top,
+				Child = bar
+			};
+			Panel.SetZIndex(container, 10000);
+			// myGrid has row/column definitions; span them all so the panel overlays the whole
+			// window (top-right) instead of being clipped to cell 0,0 (which hid all but the first option).
+			Grid.SetRowSpan(container, 99);
+			Grid.SetColumnSpan(container, 99);
+			myGrid.Children.Add(container);
+		});
+	}
+
+	private void addDebugMenuOption(string label, Action action)
+	{
+		Button button = makeDebugButton(label);
+		button.Click += delegate
 		{
-		case Key.F9:
-			debugForceSessionEnd();
-			e.Handled = true;
-			break;
-		case Key.F10:
-			debugForceAnalOrgasm(handsFree: true);
-			e.Handled = true;
-			break;
-		case Key.F11:
-			debugForceAnalOrgasm(handsFree: false);
-			e.Handled = true;
-			break;
-		}
+			if (sessionActive)
+			{
+				action();
+			}
+		};
+		debugMenuOptions.Children.Add(button);
+	}
+
+	private Button makeDebugButton(string text)
+	{
+		return new Button
+		{
+			Content = new TextBlock
+			{
+				Text = text,
+				Foreground = Brushes.White,
+				FontFamily = new FontFamily("Consolas"),
+				FontSize = 14.0
+			},
+			Background = new SolidColorBrush(Color.FromArgb(255, 40, 40, 40)),
+			BorderBrush = Brushes.DimGray,
+			BorderThickness = new Thickness(1.0),
+			Padding = new Thickness(8.0, 4.0, 8.0, 4.0),
+			Margin = new Thickness(2.0),
+			HorizontalContentAlignment = HorizontalAlignment.Left,
+			HorizontalAlignment = HorizontalAlignment.Stretch
+		};
+	}
+
+	// Forces a real anal edge on demand, bypassing the prostateOrgasm unlock gate so it's always testable.
+	private void debugForceAnalEdge()
+	{
+		base.Dispatcher.Invoke(delegate
+		{
+			setTFlag("anal");
+			analEdgeCore();
+		});
 	}
 
 	// Mirrors the end-of-session branch of pickScript() so the real ending script runs now.

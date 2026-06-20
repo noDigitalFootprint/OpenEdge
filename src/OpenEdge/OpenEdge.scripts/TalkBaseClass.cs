@@ -754,6 +754,11 @@ public class TalkBaseClass
 				mw.methodEdgeHoldDuration(text2);
 				break;
 			}
+			if (text2.StartsWith("ANALEDGE:"))
+			{
+				mw.methodAnalEdgeMultiple(text2);
+				break;
+			}
 			text3 = methodName;
 			if (!text3.StartsWith("EDGE:"))
 			{
