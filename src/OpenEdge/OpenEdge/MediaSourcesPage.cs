@@ -56,6 +56,7 @@ public partial class MediaSourcesPage : Page, IComponentConnector
 		this.mainWindow = mainWindow;
 		mediaCatalog = imageTagger.MediaCatalog;
 		InitializeComponent();
+		mediaCatalog.Reload();
 		LoadRows();
 	}
 
@@ -304,6 +305,9 @@ public partial class MediaSourcesPage : Page, IComponentConnector
 
 	private void Back_Click(object sender, RoutedEventArgs e)
 	{
+		imageTagger.reloadImagesVideosTags();
+		mainWindow.reloadImagesVideos();
+		mainWindow.p?.gotEnoughImages();
 		NavigationService?.GoBack();
 	}
 

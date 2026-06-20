@@ -79,6 +79,7 @@ public partial class Page1 : Page, IComponentConnector
 		this.bt = bt;
 		loadOptions();
 		spa = span;
+		gotEnoughImages();
 	}
 
 	public void setHomeWorkScreen(HomeworkScreen homeworkScreen)
@@ -212,7 +213,7 @@ public partial class Page1 : Page, IComponentConnector
 	private void MigrationTools_Click(object sender, RoutedEventArgs e)
 	{
 		playClickSound();
-		compatibilityToolsPage = new CompatibilityToolsPage(compatibilityStateService, settingsRegistry);
+		compatibilityToolsPage = new CompatibilityToolsPage(compatibilityStateService, settingsRegistry, imageTagger.MediaCatalog);
 		base.NavigationService.Navigate(compatibilityToolsPage);
 		saveOptions();
 	}
@@ -220,7 +221,7 @@ public partial class Page1 : Page, IComponentConnector
 	public void OpenMigrationTools(NavigationService navigationService)
 	{
 		playClickSound();
-		compatibilityToolsPage = new CompatibilityToolsPage(compatibilityStateService, settingsRegistry);
+		compatibilityToolsPage = new CompatibilityToolsPage(compatibilityStateService, settingsRegistry, imageTagger.MediaCatalog);
 		navigationService?.Navigate(compatibilityToolsPage);
 		saveOptions();
 	}
@@ -375,6 +376,11 @@ public partial class Page1 : Page, IComponentConnector
 	public void loadOptions()
 	{
 		bool flag = false;
+		if (!File.Exists(RuntimePaths.OptionsFile))
+		{
+			SessionTraceLogger.Info("first-run", "options.txt missing; writing default options");
+			saveOptions();
+		}
 		try
 		{
 			string text;
@@ -428,8 +434,9 @@ public partial class Page1 : Page, IComponentConnector
 			ttsVolume.Value = double.Parse(loadDataString("ttsVolumeValue", array2));
 			ttsVolumeValue = ttsVolume.Value;
 		}
-		catch (Exception)
+		catch (Exception ex)
 		{
+			SessionTraceLogger.Error("options", "Failed to load options.txt; keeping in-memory defaults", ex);
 		}
 		if (!flag && settingsRegistry.GetRawValue("pronoun") != null)
 		{

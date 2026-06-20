@@ -51,7 +51,7 @@ public partial class FrameWindow : Window, IComponentConnector
 		CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InvariantCulture;
 		CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.InvariantCulture;
 		CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
-		EnsureRuntimeDirectories();
+		RuntimeStateInitializer.EnsureFirstRunState();
 		File.WriteAllText(RuntimePaths.TempFlag("open"), DateTime.Now.ToString());
 		InitializeComponent();
 		Loaded += FrameWindow_Loaded;
@@ -76,6 +76,7 @@ public partial class FrameWindow : Window, IComponentConnector
 		ModService.EnsureModsDirectory();
 		settingsRegistry = new SettingsRegistry(compatibilityStateService, ModService.GetEnabledSettingDefinitions());
 		mediaCatalog = new MediaCatalogService();
+		mediaCatalog.Reload();
 		imgTag = new ImageTagger(mediaCatalog);
 		NormalizeEdgeHoldRecord();
 		span = CreateUiSoundPlayer();
@@ -90,34 +91,6 @@ public partial class FrameWindow : Window, IComponentConnector
 		homeworkScreen = new HomeworkScreen(page1);
 		page1.setHomeWorkScreen(homeworkScreen);
 		myFrame.NavigationService.Navigate(page1);
-	}
-
-	private static void EnsureRuntimeDirectories()
-	{
-		if (!Directory.Exists(RuntimePaths.ImagesDir))
-		{
-			Directory.CreateDirectory(RuntimePaths.ImagesDir);
-		}
-		if (!Directory.Exists(RuntimePaths.DebugDir))
-		{
-			Directory.CreateDirectory(RuntimePaths.DebugDir);
-		}
-		if (!Directory.Exists(RuntimePaths.VideosDir))
-		{
-			Directory.CreateDirectory(RuntimePaths.VideosDir);
-		}
-		if (!Directory.Exists(RuntimePaths.FlagsDir))
-		{
-			Directory.CreateDirectory(RuntimePaths.FlagsDir);
-		}
-		if (!Directory.Exists(RuntimePaths.TempFlagsDir))
-		{
-			Directory.CreateDirectory(RuntimePaths.TempFlagsDir);
-		}
-		if (!Directory.Exists(RuntimePaths.ModsDir))
-		{
-			Directory.CreateDirectory(RuntimePaths.ModsDir);
-		}
 	}
 
 	private static void NormalizeEdgeHoldRecord()

@@ -42,7 +42,6 @@ public sealed class MediaTagCompatibilityAdapter
 		MediaTagCompatibilityDiagnostics diagnostics = new MediaTagCompatibilityDiagnostics();
 		if (!File.Exists(tagsFilePath))
 		{
-			File.WriteAllText(tagsFilePath, "");
 			LastDiagnostics = diagnostics;
 			return;
 		}
@@ -92,19 +91,7 @@ public sealed class MediaTagCompatibilityAdapter
 
 	public void SaveLegacyTags(MediaCatalogSnapshot targetSnapshot)
 	{
-		List<string> lines = new List<string>();
-		foreach (MediaIdentityRecord identity in targetSnapshot.IdentitiesById.Values.Where(delegate(MediaIdentityRecord item)
-		{
-			return !string.IsNullOrWhiteSpace(item.Tags) && !string.IsNullOrWhiteSpace(item.CurrentRelativePath);
-		}).OrderBy(delegate(MediaIdentityRecord item)
-		{
-			return item.CurrentRelativePath;
-		}))
-		{
-			lines.Add(identity.CurrentRelativePath + legacyTagSeparator + identity.Tags);
-		}
-		File.WriteAllLines(tagsFilePath, lines);
-		LastDiagnostics.LegacyLinesWritten = lines.Count;
-		SessionTraceLogger.Info("media-tags", "legacy mirror written lines=" + lines.Count);
+		LastDiagnostics.LegacyLinesWritten = 0;
+		SessionTraceLogger.Info("media-tags", "legacy tags.txt mirror is read-only; skipped write");
 	}
 }

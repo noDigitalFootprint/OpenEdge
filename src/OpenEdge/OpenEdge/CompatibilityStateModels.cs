@@ -31,6 +31,21 @@ public sealed class CompatibilityTransferPackage
 	public List<MediaSourceDefinition> MediaSources { get; set; } = new List<MediaSourceDefinition>();
 
 	public MediaIdentityStore MediaIdentityStore { get; set; } = new MediaIdentityStore();
+
+	public List<string> ExportWarnings { get; set; } = new List<string>();
+}
+
+public sealed class EverEdgeImportResult
+{
+	public string Report { get; set; } = "";
+
+	public string DataDirectory { get; set; } = "";
+
+	public string LegacyTagsFile { get; set; } = "";
+
+	public string ImagesDirectory { get; set; } = "";
+
+	public string VideosDirectory { get; set; } = "";
 }
 
 public sealed class CompatibilityStateSummary
